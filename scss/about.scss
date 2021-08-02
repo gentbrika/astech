@@ -105,6 +105,86 @@
     margin-top: 50px;
 }
 
+// slider
+
+.owl-carousel-3 .owl3-borders{
+    background: #FFFFFF;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.08);
+    padding:20px;
+    width: 270px;
+    height: 340px;
+}
+
+.owl-carousel-3 .item {
+    width:250px;
+    height: 320px;
+    margin-left: -10px;
+    margin-top: -10px;
+    padding: 30px 25px 25px 30px;
+}
+
+
+
+.owl-carousel-3 .owl-item, .owl-carousel-3 .owl-item.active{
+    width: 250px !important;
+}
+
+.owl-carousel-3 .owl-item{
+    margin-right: 60px;
+}
+
+.owl-carousel-3 .first{
+    background-color: #023047;
+    color: #fff;
+}
+
+.owl-carousel-3 .second{
+    background-color: $primary-two;
+    color: #fff;
+}
+
+.owl-carousel-3 .third{
+    background-color: #073B4C;
+    color: #fff;
+}
+
+.owl-carousel-3 .fourth{
+    background-color: #669BBC;
+    color: #fff;
+}
+
+
+.owl3-borders .item {
+    position: relative;
+    min-height: 150px;
+}
+
+.owl3-borders h2{
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 34px;
+    margin-bottom: 0px;
+}
+
+.owl3-borders h4{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 34px;
+    margin-top: 0px;
+}
+  
+.owl3-borders .item p {
+    position: absolute;
+    bottom: 24px;
+    left: 30px;
+    font-size: 12px;
+    width: 197px;
+}
+
+.footer-background{
+    margin-top: 130px;
+}
+
 @media only screen and (max-width:1024px){
     .our-vision{
         grid-template-columns: 1fr;

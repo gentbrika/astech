@@ -1,18 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- style -->
+    <link rel="stylesheet" href="css/about.css">
     <!-- jquery -->
     <script src="/node_modules/jquery/dist/jquery.js"></script>
     <!-- bootstrap -->
     <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
     <script src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-    <!-- style -->
-    <link rel="stylesheet" href="css/about.css">
+
+    <!-- owl -->
+    <link rel="stylesheet" href="/node_modules/owl.carousel/dist/assets/owl.carousel.min.css" />
+    <script src="/node_modules/owl.carousel/dist/owl.carousel.min.js"></script>
     <title>Astech</title>
 </head>
+
 <body>
     <div id="nav"></div>
     <div class="about-content">
@@ -57,22 +63,71 @@
             </div>
         </div>
         <div class="work-photos">
-        <div class="work-photo1">
-            <img src="assets/images/about-work-photo1.svg">
+            <div class="work-photo1">
+                <img src="assets/images/about-work-photo1.svg">
+            </div>
+            <div class="work-photo2">
+                <img src="assets/images/about-work-photo2.svg">
+            </div>
         </div>
-        <div class="work-photo2">
-            <img src="assets/images/about-work-photo2.svg">
+
+
+        <div class="certified-care">
+            <div class="container">
+                <h1>Certified Care</h1>
+                <div class="owl-carousel owl-carousel-3">
+                    <div class="owl3-borders">
+                        <div class="item first">
+                            <img src="assets/images/awwwards.svg" class="certified-logos">
+                            <h2>Site of the day</h2>
+                            <h4>April 6, 2017</h4>
+                            <p>In publishing and graphic design, Lorem ipsum is a placeholder.</p>
+                        </div>
+                    </div>
+                    <div class="owl3-borders">
+                        <div class="item second">
+                            <img src="assets/images/css-design-awards.svg" class="certified-logos">
+                            <h2>Site of the day</h2>
+                            <h4>April 6, 2017</h4>
+                            <p>In publishing and graphic design, Lorem ipsum is a placeholder.</p>
+                        </div>
+                    </div>
+                    <div class="owl3-borders">
+                        <div class="item third">
+                            <img src="assets/images/awwwards.svg" class="certified-logos">
+                            <h2>Site of the day</h2>
+                            <h4>April 6, 2017</h4>
+                            <p>In publishing and graphic design, Lorem ipsum is a placeholder.</p>
+                        </div>
+                    </div>
+                    <div class="owl3-borders">
+                        <div class="item fourth">
+                            <img src="assets/images/awwwards.svg" class="certified-logos">
+                            <h2>Site of the day</h2>
+                            <h4>April 6, 2017</h4>
+                            <p>In publishing and graphic design, Lorem ipsum is a placeholder.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
         </div>
+
+
     </div>
-    </div>
-    </div>
-    <div>
-        <div id="footer"></div>
-        <script>
-            $(function () {
-                $("#nav").load("components/navbar.html");
-                $("#footer").load("components/footer.html");
-            });
-        </script>
+    <div id="footer"></div>
+    <script>
+        $(function () {
+            $("#nav").load("components/navbar.html");
+            $("#footer").load("components/footer.html");
+        });
+
+        $('.owl-carousel-3').owlCarousel({
+            loop: false,
+            autoWidth: true,
+            margin: 50
+        });
+    </script>
 </body>
+
 </html>

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- style -->
+    <link rel="stylesheet" href="css/single-services.css">
+    <!-- jquery -->
+    <script src="/node_modules/jquery/dist/jquery.js"></script>
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <title>Astech</title>
+
+</head>
+
+<body>
+
+    <div id="nav"></div>
+
+    <div class="body-content">
+        <div class="single-services">
+            <div class="background-color"></div>
+
+            <div class="center">
+
+                <div class="row content">
+                    <div class="col-3 left-side-images">
+                        <img src="assets/images/vertical-line.svg" class="vertical-line">
+                        <img src="assets/images/software-development.svg" class="post-image">
+                    </div>
+                    <div class="col-9 content-description">
+                        <div class="first-content">
+                            <h1>Custom Software Development</h1>
+                            <h6>Are you looking for a reliable long-term innovation partner who can help you turn your
+                                imaginative ideas into personalized software development?</h6>
+                        </div>
+                        <div class="second-content">
+                            <p>At Astech, we believe that a powerful IT solution is able to transform your business and
+                                bring significant profits.We advise solutions that help your business take over the
+                                market.</p>
+                            <h4>What do we develop?</h4>
+                            <p>Create elegant, solid and innovative web applications powered by clean code and the
+                                latest technologies to achieve your business goals.</p>
+                            <div class="">
+                                <img src="assets/images/saas.svg">
+                                <h5>SaaS Applications (Software as a service)</h5>
+                                <p>Leverage our multi-year experience in building commercial SaaS-based applications to
+                                    address your specific business challenges and achieve higher productivity, minimum
+                                    risks, and elevated customer experience. We are experts in creating SaaS
+                                    applications
+                                    using various technologies and frameworks using cloud and serverless.</p>
+                            </div>
+                            <img src="assets/images/ecommerce.svg" >
+                            <h5>E-commerce solutions</h5>
+                            <p>Whether you are looking for a partner to manage your entire e-commerce activity or
+                                looking for specific expertise to improve the performance of your online business,
+                                Astech provides you with a global e-business solution.
+                                Astech brings together all the e-commerce and digital expertise needed to set up and
+                                manage your e-business, from the design of your e-shop to online payment and delivery.
+                            </p>
+                            <h5>Our Job?</h5>
+                            <div class="fullsize-image">
+                                <img src="assets/images/our-job-background.png">
+                            </div>
+                            <h5>Develop your e-business by reconciling performance and the brand universe for a website
+                                adapted to your needs.</h5>
+                            <img src="" alt="">
+                            <h5>Progressive web apps (PWA):</h5>
+                            <p>Need to develop a PWA? ASTech team has an impressive experience in PWA development and
+                                will be glad to assist you with
+                                your projects. Combine the best of web and mobile apps and let user avoid the
+                                unnecessary downloading and installation stages.
+                                The main advantage of PWA is the native-app user experience available in the browser. It
+                                also reduces the time and money spent on development as the same code runs across all
+                                the platforms and devices. PWA allows taking advantage of Google search and keeps
+                                working offline or with a poor network connection.</p>
+                            <h5>ASTech web development team considers PWA to be the future of web applications for the
+                                B2C and B2B segments. Here are some of the services we offer as a PWA app development
+                                company:</h5>
+                            <ul>
+                                <li>PWA UI design</li>
+                                <li>PWA web development</li>
+                                <li>PWA web development</li>
+                                <li>PWA integration</li>
+                                <li>Staff Augmentation</li>
+                            </ul>
+                            <img src="" alt="">
+                            <h5>Single-page apps:</h5>
+                            <p>Loading times are significantly shorter, which allows for improved navigation and
+                                therefore a smoother user experience.
+                                There is much less stress on the server since it no longer has to load a full page for
+                                each request.<br><br>What a single page app developed by a competent team can do for
+                                you, is boost your business operation.</p>
+                            <ul>
+                                <li>According to recent studies, responsive and fast-loading pages are much more
+                                    attractive for users. </li>
+                                <li>They are an ideal tool for managing the display of dynamic content.</li>
+                                <li>Unlike traditional web applications, they can work offline.</li>
+                                <li>They allow modern interfaces to be created from legacy systems.</li>
+                                <li>They are generally easy to upgrade.</li>
+                                <li>And subsidiary bonus: a SPA is neither more nor less than a website designed as a
+                                    mobile application, it can be used both from a smartphone, but also from a desktop!
+                                </li>
+                            </ul>
+                            <img src="" alt="">
+                            <h5>API Development Services</h5>
+                            <p>We specialize in developing enterprise-grade REST APIs that are easy to consume, well
+                                documented and truly reliable.
+                                APIs are fundamentally changing how data can be used, and opening up entirely new
+                                business models and strategies for products. They allow for flexible integrations and
+                                customization of existing products, enabling developers to enrich and enhance services
+                                in new and creative ways.
+                                Astech, has recognized this shift in the importance of APIs, and the importance of
+                                delivering scalable and secure API development services for our clients. Over the past
+                                10 years we’ve grown our capabilities in this area to become one of the leading experts
+                                in custom API development and API integration.</p>
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <div id="footer"></div>
+    <script>
+        $(function () {
+            $("#nav").load("components/navbar.html");
+            $("#footer").load("components/footer.html");
+        });
+
+        var contentHeight = $('.content').height();
+        $(document).ready(function () {
+            // $(".vertical-line").css({ height: 'calc(100% + ' + 100000000 + 'px)' } );
+            $('.vertical-line').css({ height: `calc(369px + ${contentHeight}px)` });
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- jquery -->
+    <script src="/node_modules/jquery/dist/jquery.js"></script>
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- style -->
+    <link rel="stylesheet" href="css/about.css">
+    <title>Astech</title>
+</head>
+<body>
+    <div id="nav"></div>
+    <div class="about-content">
+        <div class="about-text container">
+            <p>ABOUT US</p>
+            <h1>We are a software development company leading the digital transformation of our worldwide clients
+                through <span>custom software development services</span></h1>
+        </div>
+        <img src="assets/images/about-logo.svg" class="about-logo">
+        <img src="assets/images/about-us photo.svg" class="about-background">
+    </div>
+    <div class="container">
+        <div class="our-vision">
+            <div class="first-column">
+                <h1>OUR VISION</h1>
+            </div>
+            <div class="second-column">
+                <img src="assets/images/about-elipse.svg">
+                <img src="assets/images/about-elipse.svg" class="second-elipse">
+            </div>
+            <div class="third-column">
+                <p>We want to recognised as a leading provider of software solutions. We are committed to earning our
+                    clients’ trust through outstanding execution and uncompromising dedication to their success.</p>
+            </div>
+        </div>
+        <div class="our-mision">
+            <div class="our-mision-text">
+                <p>ASTECh’s mission is to help our clients achieve and exceed their growth and revenue goals. We
+                    seek to
+                    accomplish this through the creation and superior execution of revenue-driving solutions. We are
+                    dedicated to developing fully customised, accountable applications to address each client’s
+                    unique
+                    situation.
+                    We are further committed to analysing the analytics data we collect and translating it into
+                    kernels
+                    of actionable business intelligence that can directly impact each client’s growth and success.
+                </p>
+            </div>
+            <div class="our-mision-logo">
+                <h1>OUR MISION</h1>
+                <img src="assets/images/Mision-photo.svg">
+            </div>
+        </div>
+        <div class="work-photos">
+        <div class="work-photo1">
+            <img src="assets/images/about-work-photo1.svg">
+        </div>
+        <div class="work-photo2">
+            <img src="assets/images/about-work-photo2.svg">
+        </div>
+    </div>
+    </div>
+    </div>
+    <div>
+        <div id="footer"></div>
+        <script>
+            $(function () {
+                $("#nav").load("components/navbar.html");
+                $("#footer").load("components/footer.html");
+            });
+        </script>
+</body>
+</html>

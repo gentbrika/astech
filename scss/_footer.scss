@@ -1,0 +1,238 @@
+.lwt{
+    height: 350px;
+    max-width: 100%;
+    background: #1B1C1F;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.lwt .right-image{
+    transform: scaleX(-1);
+}
+
+.slide-images {
+    width: 340px;
+}
+
+.quote{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: $primary-one;
+    color: $secondary-six;
+    font-size: 14px;
+    width: 209px;
+    height: 50px;
+    text-align: center;
+    border: none;
+}
+
+.footer-background{
+    position: absolute;
+    width: 100%;
+    background-color: $primary-three;
+    padding-bottom: 60px;
+}
+
+footer{
+    margin-top: -100px;
+}
+
+.footer-info{
+    margin-top: 100px !important;
+}
+
+.footer-info h3{
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 36px;
+    color: #1B1C1F;
+}
+
+.footer-info .informations p{
+    margin-bottom: 15px;
+    font-size: 16px;
+    line-height: 24px;
+    color: $secondary-two;
+    width: 253px;
+}
+
+.fourth .email{
+    color: $primary-one;
+    text-decoration: underline;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 36px;
+    margin-top: 20px;
+}
+
+.fourth .email:hover{
+    color: $primary-one;
+    text-decoration: underline;
+}
+
+
+.footer-navigations{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 175px;
+}
+
+.footer-navigations .icons  img{
+    margin-right: 22px;
+}
+
+.footer-navigations .pages a{
+    font-size: 14px;
+    line-height: 21px;
+    color: $secondary-two;
+    margin-left: 23px;
+    margin-right: 23px;
+    text-decoration: none;
+}
+
+.copyright-footer p{
+    font-size: 14px;
+    line-height: 21px;
+    color: $secondary-two;
+}
+
+.scroll-top{
+    transform: rotate(-90deg);
+    min-width: 100px;
+    height: 40px;
+    position: absolute;
+    right: 0px;
+    margin: -88px -16px -20px -30px;
+}
+
+.scroll-top button{
+    // margin: 20px 0px 0px 154px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 21px;
+    border: 1px solid #DEDEDE;
+    background-color: transparent;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+}
+.scroll-top .arrow{
+    transform: rotate(90deg);
+    padding: 10px 5px;
+}
+
+// @media only screen and (max-width: 1367px){
+//     .scroll-top button{
+//     margin: 90px 0px 0px 159px;
+//     }
+// }
+
+
+@media only screen and (max-width: 1199px){
+    .slide-images {
+        width: 250px;
+    }
+}
+
+@media only screen and (max-width: 991px){
+    .slide-images{
+        width: 232px;
+    }
+    .text-content h1{
+        width: auto !important ;
+    }
+    .footer-navigations .pages a{
+        margin-left: 10px;
+        margin-right: 10px;
+    }   
+    .footer-navigations{
+        padding-top: 50px;
+    }
+}
+
+@media only screen and (max-width: 840px){
+    .slide-images {
+        width: 200px;
+    }
+    .text-content h1{
+        line-height: 45px !important;
+    }
+}
+
+@media only screen and (max-width: 810px){
+    .scroll-top {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 767px){
+    .slide-images {
+        display: none;
+    }
+    .text-content h1{
+        width: auto !important;
+    }
+    .footer-navigations{
+        flex-direction: column;
+        padding-top: 35px;
+    }
+    .icons, .pages, .copyright-footer{
+        padding-bottom: 30px;
+    }
+    .pages{
+        display: flex;
+        flex-direction: column;
+    }
+    .pages a{
+        margin-left: 0px !important;
+        margin-right: 22px !important;
+        padding-bottom: 15px;
+    }
+}
+
+@media only screen and (max-width: 575px){
+    .first, .second, .third{
+        width: 253px !important;
+    }
+    .fourth h3{
+        width: 274px;
+    }
+}
+
+@media only screen and (max-width: 500px){
+    .text-content h1{
+        font-size: 24px !important;
+    }
+}
+
+.text-content h1{
+    font-size: 45px;
+    color: $secondary-six;
+    // width: 430px;
+    font-weight: 700;
+    line-height: 67px;
+    text-align: center;
+}
+
+.text-content p{
+    color: #999999;
+    text-align: center;
+}
+
+
+
+// test
+
+.containers{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.lwt {
+    height: 323px;
+}

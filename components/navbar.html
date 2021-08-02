@@ -1,0 +1,126 @@
+<div class="nav-content">
+    <!-- <img src="assets/images/logo.svg" class="logo"> -->
+    <picture>
+        <source media="(max-width:480px)" srcset="assets/images/res-logo.svg">
+        <img src="assets/images/logo.svg" class="logo">
+    </picture>
+
+    <div class="sidebar">
+        <button class="start link-style">Start a project</button>
+        <button id="recentItem" class="link-style">
+            <div class="hamburger-menu menu-icons">
+                <img src="assets/images/nav-icon.svg" class="lines" width="18px">
+                <img src="assets/images/nav-icon.svg" class="lines" width="20px">
+                <img src="assets/images/nav-icon.svg" class="lines" width="18px">
+            </div>
+        </button>
+        <div class="recentItem">
+            <div class="menu-toplinks">
+                <!-- <button class="project link-style">Startt a project</button> -->
+                <button href="#" id="closX" class="menu-icons link-style">
+                    <img src="assets/images/nav-icon.svg" class="close-icon">
+                </button>
+            </div>
+            <div class="menu-items">
+                <a href="">Home</a>
+                <a href="">About Us</a>
+                <a href="">Services</a>
+                <a href="">Blog</a>
+                <a href="">Contact Us</a>
+
+                <div class="under-menu">
+                    <p>View Portfolio</p>
+
+                    <div class="line-port"></div>
+                    <div class="copy-conn">
+                        <div class="find-us">
+                            <p>Find us at:</p>
+                            <div class="social-icons">
+                                <img src="assets/images/facebook.svg">
+                                <img src="assets/images/linkedin.svg">
+                                <img src="assets/images/twitter.svg">
+                                <img src="assets/images/instagram.svg">
+                            </div>
+                        </div>
+                        <div class="">
+                            <p class="copyright">© 2019-2021, Astech.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script>
+
+    $(document).ready(function () {
+        $("#recentItem").click(function () {
+            $(".recentItem").animate({
+                right: '0'
+            });
+            $("body").css('overflow', 'hidden');
+            $("body").css('background', 'rgba(0, 0, 0, 0.15)');
+            $(".nav-content").css('background', 'transparent');
+            $(".body-content").css('pointer-events', 'none');
+        });
+
+        $("#closX").click(function () {
+            $(".recentItem").animate({
+                right: '-100%'
+            });
+            $("body").css('overflow', 'auto');
+            $("body").css('background', 'transparent');
+            $(".nav-content").css('background', 'transparent');
+            $(".body-content").css('pointer-events', 'auto');
+        });
+    });
+
+    if ($(window).width() <= 768) {
+        $("#recentItem").click(function () {
+            $(".recentItem").css('width', '100%');
+        });
+    }
+
+
+
+    // if width is larger than 768 and its not mobile device
+    if ($(window).width() >= 768) {
+        if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+
+        }
+        else {
+            $("#recentItem").click(function () {
+                //home
+                $(".home-content .body-content").css('marginLeft', '-17px');
+
+                //single-services
+                $(".left-side-images").css('marginLeft', '-2px');
+                $(".content-description").css('marginLeft', '-3px');
+
+                //sidebar
+                $(".sidebar").css('marginRight', '17px');
+                
+
+            });
+            $("#closX").click(function () {
+                //home
+                $(".home-content .body-content").css('marginLeft', '0px');
+
+                //single-services
+                $(".left-side-images").css('marginLeft', '0px');
+                $(".content-description").css('marginLeft', '0px');
+
+                //sidebar
+                $(".sidebar").css('marginRight', '0px');
+
+            });
+        }
+    }
+    else {
+
+    }
+
+</script>

@@ -1,0 +1,163 @@
+@import "navbar";
+@import "footer";
+
+
+.about-content{
+    margin-bottom: 130px;
+    background: #1B1C1F;
+}
+
+.about-text h1{
+    font-weight: 600;
+    font-size: 45px;
+    line-height: 58px;
+    width: 874px;
+    margin-bottom: 80px;
+    color: #DFDFDF;
+}
+
+.about-text p{
+    color: #2DA1C5;
+    padding-top: 212px;
+    font-size: 16px;
+}
+
+.about-text span{
+    color: #2DA1C5;
+}
+
+.about-logo{
+    width: 204px;
+    height: 204px;
+    position: absolute;
+    margin-top: -104px;
+    right: 200px;
+}
+
+.about-background{
+    width: 100%;
+}
+
+.our-vision{
+    margin-bottom: 120px;
+}
+
+.our-vision img{
+    width: 166px;
+    height: 166px;
+}
+
+.our-vision{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.second-elipse{
+    position: absolute;
+    margin-left: -25px;
+}
+
+.our-mision-logo{
+    width: 366px;
+    height: 197.36px;
+    margin-left: 130px;
+}
+
+.our-mision{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.our-mision p{
+    font-size: 18px;
+    line-height: 32px;
+    margin-right: 64px;
+    width: 522px;
+}
+
+.our-mision-logo h1{
+    margin-left: 57px;
+}
+
+.our-mision{
+    margin-bottom: 200px;
+}
+
+.our-mision img{
+    margin-top: 44px;
+}
+
+.work-photos{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+}
+
+.work-photos img{
+    width: 100%;
+}
+
+.work-photos{
+    margin-bottom: 120px;
+}
+
+.work-photo2 img{
+    margin-top: 50px;
+}
+
+@media only screen and (max-width:1024px){
+    .our-vision{
+        grid-template-columns: 1fr;
+    }
+    .our-mision{
+        grid-template-columns: 1fr;
+    }
+    .our-mision-text {
+        order: 1;
+    }
+    .our-mision-logo{
+        height: auto ;
+        margin-left: 0px;
+    }
+    .our-mision-text p{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 991px){
+    .about-text h1{
+        width: 100%;
+    }
+
+    .about-text p{
+        padding-top: 202px;
+    }
+    .about-logo {
+        width: 150px;
+        height: 204px;
+        position: absolute;
+        margin-top: -104px;
+        right: 70px;
+    }
+
+    .our-mision-logo h1{
+        margin-left: 57px;
+    }
+
+    .our-mision-logo{
+        margin-left: 130px;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .about-background{
+        object-fit: cover;
+        height: 420px;
+    }
+}
+@media screen and (max-width: 375px){
+    .about-background{
+        height: 453px;
+        width: 360px;
+    }
+}

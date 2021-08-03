@@ -8,6 +8,18 @@
 html, body {
   scroll-behavior: smooth; }
 
+.overlay-openmenu {
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.25);
+  z-index: 2; }
+
 .recentItem {
   position: fixed;
   right: -535px;
@@ -417,6 +429,18 @@ footer {
 .body-content {
   margin-top: 15px;
   margin-bottom: 10px; }
+
+.number {
+  border: 3px solid #239EBE;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 15px;
+  width: 55px;
+  height: 55px; }
+
+.col-11 ::marker {
+  font-size: 24px; }
 
 @media only screen and (max-width: 1204px) {
   .vertical-line {

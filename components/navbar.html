@@ -1,3 +1,5 @@
+<div class="overlay-openmenu"></div>
+
 <div class="nav-content">
     <!-- <img src="assets/images/logo.svg" class="logo"> -->
     <picture>
@@ -65,6 +67,7 @@
             $("body").css('background', 'rgba(0, 0, 0, 0.15)');
             $(".nav-content").css('background', 'transparent');
             $(".body-content").css('pointer-events', 'none');
+            $(".overlay-openmenu").css('display', 'block');
         });
 
         $("#closX").click(function () {
@@ -75,6 +78,7 @@
             $("body").css('background', 'transparent');
             $(".nav-content").css('background', 'transparent');
             $(".body-content").css('pointer-events', 'auto');
+            $(".overlay-openmenu").css('display', 'none');
         });
     });
 

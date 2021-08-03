@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- style -->
+    <link rel="stylesheet" href="css/single-services.css">
+    <!-- jquery -->
+    <script src="/node_modules/jquery/dist/jquery.js"></script>
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <title>Astech</title>
+</head>
+
+<body>
+
+    <div id="nav"></div>
+
+    <div class="body-content">
+        <div class="single-services">
+            <div class="background-color"></div>
+
+            <div class="center">
+
+                <div class="row content">
+                    <div class="col-3 left-side-images">
+                        <img src="assets/images/vertical-line.svg" class="vertical-line">
+                        <img src="assets/images/extended-team.svg" class="post-image">
+                    </div>
+                    <div class="col-9 content-description">
+
+                        <div class="first-content">
+                            <h1>Software Re-engineering</h1>
+                            <h6>All applications go through a lifecycle - modernization is a journey, not a
+                                destination.
+                                A system that may not be considered legacy now may become outdated next year
+                                due to the
+                                pace of technological change, shifting skillset availability and cost, as
+                                well as
+                                changing business needs.</h6>
+                        </div>
+                        <div class="second-content">
+
+                            <p>A successful software re-engineering is much more than just moving data to
+                                the cloud, it
+                                is the ability to reach higher scalability, performance, and cost
+                                optimization.</p>
+                            <h4>What we offer:</h4>
+                            <div class="row">
+                                <div class="col-sm-12 col-md-12 col-lg-1 col-xl-1">
+                                    <h4 class="number" style="display: none;"></h4>
+                                    <h4 class="number"></h4>
+                                </div>
+                                <div class="col-sm-12 col-md-12 col-lg-11 col-xl-11">
+                                    <h4>LIFT AND SHIFT</h4>
+                                    <p>At this stage we gather, analyze, and specify requirements. Having discussed your
+                                        idea, we estimate the app viability.</p>
+                                    <h5>Benefits</h5>
+                                    <ul>
+                                        <li>want to start with moving to the cloud</li>
+                                        <li>Need minimal disruption to the application</li>
+                                        <li>can't change the application's architecture</li>
+                                        <li>no major changes = no unexpected costs</li>
+                                        <li>fastest modernization at lowest cost</li>
+                                        <li>new horizon of leveraging cloud services</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12 col-md-12 col-lg-1 col-xl-1">
+                                    <h4 class="number"></h4>
+                                </div>
+                                <div class="col-sm-12 col-md-12 col-lg-11 col-xl-11">
+                                    <h4>Augment & Refactor</h4>
+                                    <p>Making major changes to your application's code or configuration in order to move
+                                        it to the cloud without impacting its external behavior; architecture of
+                                        existing application remains unchanged</p>
+                                    <h5>Benefits</h5>
+                                    <ul>
+                                        <li>want to add feature, improve performance or scale the application, but it
+                                            can't be done in the application's existing state</li>
+                                        <li>need to make important code changes to enable migration to the cloud</li>
+                                        <li>reduced cost of future maintenance</li>
+                                        <li>good benefit-cost ration fostering growth</li>
+                                        <li>stability and flexibility ensured by cloud solutions</li>
+                                        <li>new horizon of leveraging cloud services</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="row ">
+                                <div class="col-sm-12 col-md-12 col-lg-1 col-xl-1">
+                                    <h4 class="number"></h4>
+                                </div>
+                                <div class="col-sm-12 col-md-12 col-lg-11 col-xl-11">
+                                    <h4>Complete Rewrite</h4>
+                                    <p>Rebuilding your application from the ground up by creating new functionalities to
+                                        replace and retire existing applications; includes updating the application
+                                        architecture for a fully modern stack</p>
+                                    <h5>Benefits</h5>
+                                    <ul>
+                                        <li>get more value from rebuilding an outdated application than sustaining it
+                                        </li>
+                                        <li>solution fully tailored to your needs</li>
+                                        <li>future-proof design created with maintenance in mind</li>
+                                        <li>leveraging full power of the cloud</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <hr>
+                            <h5>“Our cloud engineers and designers have years of experience in bringing systems up to
+                                date in a methodical manner that's oriented towards meeting modernization goals.”</h5>
+                        </div>
+                    </div>
+
+
+
+                </div>
+            </div>
+        </div>
+
+
+
+        <div id="footer"></div>
+        <script>
+            $(function () {
+                $("#nav").load("components/navbar.html");
+                $("#footer").load("components/footer.html");
+            });
+
+
+            var contentHeight = $('.content').height();
+            $(document).ready(function () {
+                $('.vertical-line').css({ height: `calc(369px + ${contentHeight}px)` });
+            });
+
+            var number = document.getElementsByClassName("number");
+            for (var i = 1; i <= number.length; i++) {
+                number[i].innerHTML = i;
+                console.log("test")
+            }
+        </script>
+
+</body>
+
+</html>

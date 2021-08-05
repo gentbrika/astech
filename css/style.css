@@ -852,7 +852,9 @@ body {
 
 @supports (-webkit-touch-callout: none) {
   .hamburger-menu {
-    margin-right: 15px; } }
+    margin-right: 15px !important; }
+  body {
+    border: 10px solid red; } }
 
 .owl-carousel-1 .item:hover .right-triangle,
 .owl-carousel-2 .item:hover .right-triangle {

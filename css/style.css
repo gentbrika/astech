@@ -858,9 +858,7 @@ body {
     justify-content: center !important;
     position: absolute !important;
     margin-top: -11px !important;
-    margin-left: -8px !important; }
-  body {
-    border: 20px solid green !important; } }
+    margin-left: -8px !important; } }
 
 .owl-carousel-1 .item:hover .right-triangle,
 .owl-carousel-2 .item:hover .right-triangle {

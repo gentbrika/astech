@@ -597,10 +597,16 @@ line-height: 30px;
 
 @supports (-webkit-touch-callout: none) {
     .hamburger-menu{
-        margin-right: 15px !important;
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        justify-content: center !important;
+        position: absolute !important;
+        margin-top: -11px !important;
+        margin-left: 3px !important;
     }
     body{
-        border:20px solid red !important;
+        border:20px solid blue !important;
     }
  }
 

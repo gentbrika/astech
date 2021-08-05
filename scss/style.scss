@@ -589,28 +589,28 @@ line-height: 30px;
     fill: #efefef !important;
 }
 
-.owl-carousel-1 .item:hover,
-.owl-carousel-2 .item:hover{
-    border-bottom: 4px solid #6EBECE;
-    transition: .1s;
-}
+// .owl-carousel-1 .item:hover,
+// .owl-carousel-2 .item:hover{
+//     border-bottom: 4px solid #6EBECE;
+//     transition: .1s;
+// }
 
-.owl-carousel-1 .item:hover .right-triangle,
-.owl-carousel-2 .item:hover .right-triangle{
-    display: block;
-    transition: .1s;
-}
-.owl-carousel-1 .item:hover .right-triangle path,
-.owl-carousel-2 .item:hover .right-triangle path{
-    fill: #6EBECE;
-    transition: .1s;
-}
+// .owl-carousel-1 .item:hover .right-triangle,
+// .owl-carousel-2 .item:hover .right-triangle{
+//     display: block;
+//     transition: .1s;
+// }
+// .owl-carousel-1 .item:hover .right-triangle path,
+// .owl-carousel-2 .item:hover .right-triangle path{
+//     fill: #6EBECE;
+//     transition: .1s;
+// }
 
-.owl-carousel-1 .item:hover .left-triangle path,
-.owl-carousel-2 .item:hover .left-triangle path{
-    fill: $primary-two !important;
-    transition: .1s;
-}
+// .owl-carousel-1 .item:hover .left-triangle path,
+// .owl-carousel-2 .item:hover .left-triangle path{
+//     fill: $primary-two !important;
+//     transition: .1s;
+// }
 
 .partners-overlay{
     background: rgba(45, 161, 197, 0.3);

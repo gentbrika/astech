@@ -253,6 +253,12 @@ button.accordion-button.collapsed:focus{
     border:1px solid $secondary-two;
 }
 
+.milestone-image img{
+    width: 100%;
+    height: 2px;
+    object-fit: cover;
+}
+
 
 
 
@@ -309,6 +315,7 @@ button.accordion-button.collapsed:focus{
     .milestone-line{
         display: none;
     }
+    
 }
 
 

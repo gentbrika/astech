@@ -502,6 +502,11 @@ button.accordion-button.collapsed:focus {
   border-radius: 100%;
   border: 1px solid #39383A; }
 
+.milestone-image img {
+  width: 100%;
+  height: 2px;
+  object-fit: cover; }
+
 @media only screen and (max-width: 1204px) {
   .vertical-line {
     display: none; }

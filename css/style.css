@@ -854,7 +854,7 @@ body {
   .hamburger-menu {
     margin-right: 15px !important; }
   body {
-    border: 10px solid red; } }
+    border: 20px solid red !important; } }
 
 .owl-carousel-1 .item:hover .right-triangle,
 .owl-carousel-2 .item:hover .right-triangle {

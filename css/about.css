@@ -32,7 +32,9 @@ html, body {
 
 .hamburger-menu {
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
 
 .hamburger-menu img {
   margin-top: 2px;

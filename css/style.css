@@ -108,7 +108,8 @@ html, body {
   line-height: 30px;
   margin-bottom: 45px;
   text-decoration: none;
-  color: #1D1C20; }
+  color: #1D1C20;
+  border-bottom: 3px solid transparent; }
 
 .menu-items a:hover {
   color: #1D1C20;
@@ -320,7 +321,9 @@ footer {
   .first, .second, .third {
     width: 253px !important; }
   .fourth h3 {
-    width: 274px; } }
+    width: 274px; }
+  .footer-background {
+    padding-bottom: 0px; } }
 
 @media only screen and (max-width: 500px) {
   .text-content h1 {
@@ -873,6 +876,9 @@ body {
 .partners-overlay2 {
   right: 20%; }
 
+.owl-item a {
+  text-decoration: none; }
+
 .owl-item p {
   overflow: hidden;
   display: -webkit-box;
@@ -1155,7 +1161,21 @@ body {
   .owl-carousel-2 .owl-stage {
     padding-bottom: 30px !important; }
   .logo-text {
-    width: 150px !important; } }
+    width: 150px !important; }
+  .right-side h1 {
+    font-size: 24px;
+    line-height: 34px; }
+  .right-side p {
+    font-size: 20px;
+    line-height: 34px; }
+  .background-color {
+    height: 630px; }
+  .our-services h1, .how-we-work h1, .looking-for h1 {
+    font-size: 24px !important; }
+  .text-section h1 {
+    font-size: 36px !important; }
+  .looking-for h1 {
+    line-height: 34px; } }
 
 @media only screen and (max-width: 520px) {
   .trianlge {

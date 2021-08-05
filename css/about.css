@@ -108,7 +108,8 @@ html, body {
   line-height: 30px;
   margin-bottom: 45px;
   text-decoration: none;
-  color: #1D1C20; }
+  color: #1D1C20;
+  border-bottom: 3px solid transparent; }
 
 .menu-items a:hover {
   color: #1D1C20;
@@ -320,7 +321,9 @@ footer {
   .first, .second, .third {
     width: 253px !important; }
   .fourth h3 {
-    width: 274px; } }
+    width: 274px; }
+  .footer-background {
+    padding-bottom: 0px; } }
 
 @media only screen and (max-width: 500px) {
   .text-content h1 {

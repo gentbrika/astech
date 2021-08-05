@@ -629,6 +629,10 @@ line-height: 30px;
     right: 20%;
 }
 
+.owl-item a{
+    text-decoration: none;
+}
+
 .owl-item p{
     overflow: hidden;
     display: -webkit-box;
@@ -1022,6 +1026,26 @@ line-height: 30px;
     }
     .logo-text{
         width: 150px !important;
+    }
+    .right-side h1{
+        font-size: 24px;
+        line-height: 34px;
+    }
+    .right-side p{
+        font-size: 20px;
+        line-height: 34px;
+    }
+    .background-color {
+        height: 630px;
+    }
+    .our-services h1, .how-we-work h1, .looking-for h1{
+        font-size: 24px !important;
+    }
+    .text-section h1{
+        font-size: 36px !important;
+    }
+    .looking-for h1{
+        line-height: 34px;
     }
 }
 

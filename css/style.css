@@ -850,6 +850,10 @@ body {
   border-bottom: 4px solid #6EBECE;
   transition: .1s; }
 
+@supports (-webkit-touch-callout: none) {
+  body {
+    border: 10px solid red; } }
+
 .owl-carousel-1 .item:hover .right-triangle,
 .owl-carousel-2 .item:hover .right-triangle {
   display: block;

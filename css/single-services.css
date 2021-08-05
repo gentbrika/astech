@@ -34,7 +34,8 @@ html, body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center; }
+  justify-content: center;
+  margin-right: 0px !important; }
 
 .hamburger-menu img {
   margin-top: 2px;

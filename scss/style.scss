@@ -596,8 +596,8 @@ line-height: 30px;
 }
 
 @supports (-webkit-touch-callout: none) {
-    body{
-        border:10px solid red;
+    .hamburger-menu{
+        margin-right: 15px;
     }
  }
 

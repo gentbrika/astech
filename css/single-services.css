@@ -369,8 +369,11 @@ footer {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  height: 300px;
   padding-bottom: 70px; }
+
+@media only screen and (min-width: 1205px) {
+  .first-content {
+    height: 300px !important; } }
 
 .second-content p:first-child {
   margin-top: 30px; }
@@ -439,11 +442,65 @@ footer {
   width: 55px;
   height: 55px; }
 
-.col-11 ::marker {
-  font-size: 24px; }
+.list-description ul li::marker {
+  font-size: 20px; }
 
-.list-description {
-  border: 20px solid red; }
+.list-description-section {
+  margin-bottom: 40px; }
+
+.accordion-button:not(.collapsed)::after {
+  background-image: url(/assets/images/minus.svg) !important;
+  transform: rotate(0deg) !important;
+  position: absolute;
+  right: 20px;
+  background-size: 14px 14px !important; }
+
+.accordion-button::after {
+  background-image: url(/assets/images/plus.svg) !important;
+  background-size: 14px 14px !important; }
+
+.accordion-button, .accordion-header, .accordion-item, .accordion {
+  border: none !important; }
+
+.accordion-button:not(.collapsed) {
+  color: #39383A !important;
+  background-color: #F6F6F6 !important;
+  box-shadow: none !important; }
+
+button.accordion-button.collapsed {
+  background-color: #F6F6F6 !important;
+  margin-bottom: 10px; }
+
+button.accordion-button.collapsed:focus {
+  box-shadow: none !important; }
+
+.accordion-button {
+  height: 50px; }
+
+.accordion-body p {
+  margin-top: 0px !important; }
+
+.accordion-button p {
+  margin-top: 13px !important; }
+
+.milestone {
+  margin-left: 10px;
+  margin-right: 10px; }
+
+.milestones-section {
+  display: flex;
+  align-items: center; }
+
+.milestone-number {
+  text-align: center;
+  margin-top: 17px !important; }
+
+.milestone-text-content {
+  width: 60px;
+  height: 60px;
+  background: #f4fcff;
+  border-radius: 100%;
+  border: 1px solid #39383A; }
 
 @media only screen and (max-width: 1204px) {
   .vertical-line {
@@ -457,6 +514,10 @@ footer {
     height: 180px; }
   .second-content p:first-child {
     margin-top: -20px; } }
+
+@media only screen and (max-width: 800px) {
+  .milestone-line img {
+    width: 16%; } }
 
 @media only screen and (max-width: 560px) {
   .first-content h1 {
@@ -476,7 +537,9 @@ footer {
     height: 135px;
     margin-bottom: 25px; }
   .content {
-    margin-top: 130px !important; } }
+    margin-top: 130px !important; }
+  .milestone-line {
+    display: none; } }
 
 @media only screen and (max-width: 395px) {
   .content-description {

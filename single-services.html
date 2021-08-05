@@ -116,7 +116,7 @@
                                     mobile application, it can be used both from a smartphone, but also from a desktop!
                                 </li>
                             </ul>
-                            <div class="">
+                            <div class="description">
                                 <img src="assets/images/api.svg" alt="">
                                 <h5>API Development Services</h5>
                                 <p>We specialize in developing enterprise-grade REST APIs that are easy to consume, well
@@ -152,6 +152,14 @@
             $("#nav").load("components/navbar.html");
             $("#footer").load("components/footer.html");
         });
+
+        if ($(window).width() < 1205) {
+                var firstContentHeight = $('.first-content').height();
+                var leftSideImagesHeight = $('.left-side-images').height();
+                $(document).ready(function () {
+                    $('.background-color').css({ height: `calc(25% + ${firstContentHeight}px + ${leftSideImagesHeight}px)` });
+                });
+            }
 
         var contentHeight = $('.content').height();
         $(document).ready(function () {

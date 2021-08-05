@@ -1,0 +1,87 @@
+@import "navbar";
+@import "footer";
+
+.sections{
+    display: flex;
+}
+
+.contact-content h1{
+    font-weight: bold;
+    font-size: 45px;
+    line-height: 57px;
+    color:$secondary-one;
+    margin-bottom: 50px;
+}
+
+.contact-content .labels{
+    color: $secondary-one;
+    opacity: 0.5;
+}
+
+.left-section .labels{
+    font-size: 12px;
+}
+
+.left-section{
+    width: 50%;
+    background-color: $primary-three;
+    padding-bottom: 130px;
+}
+
+.right-section{
+    width: 50%;
+    background-color: $secondary-six;
+    padding-bottom: 130px;
+}
+
+.right-content{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 70px;
+}
+
+.right-content .inputs ::placeholder{
+    color: $secondary-two;
+    font-size: 16px;
+}
+
+.right-content .inputs input[type="file"]{
+    display: none;
+}
+
+.right-content .inputs label{
+    margin-bottom: 10px;
+}
+
+.inputs{
+    display: flex;
+    flex-direction: column;
+}
+
+.send-message{
+    height: 50px;
+    background-color: $primary-one;
+    border: none;
+    color: white;
+    font-weight: 500;
+}
+
+.left-content{
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 70px;
+}
+
+.right-section input, .right-section textarea{
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid $secondary-three;
+    outline: none;
+    margin-bottom: 40px;
+    padding-bottom: 5px;
+}

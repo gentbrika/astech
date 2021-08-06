@@ -359,30 +359,33 @@ footer {
 .sections {
   display: flex; }
 
-.contact-content h1 {
+.start-content h1 {
   font-weight: bold;
   font-size: 45px;
   line-height: 57px;
-  color: #1D1C20;
-  margin-bottom: 50px;
-  white-space: nowrap; }
-
-.contact-content .labels {
-  color: #1D1C20;
-  opacity: 0.5; }
+  color: #1D1C20; }
 
 .left-section .labels {
   font-size: 12px; }
+
+.labels {
+  color: #1D1C20;
+  opacity: 0.5; }
 
 .left-section {
   width: 50%;
   background-color: #f4fcff;
   padding-bottom: 130px; }
 
+.left-content {
+  padding-bottom: 90px; }
+
+.left-content h1 span {
+  color: #2da1c5; }
+
 .right-section {
   width: 50%;
-  background-color: #FDFDFD;
-  padding-bottom: 214px; }
+  background-color: #FDFDFD; }
 
 .right-content {
   display: flex;
@@ -426,21 +429,8 @@ footer {
   border-bottom: 1px solid #B7B3B2;
   outline: none;
   margin-bottom: 40px;
-  padding-bottom: 5px; }
-
-.infos .labels {
-  margin-bottom: 0px; }
-
-.infos {
-  width: 216px;
-  margin-top: -8px; }
-
-.infos p {
-  font-size: 14px;
-  color: #1D1C20; }
-
-.infos .address {
-  font-weight: 500; }
+  padding-bottom: 5px;
+  background: transparent; }
 
 .left-content h4 {
   font-weight: bold;
@@ -451,9 +441,19 @@ footer {
 .left-content h4 span {
   color: #2da1c5; }
 
-.icons img {
-  margin-right: 20px;
-  margin-top: -20px; }
+.project-form input {
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 1px solid #B7B3B2;
+  background: transparent;
+  width: 100%;
+  margin-top: 45px;
+  outline: none; }
+
+.project-form input::placeholder {
+  color: #39383A;
+  font-size: 16px; }
 
 @media only screen and (max-width: 1024px) {
   .left-section, .right-section {
@@ -462,23 +462,18 @@ footer {
     flex-wrap: wrap; }
   .left-content {
     width: 80%; }
-  .astech {
-    display: flex;
-    justify-content: space-between; }
-  .contact-content h1 {
+  .start-content h1 {
     font-size: 36px;
     margin-bottom: 30px; }
   .right-section {
     padding-bottom: 135px; } }
 
 @media only screen and (max-width: 570px) {
-  .astech {
-    flex-direction: column; }
   .left-section {
     padding-bottom: 40px; }
   .left-content {
     padding-top: 40px; }
-  .contact-content h1 {
+  .start-content h1 {
     margin-bottom: 20px;
     font-size: 24px; }
   .right-content {

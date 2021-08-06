@@ -468,6 +468,20 @@ footer {
   color: #39383A;
   font-size: 16px; }
 
+#file {
+  display: none; }
+
+a#file-link {
+  margin-bottom: 10px; }
+
+.files {
+  border: 2px solid #B7B3B2;
+  width: fit-content;
+  padding: 2px;
+  height: 30px;
+  margin-bottom: 10px;
+  display: none; }
+
 @media only screen and (max-width: 1024px) {
   .left-section, .right-section {
     width: 100%; }

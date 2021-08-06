@@ -91,8 +91,11 @@
                             <input type="text" placeholder="Phone Number">
                             <p class="labels">Message</p>
                             <textarea name="" id="" cols="30" rows="10" placeholder="Write message here"></textarea>
-                            <label><img src="assets/images/upload.svg">
-                                <input type="file"></label>
+
+                            <a href="#" id="file-link"><img src="assets/images/upload.svg"></a>
+                            <input type="file" id="file" />
+                            <div class="files"></div>
+
                             <button class="send-message">SEND MESSAGE</button>
                         </div>
                     </div>
@@ -114,7 +117,17 @@
                 $("#footer").load("components/footer.html");
             });
 
+            //input type upload
+            $('#file-link').click(function () {
+                $('#file').click();
+            });
 
+            $('#file').change(function () {
+                var filez = $(this).val();
+                $('.files')
+                    .append(filez.split("\\").pop());
+                    $(".files").css('display', 'block');
+            });
         </script>
 
 </body>

@@ -31,7 +31,7 @@
 .right-section{
     width: 50%;
     background-color: $secondary-six;
-    padding-bottom: 130px;
+    padding-bottom: 214px;
 }
 
 .right-content{
@@ -84,4 +84,80 @@
     outline: none;
     margin-bottom: 40px;
     padding-bottom: 5px;
+}
+
+.infos .labels{
+    margin-bottom: 0px;
+}
+
+.infos{
+    width: 216px;
+    margin-top: -8px;
+}
+
+.infos p{
+    font-size: 14px;
+    color: $secondary-one;
+}
+
+.infos .address{
+    font-weight: 500;
+}
+
+.left-content h4{
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 33px;
+    color: $secondary-one;
+}
+
+.left-content h4 span{
+    color: $primary-one;
+}
+
+.icons img {
+    margin-right: 20px;
+    margin-top: -20px;
+}
+
+@media only screen and (max-width:1024px){
+    .left-section,.right-section{
+        width: 100%;
+    }
+    .sections{
+        flex-wrap: wrap;
+    }
+    .left-content{
+        width: 80%;
+    }
+    .astech{
+        display:flex;
+        justify-content: space-between;
+    }
+    .contact-content h1{
+        font-size: 36px;
+        margin-bottom: 30px;
+    }
+    .right-section{
+        padding-bottom: 135px;
+    }
+}
+
+@media only screen and (max-width:570px){
+    .astech{
+        flex-direction: column;
+    }
+    .left-section{
+        padding-bottom: 40px;
+    }
+    .left-content{
+        padding-top: 40px;
+    }
+    .contact-content h1{
+        margin-bottom: 20px;
+        font-size: 24px;
+    }
+    .right-content{
+        padding-top: 40px;
+    }
 }

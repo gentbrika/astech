@@ -359,7 +359,8 @@ footer {
   font-size: 45px;
   line-height: 57px;
   color: #1D1C20;
-  margin-bottom: 50px; }
+  margin-bottom: 50px;
+  white-space: nowrap; }
 
 .contact-content .labels {
   color: #1D1C20;

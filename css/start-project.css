@@ -142,6 +142,16 @@ html, body {
 .find-us p {
   margin-top: 12px; }
 
+@supports (-webkit-touch-callout: none) {
+  .hamburger-menu {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    position: absolute !important;
+    margin-top: -11px !important;
+    margin-left: -8px !important; } }
+
 @media only screen and (max-width: 768px) {
   .copy-conn {
     flex-direction: row;
@@ -472,9 +482,14 @@ footer {
   .left-section {
     padding-bottom: 40px; }
   .left-content {
-    padding-top: 40px; }
+    padding-top: 40px;
+    padding-bottom: 0px; }
   .start-content h1 {
     margin-bottom: 20px;
     font-size: 24px; }
   .right-content {
-    padding-top: 40px; } }
+    padding-top: 40px; }
+  .left-content h1 {
+    line-height: 34px; }
+  .project-form input {
+    margin-top: 40px; } }

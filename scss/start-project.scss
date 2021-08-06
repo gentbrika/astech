@@ -146,6 +146,7 @@
     }
     .left-content{
         padding-top: 40px;
+        padding-bottom: 0px;
     }
     .start-content h1{
         margin-bottom: 20px;
@@ -153,5 +154,11 @@
     }
     .right-content{
         padding-top: 40px;
+    }
+    .left-content h1{
+        line-height: 34px;
+    }
+    .project-form input{
+        margin-top: 40px;
     }
 }

@@ -142,6 +142,16 @@ html, body {
 .find-us p {
   margin-top: 12px; }
 
+@supports (-webkit-touch-callout: none) {
+  .hamburger-menu {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    position: absolute !important;
+    margin-top: -11px !important;
+    margin-left: -8px !important; } }
+
 @media only screen and (max-width: 768px) {
   .copy-conn {
     flex-direction: row;

@@ -595,18 +595,6 @@ line-height: 30px;
     transition: .1s;
 }
 
-@supports (-webkit-touch-callout: none) {
-    .hamburger-menu{
-        display: flex !important;
-        flex-direction: column !important;
-        align-items: center !important;
-        justify-content: center !important;
-        position: absolute !important;
-        margin-top: -11px !important;
-        margin-left: -8px !important;
-    }
- }
-
 .owl-carousel-1 .item:hover .right-triangle,
 .owl-carousel-2 .item:hover .right-triangle{
     display: block;

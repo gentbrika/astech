@@ -142,6 +142,16 @@ html, body {
 .find-us p {
   margin-top: 12px; }
 
+@supports (-webkit-touch-callout: none) {
+  .hamburger-menu {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    position: absolute !important;
+    margin-top: -11px !important;
+    margin-left: -8px !important; } }
+
 @media only screen and (max-width: 768px) {
   .copy-conn {
     flex-direction: row;
@@ -854,16 +864,6 @@ body {
 .owl-carousel-2 .item:hover {
   border-bottom: 4px solid #6EBECE;
   transition: .1s; }
-
-@supports (-webkit-touch-callout: none) {
-  .hamburger-menu {
-    display: flex !important;
-    flex-direction: column !important;
-    align-items: center !important;
-    justify-content: center !important;
-    position: absolute !important;
-    margin-top: -11px !important;
-    margin-left: -8px !important; } }
 
 .owl-carousel-1 .item:hover .right-triangle,
 .owl-carousel-2 .item:hover .right-triangle {

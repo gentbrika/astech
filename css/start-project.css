@@ -256,6 +256,9 @@ footer {
 .footer-navigations .icons img {
   margin-right: 22px; }
 
+.icons a {
+  text-decoration: none; }
+
 .footer-navigations .pages a {
   font-size: 14px;
   line-height: 21px;
@@ -470,6 +473,8 @@ footer {
     width: 100%; }
   .sections {
     flex-wrap: wrap; }
+  .left-section {
+    padding-bottom: 0px; }
   .left-content {
     width: 80%; }
   .start-content h1 {

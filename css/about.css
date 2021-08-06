@@ -256,6 +256,9 @@ footer {
 .footer-navigations .icons img {
   margin-right: 22px; }
 
+.icons a {
+  text-decoration: none; }
+
 .footer-navigations .pages a {
   font-size: 14px;
   line-height: 21px;

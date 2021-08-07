@@ -490,6 +490,46 @@ footer {
 .footer-background {
   margin-top: 130px; }
 
+.tools-section h1 {
+  color: #1B1C1F;
+  font-size: 45px;
+  width: 467px; }
+
+.tools-content {
+  height: 227px; }
+
+.tools-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #EFEFEF; }
+
+.tools-posts {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 30px; }
+
+.tools-image-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center; }
+
+.tools-content h5 {
+  margin-top: 15px; }
+
+.tools-image-text img {
+  width: fit-content;
+  height: fit-content; }
+
+.background-image {
+  opacity: 0.04;
+  position: absolute;
+  width: 566px;
+  height: 131px;
+  display: flex; }
+
 @media only screen and (max-width: 1024px) {
   .our-vision {
     grid-template-columns: 1fr; }

@@ -1,14 +1,17 @@
 <div class="overlay-openmenu"></div>
 
 <div class="nav-content">
-    <!-- <img src="assets/images/logo.svg" class="logo"> -->
-    <picture>
-        <source media="(max-width:480px)" srcset="assets/images/res-logo.svg">
-        <img src="assets/images/logo.svg" class="logo">
-    </picture>
+    <a href="./index.html">
+        <picture>
+            <source media="(max-width:480px)" srcset="assets/images/res-logo.svg">
+            <img src="assets/images/logo.svg" class="logo">
+        </picture>
+    </a>
 
     <div class="sidebar">
-        <button class="start link-style">Start a project</button>
+        <button class="start link-style">
+            <a href="./start-project.html">Start a project</a>
+        </button>
         <button id="recentItem" class="link-style">
             <div class="hamburger-menu menu-icons">
                 <img src="assets/images/nav-icon.svg" class="lines" width="18px">
@@ -24,11 +27,11 @@
                 </button>
             </div>
             <div class="menu-items">
-                <a href="">Home</a>
-                <a href="">About Us</a>
+                <a href="./index.html">Home</a>
+                <a href="./about.html">About Us</a>
                 <a href="">Services</a>
                 <a href="">Blog</a>
-                <a href="">Contact Us</a>
+                <a href="./contact.html">Contact Us</a>
 
                 <div class="under-menu">
                     <p>View Portfolio</p>
@@ -38,7 +41,9 @@
                         <div class="find-us">
                             <p>Find us at:</p>
                             <div class="social-icons">
-                                <img src="assets/images/facebook.svg">
+                                <a href="https://www.facebook.com/AdvancedSystemsandTechnologies">
+                                    <img src="assets/images/facebook.svg">
+                                </a>
                                 <img src="assets/images/linkedin.svg">
                                 <img src="assets/images/twitter.svg">
                                 <img src="assets/images/instagram.svg">
@@ -107,10 +112,17 @@
                 //about
                 $(".about-content").css('marginLeft', '-17px');
 
+                //contact
+                $(".contact-content").css('marginLeft', '-3px');
+                $(".inputs").css('marginLeft', '-8px');
+
+                //start project
+                $(".start-content").css('marginLeft', '-3px');
+
 
                 //sidebar
                 $(".sidebar").css('marginRight', '17px');
-                
+
 
             });
             $("#closX").click(function () {
@@ -123,6 +135,13 @@
 
                 //about
                 $(".about-content").css('marginLeft', '0px');
+
+                //contact
+                $(".contact-content").css('marginLeft', '0px');
+                $(".inputs").css('marginLeft', '0px');
+
+                //start
+                $(".start-content").css('marginLeft', '0px');
 
                 //sidebar
                 $(".sidebar").css('marginRight', '0px');

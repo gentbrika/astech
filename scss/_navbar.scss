@@ -38,6 +38,9 @@
   .hamburger-menu{
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-right: 0px !important; 
   }
 
   .hamburger-menu img{
@@ -98,6 +101,11 @@
       font-weight: 500;
   }
 
+  .start a{
+    text-decoration: none;
+    color: $secondary-one;
+  }
+
   .under-menu p{
     font-size: 16px;
     color: $secondary-two;
@@ -129,6 +137,7 @@
     margin-bottom: 45px;
     text-decoration: none;
     color: $secondary-one;
+    border-bottom: 3px solid transparent;
   }
 
   .menu-items a:hover{
@@ -160,6 +169,18 @@
   .find-us p{
     margin-top: 12px;
   }
+
+  @supports (-webkit-touch-callout: none) {
+    .hamburger-menu{
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        justify-content: center !important;
+        position: absolute !important;
+        margin-top: -11px !important;
+        margin-left: -8px !important;
+    }
+ }
 
   @media only screen and (max-width:768px){
     .copy-conn{

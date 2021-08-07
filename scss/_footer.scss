@@ -85,6 +85,10 @@ footer{
     margin-right: 22px;
 }
 
+.icons a{
+    text-decoration: none;
+}
+
 .footer-navigations .pages a{
     font-size: 14px;
     line-height: 21px;
@@ -201,6 +205,9 @@ footer{
     .fourth h3{
         width: 274px;
     }
+    .footer-background{
+        padding-bottom: 0px;
+    }
 }
 
 @media only screen and (max-width: 500px){
@@ -235,4 +242,5 @@ footer{
 
 .lwt {
     height: 323px;
+    padding: 10px;
 }

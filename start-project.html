@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- style -->
+    <link rel="stylesheet" href="css/start-project.css">
+    <!-- jquery -->
+    <!-- <script src="/node_modules/jquery/dist/jquery.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- bootstrap -->
+    <!-- <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.0/css/bootstrap.min.css"
+        integrity="sha512-F7WyTLiiiPqvu2pGumDR15med0MDkUIo5VTVyyfECR5DZmCnDhti9q5VID02ItWjq6fvDfMaBaDl2J3WdL1uxA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.0/js/bootstrap.min.js"
+        integrity="sha512-NWNl2ZLgVBoi6lTcMsHgCQyrZVFnSmcaa3zRv0L3aoGXshwoxkGs3esa9zwQHsChGRL4aLDnJjJJeP6MjPX46Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <title>Astech</title>
+
+</head>
+
+<body>
+
+    <div id="nav"></div>
+
+    <div class="body-content">
+        <div class="start-content">
+            <div class="sections">
+                <div class="left-section">
+                    <div class="left-content">
+                        <h1>Tell us more about your <span>project.</span></h1>
+                        <p>We’ll contact you within a couple of hours to schedule a meeting to discuss your goals.</p>
+                        <div class="project-form">
+                            <input type="text" placeholder="Your name">
+                            <input type="text" placeholder="Company">
+                            <input type="text" placeholder="Email address">
+                            <input type="text" placeholder="Phone number">
+                        </div>
+                    </div>
+                </div>
+                <div class="right-section">
+                    <div class="right-content">
+                        <div class="inputs">
+                            <p class="labels">Message</p>
+                            <textarea name="" id="" cols="30" rows="15" placeholder="Write message here"></textarea>
+                            <!-- <label><img src="assets/images/upload.svg">
+                                <input type="file"></label> -->
+
+                                <a href="#" id="file-link"><img src="assets/images/upload.svg"></a>
+                                <input type="file" id="file" />
+                                <div class="files show-file"></div>
+
+
+                            <button class="send-message">SEND MESSAGE</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+
+
+
+        <div id="footer"></div>
+
+        <script>
+
+            $(function () {
+                $("#nav").load("components/navbar.html");
+                $("#footer").load("components/footer.html");
+            });
+
+             //input type upload
+             $('#file-link').click(function () {
+                $('#file').click();
+            });
+
+            $('#file').change(function () {
+                var filez = $(this).val();
+                $('.files')
+                    .append(filez.split("\\").pop());
+                    $(".files").css('display', 'block');
+            });
+
+
+        </script>
+
+</body>
+
+</html>

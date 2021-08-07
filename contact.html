@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- style -->
+    <link rel="stylesheet" href="css/contact.css">
+    <!-- jquery -->
+    <!-- <script src="/node_modules/jquery/dist/jquery.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- bootstrap -->
+    <!-- <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.0/css/bootstrap.min.css"
+        integrity="sha512-F7WyTLiiiPqvu2pGumDR15med0MDkUIo5VTVyyfECR5DZmCnDhti9q5VID02ItWjq6fvDfMaBaDl2J3WdL1uxA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.0/js/bootstrap.min.js"
+        integrity="sha512-NWNl2ZLgVBoi6lTcMsHgCQyrZVFnSmcaa3zRv0L3aoGXshwoxkGs3esa9zwQHsChGRL4aLDnJjJJeP6MjPX46Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <title>Astech</title>
+
+</head>
+
+<body>
+
+    <div id="nav"></div>
+
+    <div class="body-content">
+        <div class="contact-content">
+            <div class="sections">
+                <div class="left-section">
+                    <div class="left-content">
+                        <h1>General Inquiries</h1>
+
+                        <div class="astech">
+                            <div class="astech-al">
+                                <h4>ASTech <span>Albania</span></h4>
+                                <div class="infos">
+                                    <p class="labels">Address</p>
+                                    <p class="address">Rruga ”Abdyl Frasheri” EGT Tower 101, Tirane - Albania</p>
+                                </div>
+                                <div class="infos">
+                                    <p class="labels">Email</p>
+                                    <p>info@astech.al</p>
+                                </div>
+                                <div class="infos">
+                                    <p class="labels">Phone</p>
+                                    <p>+355 123 456 789</p>
+                                </div>
+                            </div>
+                            <div class="astech-ks">
+                                <h4>ASTech <span>Kosova</span></h4>
+                                <div class="infos">
+                                    <p class="labels">Address</p>
+                                    <p class="address">Rruga ”Abdyl Frasheri” EGT Tower 101, Tirane - Albania</p>
+                                </div>
+                                <div class="infos">
+                                    <p class="labels">Email</p>
+                                    <p>info@astech.al</p>
+                                </div>
+                                <div class="infos">
+                                    <p class="labels">Phone</p>
+                                    <p>+355 123 456 789</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="find-us">
+                            <p>Find us at:</p>
+                            <div class="icons">
+                                <a href="https://www.facebook.com/AdvancedSystemsandTechnologies">
+                                    <img src="assets/images/facebook.svg">
+                                </a>
+                                <img src="assets/images/linkedin.svg">
+                                <img src="assets/images/twitter.svg">
+                                <img src="assets/images/instagram.svg">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="right-section">
+                    <div class="right-content">
+                        <div class="inputs">
+                            <h1>Get a quote</h1>
+                            <input type="text" placeholder="Your Name">
+                            <input type="text" placeholder="Email Address">
+                            <input type="text" placeholder="Phone Number">
+                            <p class="labels">Message</p>
+                            <textarea name="" id="" cols="30" rows="10" placeholder="Write message here"></textarea>
+
+                            <a href="#" id="file-link"><img src="assets/images/upload.svg"></a>
+                            <input type="file" id="file" />
+                            <div class="files"></div>
+
+                            <button class="send-message">SEND MESSAGE</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+
+
+
+        <div id="footer"></div>
+
+        <script>
+
+            $(function () {
+                $("#nav").load("components/navbar.html");
+                $("#footer").load("components/footer.html");
+            });
+
+            //input type upload
+            $('#file-link').click(function () {
+                $('#file').click();
+            });
+
+            $('#file').change(function () {
+                var filez = $(this).val();
+                $('.files')
+                    .append(filez.split("\\").pop());
+                    $(".files").css('display', 'block');
+            });
+        </script>
+
+</body>
+
+</html>

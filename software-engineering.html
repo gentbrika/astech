@@ -7,11 +7,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- style -->
     <link rel="stylesheet" href="css/single-services.css">
-    <!-- jquery -->
-    <script src="/node_modules/jquery/dist/jquery.js"></script>
+   <!-- jquery -->
+    <!-- <script src="/node_modules/jquery/dist/jquery.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <!-- bootstrap -->
-    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
-    <script src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.0/css/bootstrap.min.css"
+        integrity="sha512-F7WyTLiiiPqvu2pGumDR15med0MDkUIo5VTVyyfECR5DZmCnDhti9q5VID02ItWjq6fvDfMaBaDl2J3WdL1uxA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.0/js/bootstrap.min.js"
+        integrity="sha512-NWNl2ZLgVBoi6lTcMsHgCQyrZVFnSmcaa3zRv0L3aoGXshwoxkGs3esa9zwQHsChGRL4aLDnJjJJeP6MjPX46Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <title>Astech</title>
 </head>
 
@@ -49,27 +58,32 @@
                                 is the ability to reach higher scalability, performance, and cost
                                 optimization.</p>
                             <h4>What we offer:</h4>
-                            <div class="row">
-                                <div class="col-sm-12 col-md-12 col-lg-1 col-xl-1">
-                                    <h4 class="number" style="display: none;"></h4>
-                                    <h4 class="number"></h4>
-                                </div>
-                                <div class="col-sm-12 col-md-12 col-lg-11 col-xl-11">
-                                    <h4>LIFT AND SHIFT</h4>
-                                    <p>At this stage we gather, analyze, and specify requirements. Having discussed your
-                                        idea, we estimate the app viability.</p>
-                                    <h5>Benefits</h5>
-                                    <ul>
-                                        <li>want to start with moving to the cloud</li>
-                                        <li>Need minimal disruption to the application</li>
-                                        <li>can't change the application's architecture</li>
-                                        <li>no major changes = no unexpected costs</li>
-                                        <li>fastest modernization at lowest cost</li>
-                                        <li>new horizon of leveraging cloud services</li>
-                                    </ul>
+
+                            <div class="list-description-section">
+                                <div class="row">
+                                    <div class="col-sm-12 col-md-12 col-lg-1 col-xl-1">
+                                        <h4 class="number" style="display: none;"></h4>
+                                        <h4 class="number"></h4>
+                                    </div>
+                                    <div class="col-sm-12 col-md-12 col-lg-11 col-xl-11">
+                                        <h4>LIFT AND SHIFT</h4>
+                                        <p>At this stage we gather, analyze, and specify requirements. Having discussed
+                                            your
+                                            idea, we estimate the app viability.</p>
+                                        <h5>Benefits</h5>
+                                        <ul>
+                                            <li>want to start with moving to the cloud</li>
+                                            <li>Need minimal disruption to the application</li>
+                                            <li>can't change the application's architecture</li>
+                                            <li>no major changes = no unexpected costs</li>
+                                            <li>fastest modernization at lowest cost</li>
+                                            <li>new horizon of leveraging cloud services</li>
+                                        </ul>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="row">
+
+                            <div class="row list-description">
                                 <div class="col-sm-12 col-md-12 col-lg-1 col-xl-1">
                                     <h4 class="number"></h4>
                                 </div>
@@ -90,7 +104,8 @@
                                     </ul>
                                 </div>
                             </div>
-                            <div class="row ">
+
+                            <div class="row list-description">
                                 <div class="col-sm-12 col-md-12 col-lg-1 col-xl-1">
                                     <h4 class="number"></h4>
                                 </div>
@@ -129,6 +144,14 @@
                 $("#nav").load("components/navbar.html");
                 $("#footer").load("components/footer.html");
             });
+
+            if ($(window).width() < 1205) {
+                var firstContentHeight = $('.first-content').height();
+                var leftSideImagesHeight = $('.left-side-images').height();
+                $(document).ready(function () {
+                    $('.background-color').css({ height: `calc(25% + ${firstContentHeight}px + ${leftSideImagesHeight}px)` });
+                });
+            }
 
 
             var contentHeight = $('.content').height();

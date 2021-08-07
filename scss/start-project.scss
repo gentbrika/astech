@@ -1,0 +1,184 @@
+@import "navbar";
+@import "footer";
+
+.sections{
+    display: flex;
+}
+
+.start-content h1{
+    font-weight: bold;
+    font-size: 45px;
+    line-height: 57px;
+    color:$secondary-one;
+}
+
+.left-section .labels{
+    font-size: 12px;
+}
+
+.labels{
+    color: $secondary-one;
+    opacity: 0.5;
+}
+
+.left-section{
+    width: 50%;
+    background-color: $primary-three;
+    padding-bottom: 130px;
+}
+
+.left-content{
+    padding-bottom: 90px;
+}
+
+.left-content h1 span{
+    color: $primary-one;
+}
+
+.right-section{
+    width: 50%;
+    background-color: $secondary-six;
+}
+
+.right-content{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 70px;
+}
+
+.right-content .inputs ::placeholder{
+    color: $secondary-two;
+    font-size: 16px;
+}
+
+.right-content .inputs input[type="file"]{
+    display: none;
+}
+
+.right-content .inputs label{
+    margin-bottom: 10px;
+}
+
+.inputs{
+    display: flex;
+    flex-direction: column;
+}
+
+.send-message{
+    height: 50px;
+    background-color: $primary-one;
+    border: none;
+    color: white;
+    font-weight: 500;
+}
+
+.left-content{
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 70px;
+}
+
+.right-section input, .right-section textarea{
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid $secondary-three;
+    outline: none;
+    margin-bottom: 40px;
+    padding-bottom: 5px;
+    background: transparent;
+}
+
+.left-content h4{
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 33px;
+    color: $secondary-one;
+}
+
+.left-content h4 span{
+    color: $primary-one;
+}
+
+.project-form input{
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid $secondary-three;
+    background: transparent;
+    width: 100%;
+    margin-top: 45px;
+    outline: none;
+}
+
+.project-form input::placeholder{
+    color: $secondary-two;
+    font-size: 16px;
+}
+
+#file {
+    display:none;
+}
+
+a#file-link {
+    margin-bottom: 10px;
+}
+
+.files{
+    border: 2px solid #B7B3B2;
+    width: fit-content;
+    padding: 2px;
+    height: 30px;
+    margin-bottom: 10px;
+    display:none;
+}
+
+
+@media only screen and (max-width:1024px){
+    .left-section,.right-section{
+        width: 100%;
+    }
+    .sections{
+        flex-wrap: wrap;
+    }
+    .left-section{
+        padding-bottom: 0px;
+    }
+    .left-content{
+        width: 80%;
+    }
+    .start-content h1{
+        font-size: 36px;
+        margin-bottom: 30px;
+    }
+    .right-section{
+        padding-bottom: 135px;
+    }
+}
+
+@media only screen and (max-width:570px){
+    .left-section{
+        padding-bottom: 40px;
+    }
+    .left-content{
+        padding-top: 40px;
+        padding-bottom: 0px;
+    }
+    .start-content h1{
+        margin-bottom: 20px;
+        font-size: 24px;
+    }
+    .right-content{
+        padding-top: 40px;
+    }
+    .left-content h1{
+        line-height: 34px;
+    }
+    .project-form input{
+        margin-top: 40px;
+    }
+}

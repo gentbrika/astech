@@ -1,0 +1,181 @@
+@import "navbar";
+@import "footer";
+
+.sections{
+    display: flex;
+}
+
+.contact-content h1{
+    font-weight: bold;
+    font-size: 45px;
+    line-height: 57px;
+    color:$secondary-one;
+    margin-bottom: 50px;
+    white-space: nowrap;
+}
+
+.contact-content .labels{
+    color: $secondary-one;
+    opacity: 0.5;
+}
+
+.left-section .labels{
+    font-size: 12px;
+}
+
+.left-section{
+    width: 50%;
+    background-color: $primary-three;
+    padding-bottom: 130px;
+}
+
+.right-section{
+    width: 50%;
+    background-color: $secondary-six;
+    padding-bottom: 214px;
+}
+
+.right-content{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 70px;
+}
+
+.right-content .inputs ::placeholder{
+    color: $secondary-two;
+    font-size: 16px;
+}
+
+.right-content .inputs input[type="file"]{
+    display: none;
+}
+
+.right-content .inputs label{
+    margin-bottom: 10px;
+}
+
+.inputs{
+    display: flex;
+    flex-direction: column;
+}
+
+.send-message{
+    height: 50px;
+    background-color: $primary-one;
+    border: none;
+    color: white;
+    font-weight: 500;
+}
+
+.left-content{
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 70px;
+}
+
+.right-section input, .right-section textarea{
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid $secondary-three;
+    outline: none;
+    margin-bottom: 40px;
+    padding-bottom: 5px;
+}
+
+.infos .labels{
+    margin-bottom: 0px;
+}
+
+.infos{
+    width: 216px;
+    margin-top: -8px;
+}
+
+.infos p{
+    font-size: 14px;
+    color: $secondary-one;
+}
+
+.infos .address{
+    font-weight: 500;
+}
+
+.left-content h4{
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 33px;
+    color: $secondary-one;
+}
+
+.left-content h4 span{
+    color: $primary-one;
+}
+
+.icons img {
+    margin-right: 20px;
+    margin-top: -20px;
+}
+
+#file {
+    display:none;
+}
+
+a#file-link {
+    margin-bottom: 10px;
+}
+
+.files{
+    border: 2px solid #B7B3B2;
+    width: fit-content;
+    padding: 2px;
+    height: 30px;
+    margin-bottom: 10px;
+    display:none;
+}
+
+@media only screen and (max-width:1024px){
+    .left-section,.right-section{
+        width: 100%;
+    }
+    .sections{
+        flex-wrap: wrap;
+    }
+    .left-content{
+        width: 80%;
+    }
+    .astech{
+        display:flex;
+        justify-content: space-between;
+    }
+    .contact-content h1{
+        font-size: 36px;
+        margin-bottom: 30px;
+    }
+    .right-section{
+        padding-bottom: 135px;
+    }
+}
+
+@media only screen and (max-width:570px){
+    .astech{
+        flex-direction: column;
+    }
+    .left-section{
+        padding-bottom: 40px;
+    }
+    .left-content{
+        padding-top: 40px;
+    }
+    .contact-content h1{
+        margin-bottom: 20px;
+        font-size: 24px;
+    }
+    .right-content{
+        padding-top: 40px;
+    }
+}

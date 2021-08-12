@@ -396,146 +396,106 @@ footer {
   height: 323px;
   padding: 10px; }
 
-.sections {
-  display: flex; }
+.blog-content {
+  padding-bottom: 100px; }
 
-.start-content h1 {
+.body-content {
+  padding-top: 100px;
+  padding-bottom: 100px; }
+
+.blog-title {
+  color: #2da1c5;
+  font-weight: 700; }
+
+.blog-text {
   font-weight: bold;
   font-size: 45px;
-  line-height: 57px;
-  color: #1D1C20; }
+  color: #1B1C1F; }
 
-.left-section .labels {
-  font-size: 12px; }
+.post-categories {
+  margin-top: 30px;
+  margin-bottom: 60px; }
 
-.labels {
-  color: #1D1C20;
-  opacity: 0.5; }
-
-.left-section {
-  width: 50%;
-  background-color: #f4fcff;
-  padding-bottom: 130px; }
-
-.left-content {
-  padding-bottom: 90px; }
-
-.left-content h1 span {
-  color: #2da1c5; }
-
-.right-section {
-  width: 50%;
-  background-color: #FDFDFD; }
-
-.right-content {
-  display: flex;
-  flex-direction: column;
-  width: 80%;
-  margin-left: auto;
-  margin-right: auto;
-  padding-top: 70px; }
-
-.right-content .inputs ::placeholder {
+.categories {
+  text-decoration: none;
   color: #39383A;
-  font-size: 16px; }
+  padding: 7px 15px;
+  border: 1px solid #D7D7D7;
+  border-radius: 20px; }
 
-.right-content .inputs input[type="file"] {
-  display: none; }
-
-.right-content .inputs label {
-  margin-bottom: 10px; }
-
-.inputs {
-  display: flex;
-  flex-direction: column; }
-
-.send-message {
-  height: 50px;
+.categories.active, .categories:hover {
   background-color: #2da1c5;
-  border: none;
-  color: white;
-  font-weight: 500; }
+  color: #fff; }
 
-.left-content {
-  width: 50%;
-  margin-left: auto;
-  margin-right: auto;
-  padding-top: 70px; }
-
-.right-section input, .right-section textarea {
-  border-top: none;
-  border-left: none;
-  border-right: none;
-  border-bottom: 1px solid #B7B3B2;
-  outline: none;
-  margin-bottom: 40px;
-  padding-bottom: 5px;
-  background: transparent; }
-
-.left-content h4 {
-  font-weight: bold;
-  font-size: 22px;
-  line-height: 33px;
-  color: #1D1C20; }
-
-.left-content h4 span {
-  color: #2da1c5; }
-
-.project-form input {
-  border-top: none;
-  border-left: none;
-  border-right: none;
-  border-bottom: 1px solid #B7B3B2;
-  background: transparent;
-  width: 100%;
-  margin-top: 45px;
-  outline: none; }
-
-.project-form input::placeholder {
-  color: #39383A;
-  font-size: 16px; }
-
-#file {
-  display: none; }
-
-a#file-link {
+.owl-stage {
+  margin-top: 10px;
   margin-bottom: 10px; }
 
-.files {
-  border: 2px solid #B7B3B2;
-  width: fit-content;
-  padding: 2px;
-  height: 30px;
-  margin-bottom: 10px;
-  display: none; }
+.posts {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 30px; }
 
-@media only screen and (max-width: 1024px) {
-  .left-section, .right-section {
+.post-image {
+  width: 370px;
+  height: 300px;
+  object-fit: cover; }
+
+.post-category {
+  padding: 7px 10px;
+  background: #2da1c5;
+  width: fit-content;
+  border-radius: 2px;
+  margin-bottom: 15px;
+  color: white !important; }
+
+.post-content {
+  background: #F4FCFF;
+  width: 370px;
+  padding-top: 20px;
+  padding-bottom: 25px;
+  padding-left: 30px;
+  padding-right: 30px; }
+
+.post-title {
+  font-weight: 600;
+  font-size: 20px;
+  color: #000;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical; }
+
+.post-date {
+  color: #a4a4a4;
+  margin-top: 15px; }
+
+@media only screen and (max-width: 1340px) {
+  .posts {
+    grid-template-columns: 1fr 1fr; } }
+
+@media only screen and (max-width: 990px) {
+  .post-image, .post-content {
+    width: 322px; } }
+
+@media only screen and (max-width: 768px) {
+  .posts {
+    grid-template-columns: 1fr; }
+  .post-image, .post-content {
     width: 100%; }
-  .sections {
-    flex-wrap: wrap; }
-  .left-section {
-    padding-bottom: 0px; }
-  .left-content {
-    width: 80%; }
-  .start-content h1 {
-    font-size: 36px;
-    margin-bottom: 30px; }
-  .right-section {
-    padding-bottom: 135px; } }
+  .post-content {
+    padding-left: 20px; }
+  .blog-title {
+    font-size: 16px; }
+  .body-content {
+    padding-top: 60px;
+    padding-bottom: 60px; } }
 
 @media only screen and (max-width: 570px) {
-  .left-section {
-    padding-bottom: 40px; }
-  .left-content {
-    padding-top: 40px;
-    padding-bottom: 0px; }
-  .start-content h1 {
-    margin-bottom: 20px;
-    font-size: 24px; }
-  .right-content {
-    padding-top: 40px; }
-  .left-content h1 {
-    line-height: 34px; }
-  .project-form input {
-    margin-top: 40px; } }
+  .post-categories {
+    margin-top: 15px;
+    margin-bottom: 50px; }
+  .categories {
+    font-size: 14px; }
+  .blog-text {
+    font-size: 24px; } }

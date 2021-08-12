@@ -167,6 +167,10 @@ body{
     text-decoration: none !important;
 }
 
+.text-section a:hover{
+    border-bottom: none !important;
+}
+
 .progress-line {
     position: fixed;
     width: 100%;
@@ -313,6 +317,11 @@ line-height: 30px;
     outline: none;
     color: $secondary-six;
     padding: 14px 52px;
+    transition: .2s;
+}
+
+.right-side .about:hover{
+    margin-top: -3px;
 }
 
 .csd{
@@ -429,6 +438,12 @@ line-height: 30px;
     margin-bottom: 15px;
 }
 
+.rtbp{
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .rtbp button{
     border: 1px solid $secondary-six;
     box-sizing: border-box;
@@ -436,12 +451,15 @@ line-height: 30px;
     background-color: transparent;
     color: $secondary-six;
     padding: 12px 20px;
+    z-index: 1;
+    position: relative;
 }
-.rtbp{
-    width: fit-content;
-    margin-left: auto;
-    margin-right: auto;
+
+.rtbp button:hover{
+    border-color: $primary-one;
+    color:$primary-one;
 }
+
 
 
 @-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }

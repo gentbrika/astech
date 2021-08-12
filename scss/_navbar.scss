@@ -88,6 +88,10 @@
   z-index: 1;
   }
 
+  .link-style:hover{
+    border: 2px solid $primary-one;
+  }
+
   .sidebar{
     display: flex;
     justify-content: center;
@@ -104,6 +108,11 @@
   .start a{
     text-decoration: none;
     color: $secondary-one;
+  }
+
+  .start:hover{
+    border-color: $primary-one;
+    color: $primary-one;
   }
 
   .under-menu p{

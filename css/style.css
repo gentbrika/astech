@@ -74,6 +74,9 @@ html, body {
   border: 2px solid #1D1C20;
   z-index: 1; }
 
+.link-style:hover {
+  border: 2px solid #2da1c5; }
+
 .sidebar {
   display: flex;
   justify-content: center;
@@ -88,6 +91,10 @@ html, body {
 .start a {
   text-decoration: none;
   color: #1D1C20; }
+
+.start:hover {
+  border-color: #2da1c5;
+  color: #2da1c5; }
 
 .under-menu p {
   font-size: 16px;
@@ -294,6 +301,26 @@ footer {
   transform: rotate(90deg);
   padding: 10px 5px; }
 
+.footer-links {
+  position: relative;
+  width: fit-content; }
+
+.footer-links::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 0;
+  height: 2px;
+  background-color: #0074D9;
+  transition: width 0.6s cubic-bezier(0.25, 1, 0.5, 1); }
+
+@media (hover: hover) and (pointer: fine) {
+  .footer-links:hover::before {
+    left: 0;
+    right: auto;
+    width: 100%; } }
+
 @media only screen and (max-width: 1199px) {
   .slide-images {
     width: 250px; } }
@@ -498,6 +525,9 @@ body {
   border-bottom: 2px solid #2da1c5;
   text-decoration: none !important; }
 
+.text-section a:hover {
+  border-bottom: none !important; }
+
 .progress-line {
   position: fixed;
   width: 100%;
@@ -628,7 +658,11 @@ body {
   border: none;
   outline: none;
   color: #FDFDFD;
-  padding: 14px 52px; }
+  padding: 14px 52px;
+  transition: .2s; }
+
+.right-side .about:hover {
+  margin-top: -3px; }
 
 .csd {
   float: right;
@@ -722,18 +756,24 @@ body {
   margin-right: auto;
   margin-bottom: 15px; }
 
+.rtbp {
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto; }
+
 .rtbp button {
   border: 1px solid #FDFDFD;
   box-sizing: border-box;
   width: fit-content;
   background-color: transparent;
   color: #FDFDFD;
-  padding: 12px 20px; }
+  padding: 12px 20px;
+  z-index: 1;
+  position: relative; }
 
-.rtbp {
-  width: fit-content;
-  margin-left: auto;
-  margin-right: auto; }
+.rtbp button:hover {
+  border-color: #2da1c5;
+  color: #2da1c5; }
 
 @-webkit-keyframes fadeIn {
   from {

@@ -10,6 +10,10 @@
     padding-bottom: 100px;
 }
 
+.cards a{
+    text-decoration: none;
+}
+
 .blog-title{
     color: $primary-one;
     font-weight: 700;
@@ -109,7 +113,8 @@
         width: 100%;
     }
     .post-content{
-        padding-left: 20px;
+        padding-left: 20px !important;
+        padding-right: 20px !important;
     }
     .blog-title{
         font-size: 16px;

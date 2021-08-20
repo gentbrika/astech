@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- style -->
-    <link rel="stylesheet" href="css/blog.css">
+    <link rel="stylesheet" href="css/single-blog.css">
     <!-- jquery -->
     <!-- <script src="/node_modules/jquery/dist/jquery.js"></script> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
@@ -39,62 +39,80 @@
     <div id="nav"></div>
 
 
-    <div class="blog-content">
+    <div class="single-blog-content">
 
         <div class="body-content">
-            <div class="container">
-                <h4 class="blog-title">BLOG</h4>
-                <h1 class="blog-text">We share our thoughts</h1>
+            <div class="container custom-container">
+                <h1 class="single-blog-post-title">The future of marketing have an amazing value.</h1>
+                <p class="single-blog-post-date">17.07.2021</p>
+            </div>
+            <div class="single-blog-post-image">
+                <img src="assets/images/development.png">
+            </div>
+            <div class="container custom-container">
+                <div class="single-blog-post-content">
+                    <p>For someone who plays video games a lot, I realize how easy it is to get sucked into a game and
+                        play for hours at a time, but this can be a problem if you are playing a game INTENTIONALLY
+                        designed to be played for hours at a time.
+                        More often than not, game designers are regarded as advocates for players, but sometimes their
+                        interests may not align with those of players’. These
 
-                <div class="owl-carousel post-categories">
-                    <div class="item">
-                        <a href="" class="categories active">All</a>
-                    </div>
-                    <div class="item">
-                        <a href="" class="categories">Marketing</a>
-                    </div>
-                    <div class="item">
-                        <a href="" class="categories">Design</a>
-                    </div>
-                    <div class="item">
-                        <a href="" class="categories">Development</a>
+                        underhanded strategies are called dark patterns. Here’s a research paper that discusses dark
+                        game design patterns in detail.
+                        Building upon the dark patterns in digital products, we take a long hard look at the dark
+                        patterns in game design.
+
+                        Here are few deceptive design patterns that are employed into game design and how it manipulates
+                        players:</p>
+                    <h4>1. Understand the value of both refinement and exploration</h4>
+                    <p>For someone who plays video games a lot, I realize how easy it is to get sucked into a game and
+                        play for hours at a time, but this can be a problem if you are playing a game INTENTIONALLY
+                        designed to be played for hours at a time.
+                        More often than not, game designers are regarded as advocates for players, but sometimes their
+                        interests may not align with those of players’. These underhanded strategies are called dark
+                        patterns. Here’s a research paper that discusses dark game design patterns in detail.
+                        Building upon the dark patterns in digital products, we take a long hard look at the dark
+                        patterns in game design.
+                        Here are few deceptive design patterns that are employed into game design and how it manipulates
+                        players:</p>
+                    <div class="marketing">
+                        <img src="assets/images/marketing-image.png">
                     </div>
                 </div>
+            </div>
+            <div class="hr"></div>
 
-                <div class="posts">
-                    <div class="cards">
-                        <a href="single-blog.html">
+            <div class="related-posts">
+                <div class="container">
+                    <div class="posts">
+                        <div class="cards">
                             <img src="assets/images/marketing.png" class="post-image">
                             <div class="post-content">
                                 <p class="post-category">Marketing</p>
                                 <h2 class="post-title">Should ui designers learn how to code</h2>
                                 <p class="post-date">17.07.2021</p>
                             </div>
-                        </a>
-                    </div>
-                    <div class="cards">
-                        <a href="single-blog.html">
+                        </div>
+                        <div class="cards">
                             <img src="assets/images/design.png" class="post-image">
                             <div class="post-content">
                                 <p class="post-category">Design</p>
                                 <h2 class="post-title">The future of marketing have an amazing value.</h2>
                                 <p class="post-date">17.07.2021</p>
                             </div>
-                        </a>
-                    </div>
-                    <div class="cards">
-                        <a href="single-blog.html">
+                        </div>
+                        <div class="cards">
                             <img src="assets/images/development.png" class="post-image">
                             <div class="post-content">
                                 <p class="post-category">Development</p>
                                 <h2 class="post-title">Communication Between Departments</h2>
                                 <p class="post-date">17.07.2021</p>
                             </div>
-                        </a>
+                        </div>
                     </div>
                 </div>
-
             </div>
+
         </div>
     </div>
 
@@ -105,12 +123,6 @@
         $(function () {
             $("#nav").load("components/navbar.html");
             $("#footer").load("components/footer.html");
-        });
-
-        $('.post-categories').owlCarousel({
-            loop: false,
-            autoWidth: true,
-            margin: 10
         });
 
     </script>

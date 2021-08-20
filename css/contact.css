@@ -466,7 +466,8 @@ footer {
   border-bottom: 1px solid #B7B3B2;
   outline: none;
   margin-bottom: 40px;
-  padding-bottom: 5px; }
+  padding-bottom: 5px;
+  background: transparent; }
 
 .infos .labels {
   margin-bottom: 0px; }

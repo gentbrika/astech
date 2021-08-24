@@ -65,6 +65,9 @@ html, body {
   width: 158px;
   height: 43px; }
 
+.logo-responsive {
+  display: none; }
+
 #recentItem {
   width: 40px;
   height: 40px; }
@@ -136,6 +139,9 @@ html, body {
   border-bottom: 1px solid #d7d7d7;
   margin-top: 40px; }
 
+.social-icons a:hover {
+  border-bottom: none; }
+
 .social-icons img {
   margin-right: 20px; }
 
@@ -172,8 +178,11 @@ html, body {
 
 @media only screen and (max-width: 480px) {
   .logo {
+    display: none; }
+  .logo-responsive {
     width: 47px;
-    height: 44px; }
+    height: 44px;
+    display: block; }
   .nav-content {
     padding: 20px 20px; }
   .menu-toplinks {
@@ -362,7 +371,9 @@ footer {
   .pages a {
     margin-left: 0px !important;
     margin-right: 22px !important;
-    padding-bottom: 15px; } }
+    padding-bottom: 15px; }
+  .lwt {
+    padding: 10px; } }
 
 @media only screen and (max-width: 575px) {
   .first, .second, .third {
@@ -393,8 +404,7 @@ footer {
   margin-right: auto; }
 
 .lwt {
-  height: 323px;
-  padding: 10px; }
+  height: 323px; }
 
 .sections {
   display: flex; }

@@ -1,0 +1,531 @@
+@import "navbar";
+@import "footer";
+
+.logo-text{
+    fill: #fff;
+}
+.start {
+    border-color: white;
+    color: white;
+}
+#recentItem{
+    border-color: white;
+}
+
+.first-section{
+    background-color: #1B1C1F;
+    margin-top: -103px;
+    padding-top: 200px;
+    padding-bottom: 200px;
+}
+
+.first-section h4{
+    color: $primary-one;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.first-section .description{
+    font-weight: 600;
+    font-size: 45px;
+    line-height: 58px;
+    color: #DFDFDF;
+    max-width: 863px;
+}
+
+.first-section .description span {
+    color: $primary-one;
+}
+
+.body-content{
+    margin-bottom: 200px;
+}
+
+
+.posts{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 30px;
+    margin-top: -100px;
+    padding-bottom: 130px;
+}
+
+.item {
+    background: #fff;
+    width:100%;
+    min-height:377px;
+    padding-top: 50px;
+    padding-left: 30px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.08);
+}
+
+.item a{
+    text-decoration: none ;
+}
+
+.item h2{
+    font-weight: bold;
+    font-size: 24px;
+    color: #233F79;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.item p{
+    font-size: 18px;
+    color: $secondary-two;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+
+.post-triangles{
+    display: flex;
+}
+
+
+.right-triangle {
+    position: absolute;
+    margin-left: 10px;
+    display: none;
+}
+
+.left-triangle path{
+    fill: #efefef !important;
+}
+
+ .item:hover{
+    border-bottom: 4px solid #6EBECE;
+    transition: .1s;
+}
+
+.item:hover .right-triangle{
+    display: block;
+    transition: .1s;
+}
+.item:hover .right-triangle path{
+    fill: #6EBECE;
+    transition: .1s;
+}
+
+.item:hover .left-triangle path{
+    fill: $primary-two !important;
+    transition: .1s;
+}
+
+.our-process{
+    background-color: $primary-three;
+    padding-top: 100px;
+    padding-bottom: 250px;
+
+    .title{
+        font-weight: bold;
+        font-size: 45px;
+        color: #1B1C1F;
+        margin-bottom: 40px;
+    }
+}
+
+
+.process{
+    display: flex;
+    align-items: center;
+  }
+
+.numbers{
+  border-radius:100%;
+  min-width: 142px;
+  height: 142px;
+  border:10px solid #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: $primary-one;
+  font-weight: bold;
+  font-size: 45px;
+}
+
+// .dots{
+//   width:14%;
+//   height:1px;
+//   align-self:center;
+// }
+
+.dots-image{
+  width:100% !important;
+  height:20px;
+}
+
+.description h4{
+    width: 10%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.milestone{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.milestones-section{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.milestones-section .milestone-title{
+    margin-top: 60px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.milestone-number{
+    text-align: center;
+    margin-top: 40px !important;
+    color: $primary-one !important;
+}
+
+.milestone-description{
+    text-align: center;
+    font-size: 18px;
+    width: 272px;
+    margin-left: -69px;
+}
+
+.milestone-text-content{
+    width: 142px;
+    height: 142px;
+    background: $primary-three;
+    border-radius: 100%;
+    border: 10px solid white;
+}
+
+.milestone-image img{
+    width: 100%;
+    height: 3px;
+    margin-top: 30px;
+    object-fit: cover;
+}
+
+.first-part{
+    display: flex;
+    align-items: center;
+}
+.other-part{
+    display: flex;
+    margin-top: 58px;
+}
+
+
+
+
+
+
+
+.milestone-image{
+    display: flex;
+    align-items: center;
+    height: 104px;
+    width: 69%;
+    position: absolute;
+    z-index: 0;
+    left: 191px;
+}
+
+.milestone-title{
+    text-align: center !important;
+    margin-top: 50px !important;
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.milestone-image img{
+    width: 80%;
+    height: 3px;
+    margin-top: 30px;
+    margin-left: auto;
+    object-fit: cover;
+    margin-right: auto;
+}
+
+.hide-desktop{
+    display: none;
+}
+
+@media only screen and (max-width:1370px){
+    .milestone-image img{
+        width: 95%;
+        height: 3px;
+        margin-top: 30px;
+        margin-left: auto;
+        object-fit: cover;
+        margin-right: auto;
+    } 
+}
+
+@media only screen and (min-width:1400px) and (max-width:1580px){
+    .milestone-image img {
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width:991px) and (max-width:1023px){
+    .milestone-image img {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width:991px){
+    .col-xs-12{
+        height: 300px;
+    }
+    .hide-desktop{
+        display: block;
+    }
+}
+
+@media only screen and (max-width:575px){
+    .hidden-xs, .hide-desktop{
+        display: none;
+    }
+    .part-content{
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media only screen and (max-width: 991px){
+    .milestone-image img {
+        width: 40%;
+        margin-right: 335px !important;
+    }
+}
+
+
+.col-xs-12{
+    z-index: 1;
+}
+
+
+
+
+
+
+.development-section {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.development-section img{
+    width: 100%;
+}
+  
+.centered-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+}
+
+.centered-text h1{
+    font-size: 45px;
+    font-weight: bold;
+}
+
+.centered-text p{
+    font-size: 24px;
+    font-weight: normal;
+}
+
+
+
+.our-vision-section .item:hover{
+    border-bottom: none;
+}
+
+.our-vision-section{
+    padding-top: 130px;
+}
+
+.our-vision-section h1{
+    font-weight: bold;
+    font-size: 45px;
+    line-height: 67px;
+    color: #1B1C1F;
+ }
+
+.our-vision {
+    margin-top: 50px;
+}
+
+.tables{
+    width: 100%;
+}
+
+.tables h4{
+    font-weight: 600;
+    font-size: 18px;
+    color: $secondary-two;
+}
+
+.column{
+    border: 1px solid #EFEFEF;
+}
+.rows{
+    border-bottom:1px solid #EFEFEF;
+    height: 80px;
+    align-items: center;
+    display: flex;
+    padding-left: 30px;
+}
+
+.row3 .images{
+    margin-right: 10px;
+}
+
+.column4 .images{
+    justify-content: space-around;
+}
+
+.images{
+    display: flex;
+    width: 100%;
+}
+
+.owl-carousel .owl-item img{
+    width: fit-content !important;
+}
+
+.owl-nav .left-arrow {
+    transform: rotate(180deg);
+    margin-left: -13px;
+}
+
+.owl-nav{
+    float: right;
+    margin-right: 25px;
+}
+
+.disabled svg path{
+    fill: #B7B3B2;
+}
+
+.owl-prev, .owl-next {
+    position: absolute;
+    top: 0%;
+    transform: translateY(-350%);
+}
+
+.owl-prev {
+    margin-left: -50px;
+}
+
+.owl-next::before {
+    content: url(/assets/images/arrow-divider.svg);
+    margin-top: 2px;
+    position: inherit;
+    margin-left: -20px;
+}
+
+
+
+@media only screen and (max-width:1024px){
+    .posts{
+        grid-template-columns: 1fr 1fr;
+    }
+    .item{
+        padding-top: 40px;
+        padding-left: 20px;
+    }
+    .posts{
+        padding-bottom: 80px;
+    }
+    .part-content{
+        width: auto;
+    }
+    .development-section img{
+        height: 443px;
+        object-fit: cover;
+    }
+    .our-vision-section {
+        padding-top: 90px;
+    }
+}
+
+@media only screen and (max-width:768px){
+    .posts{
+        margin-top: -110px;
+    }
+    .second-part{
+        display: none;
+    }
+    .process{
+        flex-wrap: wrap;
+    }
+    .numbers, .dots{
+        width: 33%;
+    }
+    // .process{
+    //     flex-wrap: wrap;
+    // }
+    // .dots-image, .image{
+    //     width: 33%;
+    // }
+    .our-vision-section h1{
+        max-width: 376px;
+    }
+}
+
+@media only screen and (max-width:700px){
+    .posts{
+        grid-template-columns: 1fr;
+    }
+}
+
+@media only screen and (max-width: 575px){
+    .first-section .description{
+        font-size: 24px;
+        line-height: 34px;
+    }
+    .posts {
+        margin-top: -140px;
+        padding-bottom: 70px;
+    }
+    .development-section img{
+        height: 473px;
+    }
+    .development-section h1{
+        font-size: 32px;
+        line-height: 42px;
+    }
+    .our-vision-section h1{
+        font-size: 24px;
+        max-width: 245px;
+        line-height: 35px;
+    }
+    .our-vision-section {
+        padding-top: 60px;
+    }
+}

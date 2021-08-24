@@ -77,6 +77,10 @@
       height: 43px;
   }
 
+  .logo-responsive{
+    display: none;
+  }
+
   #recentItem{
       width: 40px;
       height: 40px;
@@ -162,6 +166,10 @@
       margin-top: 40px;
   }
 
+  .social-icons a:hover {
+    border-bottom: none;
+  }
+
   .social-icons img{
     margin-right: 20px;
   }
@@ -208,8 +216,14 @@
 
   @media only screen and (max-width:480px){
       .logo{
-          width: 47px;
-          height: 44px;
+          // width: 47px;
+          // height: 44px;
+          display: none;
+      }
+      .logo-responsive{
+        width: 47px;
+        height: 44px;
+        display: block;
       }
       .nav-content {
         padding: 20px 20px;

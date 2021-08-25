@@ -155,8 +155,32 @@
 
   .menu-items a:hover{
     color: $secondary-one;
-    border-bottom: 3px solid $primary-one;
+    // border-bottom: 3px solid $primary-one;
     width: fit-content;
+  }
+
+  .menu-links{
+    position: relative;
+    width:fit-content;
+  }
+  
+  .menu-links::before{
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    right: 0;
+    width: 0;
+    height: 3px;
+    background-color: $primary-one;
+    transition: width 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+  }
+  
+  @media (hover: hover) and (pointer: fine) {
+    .menu-links:hover::before{
+      left: 0;
+      right: auto;
+      width: 100%;
+    }
   }
 
   .line-port{

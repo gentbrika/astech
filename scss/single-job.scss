@@ -1,0 +1,120 @@
+@import "navbar";
+@import "footer";
+
+.background-color{
+    background-color: $primary-three;
+    width: 100%;
+    height: 420px;
+    margin-top: -103px;
+}
+
+.job-content{
+    margin-bottom: 200px;
+}
+
+.all-content{
+    margin-top: -220px;
+}
+
+.all-content .container{
+    max-width: 794px !important; 
+}
+
+
+.all-content{
+    .post-title{
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 34px;
+        color: #1B1C1F;
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
+    .details{
+        display: flex;
+        .location{
+            display: flex;
+            align-items: self-start;
+            margin-right: 40px;
+            img{
+                margin-right: 7px;
+            }
+        }
+        .date{
+            display: flex;
+            align-items: self-start;
+            img{
+                margin-right: 7px;
+            }
+        }
+    }
+    .divider{
+        width: 100%;
+        height: 1px;
+        background: #d7d7d7;
+        margin-top: 35px;
+        margin-bottom: 35px;
+    }
+    .apply{
+        background-color: $primary-one;
+        color: white;
+        font-size: 14px;
+        border:none;
+        padding:15px 65px;
+    }
+}
+
+.job-description{
+    p{
+        font-size: 16px;
+    }
+    h5{
+        font-weight: 600;
+        font-size: 18px;
+        color: #1B1C1F;
+    }
+}
+
+.main-image{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 770px;
+    width: 100%;
+    height: 340px;
+    object-fit: cover;
+}
+
+.job-logo{
+    width: 131px;
+    height: 131px;
+    background-color: #fff;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.07);
+    border-radius: 10px;
+    float: right;
+    margin-top: -70px;
+    z-index: 1;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img{
+        height: 64px;
+    }
+}
+
+@media only screen and (max-width: 575px){
+    .job-logo{
+        float: left;
+    }
+    .post-title{
+        margin-top: 85px;
+    }
+    .all-content .details {
+        flex-direction: column;
+    }
+    .all-content .divider {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+}

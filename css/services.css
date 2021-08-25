@@ -549,11 +549,6 @@ footer {
   font-weight: 600;
   font-size: 24px; }
 
-.milestone-number {
-  text-align: center;
-  margin-top: 40px !important;
-  color: #2da1c5 !important; }
-
 .milestone-description {
   text-align: center;
   font-size: 18px;
@@ -581,6 +576,13 @@ footer {
   display: flex;
   margin-top: 58px; }
 
+.milestone-number {
+  text-align: center;
+  padding-top: 40px !important;
+  color: #2da1c5 !important;
+  width: 100%;
+  padding-bottom: 40px; }
+
 .milestone-image {
   display: flex;
   align-items: center;
@@ -590,12 +592,6 @@ footer {
   z-index: 0;
   left: 191px; }
 
-.milestone-title {
-  text-align: center !important;
-  margin-top: 50px !important;
-  font-weight: 600;
-  font-size: 24px; }
-
 .milestone-image img {
   width: 80%;
   height: 3px;
@@ -603,6 +599,36 @@ footer {
   margin-left: auto;
   object-fit: cover;
   margin-right: auto; }
+
+.milestone-title {
+  text-align: center !important;
+  font-weight: 600;
+  font-size: 24px;
+  pointer-events: none; }
+
+.milestone-description {
+  pointer-events: none; }
+
+.milestone-hover {
+  display: none;
+  width: 38px;
+  height: 54px; }
+
+.milestone-text-content:hover {
+  background-color: #2da1c5; }
+
+.milestone:hover .milestone-hover {
+  display: block;
+  margin-top: 30px;
+  margin-bottom: 52px;
+  margin-left: auto;
+  margin-right: auto; }
+
+.milestone:hover .milestone-number {
+  display: none; }
+
+.development .milestone-title {
+  margin-left: -20px; }
 
 .hide-desktop {
   display: none; }
@@ -628,14 +654,36 @@ footer {
   .col-xs-12 {
     height: 300px; }
   .hide-desktop {
-    display: block; } }
+    display: block; }
+  .second-row {
+    margin-top: 85px !important; }
+  .our-process {
+    padding-top: 80px;
+    padding-bottom: 70px; } }
 
 @media only screen and (max-width: 575px) {
   .hidden-xs, .hide-desktop {
     display: none; }
   .part-content {
     display: flex;
-    justify-content: center; } }
+    justify-content: center; }
+  .design-row {
+    margin-top: 54px !important;
+    margin-bottom: 54px !important; }
+  .development {
+    margin-bottom: 35px; }
+  .milestone-title {
+    margin-top: 20px; }
+  .our-process {
+    padding-bottom: 80px;
+    padding-top: 60px; }
+    .our-process .title {
+      font-size: 24px; }
+  .second-row {
+    margin-top: 0px !important; }
+  .milestone-description {
+    font-size: 16px;
+    line-height: 29px; } }
 
 @media only screen and (max-width: 991px) {
   .milestone-image img {

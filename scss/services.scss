@@ -60,6 +60,15 @@
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.08);
 }
 
+.item:hover .post-image{
+    margin-top: -10px;
+    margin-bottom: 10px;
+}
+
+.post-image{
+    transition: .4s;
+}
+
 .item a{
     text-decoration: none ;
 }
@@ -328,6 +337,12 @@
 @media only screen and (min-width:991px) and (max-width:1023px){
     .milestone-image img {
         width: 100%;
+    }
+}
+
+@media only screen and (min-width: 991px){
+    .container {
+        max-width: 1200px;
     }
 }
 

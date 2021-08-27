@@ -1,6 +1,6 @@
 <div class="overlay-openmenu"></div>
 
-<div class="nav-content">
+<div class="nav-content" id="navbar">
     <a href="./index.html">
         <!-- <picture>
             <source media="(max-width:480px)" srcset="assets/images/res-logo.svg">
@@ -186,9 +186,9 @@
         </button>
         <button id="recentItem" class="link-style">
             <div class="hamburger-menu menu-icons">
-                <img src="assets/images/nav-icon.svg" class="lines first-line" width="18px">
+                <img src="assets/images/nav-icon.svg" class="lines first-line" width="15px">
                 <img src="assets/images/nav-icon.svg" class="lines second-line" width="20px">
-                <img src="assets/images/nav-icon.svg" class="lines third-line" width="18px">
+                <img src="assets/images/nav-icon.svg" class="lines third-line" width="15px">
             </div>
         </button>
         <div class="recentItem">
@@ -246,22 +246,24 @@
             $(".recentItem").animate({
                 right: '0'
             });
-            $("body").css('overflow', 'hidden');
+            // $("body").css('overflow', 'hidden');
             $("body").css('background', 'rgba(0, 0, 0, 0.15)');
             $(".nav-content").css('background', 'transparent');
-            $(".body-content").css('pointer-events', 'none');
+            // $(".body-content").css('pointer-events', 'none');
             $(".overlay-openmenu").css('display', 'block');
+            $(".nav-content").css('backdropFilter', 'none');
         });
 
         $("#closX").click(function () {
             $(".recentItem").animate({
                 right: '-100%'
             });
-            $("body").css('overflow', 'auto');
+            // $("body").css('overflow', 'auto');
             $("body").css('background', 'transparent');
             $(".nav-content").css('background', 'transparent');
-            $(".body-content").css('pointer-events', 'auto');
+            // $(".body-content").css('pointer-events', 'auto');
             $(".overlay-openmenu").css('display', 'none');
+            $(".nav-content").css('backdropFilter', 'blur(10px)');
         });
     });
 
@@ -281,33 +283,7 @@
         else {
             $("#recentItem").click(function () {
                 //home
-                $(".home-content .body-content").css('marginLeft', '-17px');
 
-                //single-services
-                $(".left-side-images").css('marginLeft', '-2px');
-                $(".content-description").css('marginLeft', '-3px');
-
-                //about
-                $(".about-content").css('marginLeft', '-17px');
-
-                //contact
-                $(".contact-content").css('marginLeft', '-3px');
-                $(".inputs").css('marginLeft', '-8px');
-
-                //start project
-                $(".start-content").css('marginLeft', '-3px');
-
-                //blog
-                $(".blog-content").css('marginLeft', '-17px');
-
-                //services
-                $(".services-content").css('marginLeft', '-17px');
-
-                //single job
-                $(".all-content").css('marginLeft', '-17px');
-
-                //sidebar
-                $(".sidebar").css('marginRight', '17px');
 
 
 
@@ -315,33 +291,7 @@
             });
             $("#closX").click(function () {
                 //home
-                $(".home-content .body-content").css('marginLeft', '0px');
 
-                //single-services
-                $(".left-side-images").css('marginLeft', '0px');
-                $(".content-description").css('marginLeft', '0px');
-
-                //about
-                $(".about-content").css('marginLeft', '0px');
-
-                //contact
-                $(".contact-content").css('marginLeft', '0px');
-                $(".inputs").css('marginLeft', '0px');
-
-                //startproject
-                $(".start-content").css('marginLeft', '0px');
-
-                //blog
-                $(".blog-content").css('marginLeft', '0px');
-
-                //services
-                $(".services-content").css('marginLeft', '0px');
-
-                //single job
-                $(".all-content").css('marginLeft', '0px');
-
-                //sidebar
-                $(".sidebar").css('marginRight', '0px');
 
             });
         }
@@ -349,5 +299,20 @@
     else {
 
     }
+
+
+
+    var prevScrollpos = window.pageYOffset;
+    window.onscroll = function () {
+        var currentScrollPos = window.pageYOffset;
+        if (prevScrollpos > currentScrollPos) {
+            document.getElementById("navbar").style.top = "0";
+        } else {
+            document.getElementById("navbar").style.top = "-103px";
+        }
+        prevScrollpos = currentScrollPos;
+    }
+
+
 
 </script>

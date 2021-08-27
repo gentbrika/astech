@@ -60,6 +60,8 @@
 .inputs{
     display: flex;
     flex-direction: column;
+    max-width: 540px;
+    width: 100%;
 }
 
 .send-message{

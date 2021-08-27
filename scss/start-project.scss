@@ -3,6 +3,7 @@
 
 .sections{
     display: flex;
+    margin-top: -103px;
 }
 
 .start-content h1{
@@ -25,10 +26,11 @@
     width: 50%;
     background-color: $primary-three;
     padding-bottom: 130px;
+    z-index: -1;
 }
 
 .left-content{
-    padding-bottom: 90px;
+    padding-bottom: 160px;
 }
 
 .left-content h1 span{
@@ -43,10 +45,11 @@
 .right-content{
     display: flex;
     flex-direction: column;
-    width: 80%;
+    width: 100%;
+    max-width: 570px;
     margin-left: auto;
     margin-right: auto;
-    padding-top: 70px;
+    padding-top: 160px;
 }
 
 .right-content .inputs ::placeholder{
@@ -76,10 +79,11 @@
 }
 
 .left-content{
-    width: 50%;
+    width: 100%;
+    max-width: 470px;
     margin-left: auto;
     margin-right: auto;
-    padding-top: 70px;
+    padding-top: 160px;
 }
 
 .right-section input, .right-section textarea{

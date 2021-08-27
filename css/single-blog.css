@@ -218,6 +218,17 @@ html, body {
   .copyright {
     margin-top: 40px; } }
 
+@media only screen and (max-height: 888px) {
+  .menu-items {
+    margin-top: 0px;
+    display: flex;
+    justify-content: center;
+    height: 82%; }
+    .menu-items a {
+      margin-bottom: 35px;
+      font-size: 30px;
+      line-height: 25px; } }
+
 .recentItem::-webkit-scrollbar {
   width: 0;
   background: transparent; }

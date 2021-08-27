@@ -226,7 +226,7 @@ html, body {
   position: fixed;
   top: 0;
   width: 100%;
-  background: rgba(255, 255, 255, 0.9);
+  background: rgba(255, 255, 255, 0.9) !important;
   backdrop-filter: blur(10px);
   z-index: 2;
   transition: .05s; }
@@ -459,7 +459,8 @@ footer {
   width: 50%;
   background-color: #f4fcff;
   padding-bottom: 130px;
-  z-index: -1; }
+  z-index: -1;
+  padding-top: 112px; }
 
 .left-content {
   padding-bottom: 160px; }
@@ -478,7 +479,7 @@ footer {
   max-width: 570px;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 160px; }
+  padding-top: 260px; }
 
 .right-content .inputs ::placeholder {
   color: #39383A;
@@ -567,15 +568,31 @@ a#file-link {
   .start-content h1 {
     font-size: 36px;
     margin-bottom: 30px; }
-  .right-section {
-    padding-bottom: 135px; } }
+  .left-content, .right-content {
+    margin-bottom: 30px; }
+  .right-content {
+    padding-top: 40px; }
+  .left-content {
+    max-width: fit-content; } }
+
+@media only screen and (min-width: 575px) and (max-width: 1024px) {
+  .project-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 40px; } }
+
+@media only screen and (max-width: 768px) {
+  .right-content {
+    max-width: 80% !important; }
+  .left-content {
+    padding-bottom: 40px !important; } }
 
 @media only screen and (max-width: 570px) {
   .left-section {
     padding-bottom: 40px; }
   .left-content {
-    padding-top: 40px;
-    padding-bottom: 0px; }
+    padding-top: 0px !important;
+    padding-bottom: 0px !important; }
   .start-content h1 {
     margin-bottom: 20px;
     font-size: 24px; }
@@ -584,4 +601,6 @@ a#file-link {
   .left-content h1 {
     line-height: 34px; }
   .project-form input {
-    margin-top: 40px; } }
+    margin-top: 40px; }
+  .sections {
+    margin-top: 0px; } }

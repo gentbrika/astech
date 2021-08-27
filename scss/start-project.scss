@@ -27,6 +27,7 @@
     background-color: $primary-three;
     padding-bottom: 130px;
     z-index: -1;
+    padding-top: 112px;
 }
 
 .left-content{
@@ -49,7 +50,7 @@
     max-width: 570px;
     margin-left: auto;
     margin-right: auto;
-    padding-top: 160px;
+    padding-top: 260px;
 }
 
 .right-content .inputs ::placeholder{
@@ -160,7 +161,37 @@ a#file-link {
         margin-bottom: 30px;
     }
     .right-section{
-        padding-bottom: 135px;
+        // padding-bottom: 135px;
+    }
+    .left-content, .right-content{
+        // margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    .right-content{
+        padding-top: 40px;
+    }
+    .left-content{
+        max-width: fit-content;
+    }
+}
+
+@media only screen and (min-width:575px) and (max-width:1024px){
+    .project-form {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 40px;
+    }
+}
+
+
+
+
+@media only screen and (max-width: 768px){
+    .right-content {
+        max-width: 80% !important;
+    }
+    .left-content{
+        padding-bottom: 40px !important;
     }
 }
 
@@ -169,8 +200,8 @@ a#file-link {
         padding-bottom: 40px;
     }
     .left-content{
-        padding-top: 40px;
-        padding-bottom: 0px;
+        padding-top: 0px !important;
+        padding-bottom: 0px !important;
     }
     .start-content h1{
         margin-bottom: 20px;
@@ -184,5 +215,8 @@ a#file-link {
     }
     .project-form input{
         margin-top: 40px;
+    }
+    .sections {
+        margin-top: 0px;
     }
 }

@@ -226,7 +226,7 @@ html, body {
   position: fixed;
   top: 0;
   width: 100%;
-  background: rgba(255, 255, 255, 0.9);
+  background: rgba(255, 255, 255, 0.9) !important;
   backdrop-filter: blur(10px);
   z-index: 2;
   transition: .05s; }
@@ -488,7 +488,8 @@ footer {
   display: flex;
   flex-direction: column;
   max-width: 540px;
-  width: 100%; }
+  width: 100%;
+  padding-top: 90px; }
 
 .send-message {
   height: 50px;
@@ -501,7 +502,7 @@ footer {
   width: 50%;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 70px; }
+  padding-top: 160px; }
 
 .right-section input, .right-section textarea {
   border-top: none;
@@ -568,7 +569,9 @@ a#file-link {
     font-size: 36px;
     margin-bottom: 30px; }
   .right-section {
-    padding-bottom: 135px; } }
+    padding-bottom: 35px; }
+  .inputs {
+    padding-top: 35px; } }
 
 @media only screen and (max-width: 570px) {
   .astech {

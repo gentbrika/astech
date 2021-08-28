@@ -31,6 +31,9 @@
         integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
+    <!-- animation -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <title>Astech</title>
 
 </head>
@@ -43,25 +46,27 @@
 
         <div class="body-content">
             <div class="container">
-                <h4 class="blog-title">BLOG</h4>
-                <h1 class="blog-text">We share our thoughts</h1>
+                <div class="top-section" data-aos="fade-down" data-aos-once="true" data-aos-duration="1000">
+                    <h4 class="blog-title">BLOG</h4>
+                    <h1 class="blog-text">We share our thoughts</h1>
 
-                <div class="owl-carousel post-categories">
-                    <div class="item">
-                        <a href="" class="categories active">All</a>
-                    </div>
-                    <div class="item">
-                        <a href="" class="categories">Marketing</a>
-                    </div>
-                    <div class="item">
-                        <a href="" class="categories">Design</a>
-                    </div>
-                    <div class="item">
-                        <a href="" class="categories">Development</a>
+                    <div class="owl-carousel post-categories">
+                        <div class="item">
+                            <a href="" class="categories active">All</a>
+                        </div>
+                        <div class="item">
+                            <a href="" class="categories">Marketing</a>
+                        </div>
+                        <div class="item">
+                            <a href="" class="categories">Design</a>
+                        </div>
+                        <div class="item">
+                            <a href="" class="categories">Development</a>
+                        </div>
                     </div>
                 </div>
 
-                <div class="posts">
+                <div class="posts"  data-aos="fade-up" data-aos-once="true" data-aos-duration="1400">
                     <div class="cards">
                         <a href="single-blog.html">
                             <img src="assets/images/marketing.png" class="post-image">
@@ -114,6 +119,13 @@
         });
 
     </script>
+
+    <!-- animation -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
 </body>
 
 </html>

@@ -452,6 +452,9 @@ footer {
 .single-blog-content {
   padding-bottom: 100px; }
 
+.body-content {
+  padding-top: 200px; }
+
 .single-blog-content .custom-container {
   max-width: 736px !important; }
 

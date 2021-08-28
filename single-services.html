@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- style -->
     <link rel="stylesheet" href="css/single-services.css">
-   <!-- jquery -->
+    <!-- jquery -->
     <!-- <script src="/node_modules/jquery/dist/jquery.js"></script> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
         integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
@@ -21,6 +21,10 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.0/js/bootstrap.min.js"
         integrity="sha512-NWNl2ZLgVBoi6lTcMsHgCQyrZVFnSmcaa3zRv0L3aoGXshwoxkGs3esa9zwQHsChGRL4aLDnJjJJeP6MjPX46Q=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- animation -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <title>Astech</title>
 
 </head>
@@ -33,7 +37,7 @@
         <div class="single-services">
             <div class="background-color"></div>
 
-            <div class="center">
+            <div class="center" data-aos="fade-down" data-aos-once="true" data-aos-duration="1000">
 
                 <div class="row content">
                     <div class="col-3 left-side-images">
@@ -163,18 +167,25 @@
         });
 
         if ($(window).width() < 1205) {
-                var firstContentHeight = $('.first-content').height();
-                var leftSideImagesHeight = $('.left-side-images').height();
-                $(document).ready(function () {
-                    $('.background-color').css({ height: `calc(25% + ${firstContentHeight}px + ${leftSideImagesHeight}px)` });
-                });
-            }
+            var firstContentHeight = $('.first-content').height();
+            var leftSideImagesHeight = $('.left-side-images').height();
+            $(document).ready(function () {
+                $('.background-color').css({ height: `calc(25% + ${firstContentHeight}px + ${leftSideImagesHeight}px)` });
+            });
+        }
 
         var contentHeight = $('.content').height();
         $(document).ready(function () {
             $('.vertical-line').css({ height: `calc(369px + ${contentHeight}px)` });
         });
     </script>
+
+    <!-- animation -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
 </body>
 
 </html>

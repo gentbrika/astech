@@ -31,6 +31,10 @@
         integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
+    <!-- animation -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+
     <title>Astech</title>
 
 </head>
@@ -38,15 +42,14 @@
 <body>
     <div id="nav"></div>
 
-
     <div class="single-blog-content">
 
         <div class="body-content">
-            <div class="container custom-container">
+            <div class="container custom-container"  data-aos="fade-down" data-aos-once="true" data-aos-duration="1000">
                 <h1 class="single-blog-post-title">The future of marketing have an amazing value.</h1>
                 <p class="single-blog-post-date">17.07.2021</p>
             </div>
-            <div class="single-blog-post-image">
+            <div class="single-blog-post-image" data-aos="fade-up" data-aos-once="true" data-aos-duration="1000">
                 <img src="assets/images/development.png">
             </div>
             <div class="container custom-container">
@@ -125,6 +128,12 @@
             $("#footer").load("components/footer.html");
         });
 
+    </script>
+
+    <!-- animation -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
     </script>
 </body>
 

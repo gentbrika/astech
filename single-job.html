@@ -21,6 +21,10 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.0/js/bootstrap.min.js"
         integrity="sha512-NWNl2ZLgVBoi6lTcMsHgCQyrZVFnSmcaa3zRv0L3aoGXshwoxkGs3esa9zwQHsChGRL4aLDnJjJJeP6MjPX46Q=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- animation -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <title>Astech</title>
 
 </head>
@@ -34,33 +38,47 @@
 
         <div class="all-content">
             <div class="container">
+                <div class="top-section" data-aos="fade-down" data-aos-once="true" data-aos-duration="1000">
 
-                <img src="assets/images/job-background.png" class="main-image">
-                <div class="job-logo">
-                    <img src="assets/images/vue.svg">
+                    <img src="assets/images/job-background.png" class="main-image">
+                    <div class="job-logo">
+                        <img src="assets/images/vue.svg">
+                    </div>
+
+                    <h3 class="post-title">Looking for Vue Senior Developer</h3>
+
+                    <div class="details">
+                        <div class="location">
+                            <img src="assets/images/location.svg">
+                            <p class="job-location">Tirane, Albania</p>
+                        </div>
+                        <div class="date">
+                            <img src="assets/images/calendar.svg">
+                            <p>Posted 5 Days ago</p>
+                        </div>
+                    </div>
+                    <div class="divider"></div>
                 </div>
 
-                <h3 class="post-title">Looking for Vue Senior Developer</h3>
-
-                <div class="details">
-                    <div class="location">
-                        <img src="assets/images/location.svg">
-                        <p class="job-location">Tirane, Albania</p>
-                    </div>
-                    <div class="date">
-                        <img src="assets/images/calendar.svg">
-                        <p>Posted 5 Days ago</p>
-                    </div>
-                </div>
-
-                <div class="divider"></div>
 
 
-                <div class="job-description">
+                <div class="job-description" data-aos="fade-up" data-aos-once="true" data-aos-duration="1000">
                     <h5>Job Description</h5>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                        the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
+                        of type and scrambled it to make a type specimen book. It has survived not only five centuries,
+                        but also the leap into electronic typesetting, remaining essentially unchanged. It was
+                        popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
+                        and more recently with desktop publishing software like Aldus PageMaker including versions of
+                        Lorem Ipsum.</p>
                     <h5>Job tasks and responsibilities</h5>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                        the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
+                        of type and scrambled it to make a type specimen book. It has survived not only five centuries,
+                        but also the leap into electronic typesetting, remaining essentially unchanged. It was
+                        popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
+                        and more recently with desktop publishing software like Aldus PageMaker including versions of
+                        Lorem Ipsum.</p>
                     <h5>Skills and experience</h5>
                     <ul>
                         <li>Experience and/or interest in Agile methodologies</li>
@@ -69,7 +87,9 @@
                         <li>Experience working on production, shipping code</li>
                         <li>Excellent written and verbal communication skills</li>
                     </ul>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley.</p>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                        the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley.
+                    </p>
                 </div>
 
                 <div class="divider"></div>
@@ -83,7 +103,7 @@
 
 
 
-    
+
 
     <div id="footer"></div>
 
@@ -93,6 +113,12 @@
             $("#nav").load("components/navbar.html");
             $("#footer").load("components/footer.html");
         });
+    </script>
+
+    <!-- animation -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
     </script>
 </body>
 

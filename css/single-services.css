@@ -538,7 +538,7 @@ footer {
   height: 200px; }
 
 .content {
-  margin-top: 174px !important; }
+  margin-top: 274px !important; }
 
 .first-content {
   display: flex;
@@ -698,7 +698,7 @@ button.accordion-button.collapsed:focus {
   .vertical-line {
     display: none; }
   .content {
-    margin-top: 80px !important; }
+    margin-top: 220px !important; }
   .background-color {
     height: 602px; }
   .post-image {

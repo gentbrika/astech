@@ -522,6 +522,9 @@ footer {
 .logo-text {
   fill: #fff; }
 
+.nav-content {
+  background: #1D1C20 !important; }
+
 .start {
   border-color: white;
   color: white; }

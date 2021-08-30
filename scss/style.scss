@@ -65,7 +65,7 @@ body{
 }
 
 .logo-text{
-    height: 96px;
+    height: 60px;
 }
 
 @keyframes logo-animation {
@@ -1028,6 +1028,9 @@ line-height: 30px;
     .other-half {
         width: 51%;
     }
+    .scroll-bar-wrapper{
+        display: none;
+    }
 }
 
 @media only screen and (max-width: 720px){
@@ -1210,3 +1213,23 @@ line-height: 30px;
         margin-bottom: 100px;
     }
 }
+
+.scroll-bar-wrapper {
+    width: 151px;
+    height: 4px;
+    position: fixed;
+    top: 340px;
+    z-index: 999999999999999;
+    background: #e7e7e7;
+    right: -40px;
+    transform: rotate(90deg);
+    border-radius: 10px;
+}
+  
+.scroll-bar { 
+    width:0;
+    height: inherit;
+    background: $primary-one;
+    border-radius: 10px;
+}
+  

@@ -1,6 +1,6 @@
 <div class="overlay-openmenu"></div>
 
-<div class="nav-content" id="navbar"  data-aos="fade-down" data-aos-once="true" data-aos-duration="1000">
+<div class="nav-content" id="navbar" data-aos="fade-down" data-aos-once="true" data-aos-duration="1000">
     <a href="./index.html">
         <!-- <picture>
             <source media="(max-width:480px)" srcset="assets/images/res-logo.svg">
@@ -259,7 +259,7 @@
             $(".recentItem").animate({
                 right: '-100%'
             });
-            
+
             // $("body").css('overflow', 'auto');
             $("body").css('background', 'transparent');
             // $(".nav-content").css('background', 'transparent');
@@ -316,5 +316,9 @@
     }
 
 
+    $('.link-style').click(function () {
+        $(".menu-links").toggleClass("open-menu");
+        $(".under-menu").toggleClass("open-menu");
+    });
 
 </script>

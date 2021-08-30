@@ -242,6 +242,76 @@ html, body {
   z-index: 2;
   transition: .05s; }
 
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    -webkit-transform: translatex(60px);
+    -moz-transform: translatex(60px);
+    -o-transform: translatex(60px);
+    transform: translatex(60px); }
+  to {
+    opacity: 1;
+    -webkit-transform: translatex(0);
+    -moz-transform: translatex(0);
+    -o-transform: translatex(0);
+    transform: translatex(0); } }
+
+.open-menu {
+  -webkit-animation-name: fadeInRight;
+  -moz-animation-name: fadeInRight;
+  -o-animation-name: fadeInRight;
+  animation-name: fadeInRight;
+  -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+  -o-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-duration: .8s;
+  -moz-animation-duration: .8s;
+  -o-animation-duration: .8s;
+  animation-duration: .8s;
+  animation-delay: .3s; }
+
+.open-menu:nth-child(2) {
+  animation-delay: .4s; }
+
+.open-menu:nth-child(3) {
+  animation-delay: .5s; }
+
+.open-menu:nth-child(4) {
+  animation-delay: .6s; }
+
+.open-menu:nth-child(5) {
+  animation-delay: .7s; }
+
+@keyframes fadeTest {
+  from {
+    opacity: 0;
+    -webkit-transform: translatex(60px);
+    -moz-transform: translatex(60px);
+    -o-transform: translatex(60px);
+    transform: translatex(60px); }
+  to {
+    opacity: 1;
+    -webkit-transform: translatex(0);
+    -moz-transform: translatex(0);
+    -o-transform: translatex(0);
+    transform: translatex(0); } }
+
+.under-menu.open-menu {
+  -webkit-animation-name: fadeTest;
+  -moz-animation-name: fadeTest;
+  -o-animation-name: fadeTest;
+  animation-name: fadeTest;
+  -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+  -o-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-duration: .8s;
+  -moz-animation-duration: .8s;
+  -o-animation-duration: .8s;
+  animation-duration: .8s;
+  animation-delay: 1s; }
+
 .lwt {
   height: 350px;
   max-width: 100%;
@@ -506,7 +576,7 @@ body {
   height: 96px; }
 
 .logo-text {
-  height: 96px; }
+  height: 60px; }
 
 @keyframes logo-animation {
   0% {
@@ -1261,7 +1331,9 @@ body {
   .half-screen {
     width: 51%; }
   .other-half {
-    width: 51%; } }
+    width: 51%; }
+  .scroll-bar-wrapper {
+    display: none; } }
 
 @media only screen and (max-width: 720px) {
   .partner-logos {
@@ -1385,3 +1457,20 @@ body {
   .first-section {
     margin-top: 135px;
     margin-bottom: 100px; } }
+
+.scroll-bar-wrapper {
+  width: 151px;
+  height: 4px;
+  position: fixed;
+  top: 340px;
+  z-index: 999999999999999;
+  background: #e7e7e7;
+  right: -40px;
+  transform: rotate(90deg);
+  border-radius: 10px; }
+
+.scroll-bar {
+  width: 0;
+  height: inherit;
+  background: #2da1c5;
+  border-radius: 10px; }

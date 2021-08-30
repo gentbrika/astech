@@ -33,7 +33,7 @@
 
 
 
-        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
     <title>Astech</title>
 
@@ -57,12 +57,27 @@
     <div class="home-content">
         <div id="nav"></div>
 
+
+
+
+
+
+        <div class='scroll-bar-wrapper'>
+            <div class='scroll-bar'> </div>
+        </div>
+
+
+
+
+
+
+
         <div class="body-content">
-            <div class="progress-line">
+            <!-- <div class="progress-line">
                 <div class="progress-container">
                     <div class="progress-bar" id="myBar"></div>
                 </div>
-            </div>
+            </div> -->
 
             <div class="first-section">
                 <div class="text-section">
@@ -299,7 +314,7 @@
                 </div>
 
 
-                <div class="our-services" >
+                <div class="our-services">
                     <div class="container">
                         <h1>Our Services</h1>
 
@@ -699,7 +714,8 @@
             <div class="looking-for">
                 <div class="container">
                     <h1>We are always looking for new <span>talented people.</span></h1>
-                    <div class="owl-carousel owl-carousel-2" data-aos="fade-up" data-aos-once="true" data-aos-duration="1000">
+                    <div class="owl-carousel owl-carousel-2" data-aos="fade-up" data-aos-once="true"
+                        data-aos-duration="1000">
                         <a href="single-job.html">
                             <div class="item">
                                 <img src="./assets/images/react.svg" class="pl-logo">
@@ -806,14 +822,17 @@
             $("#footer").load("components/footer.html");
         });
 
-        // scroll top
-        window.onscroll = function () { myFunction() };
-        function myFunction() {
-            var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
-            var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-            var scrolled = (winScroll / height) * 100;
-            document.getElementById("myBar").style.width = scrolled + "%";
+        // scroll progress
+        window.addEventListener('scroll', () => indicateScrollBar())
+
+        function indicateScrollBar() {
+            const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+            const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            const scrolled = (winScroll / height) * 100;
+            document.querySelector(".scroll-bar").style.width = `${scrolled}%`;
+
         }
+
 
         // scroll bottom
         $(document).ready(function () {
@@ -910,14 +929,14 @@
         });
 
 
- 
+
 
     </script>
 
-<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-<script>
-    AOS.init();
-</script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 
 </body>
 

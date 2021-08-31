@@ -312,6 +312,13 @@ html, body {
   animation-duration: .8s;
   animation-delay: 1s; }
 
+@-moz-document url-prefix() {
+  .menu-items a {
+    width: -moz-fit-content; }
+  .rtbp {
+    display: flex;
+    justify-content: center; } }
+
 .lwt {
   height: 350px;
   max-width: 100%;

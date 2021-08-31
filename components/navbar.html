@@ -1,4 +1,4 @@
-<div class="overlay-openmenu"></div>
+<div class="overlay-openmenu close-outside-menu"></div>
 
 <div class="nav-content" id="navbar" data-aos="fade-down" data-aos-once="true" data-aos-duration="1000">
     <a href="./index.html">
@@ -320,5 +320,26 @@
         $(".menu-links").toggleClass("open-menu");
         $(".under-menu").toggleClass("open-menu");
     });
+
+    $("body").on("click", "*", function (e) {
+        e.stopPropagation();
+        if (!$(e.currentTarget).is('.test')) {
+            // $("body").css('display', 'none');
+        }
+    });
+
+    $(".close-outside-menu").click(function () {
+            $(".recentItem").animate({
+                right: '-100%'
+            });
+
+            // $("body").css('overflow', 'auto');
+            $("body").css('background', 'transparent');
+            // $(".nav-content").css('background', 'transparent');
+            // $(".body-content").css('pointer-events', 'auto');
+            $(".overlay-openmenu").css('display', 'none');
+            $(".nav-content").css('backdropFilter', 'blur(10px)');
+        });
+
 
 </script>

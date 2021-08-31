@@ -312,6 +312,13 @@ html, body {
   animation-duration: .8s;
   animation-delay: 1s; }
 
+@-moz-document url-prefix() {
+  .menu-items a {
+    width: -moz-fit-content; }
+  .rtbp {
+    display: flex;
+    justify-content: center; } }
+
 .lwt {
   height: 350px;
   max-width: 100%;
@@ -527,8 +534,9 @@ footer {
   padding-top: 100px;
   padding-bottom: 100px; }
 
-.container {
-  max-width: 1200px !important; }
+@media only screen and (max-width: 1200px) {
+  .container {
+    max-width: 1200px !important; } }
 
 .cards a {
   text-decoration: none; }

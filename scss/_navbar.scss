@@ -393,3 +393,14 @@
   animation-duration: .8s;
   animation-delay: 1s;
 }
+
+// for mozilla
+@-moz-document url-prefix() {
+  .menu-items a {
+    width: -moz-fit-content;
+  }
+  .rtbp {
+    display: flex;
+    justify-content: center;
+  }
+}

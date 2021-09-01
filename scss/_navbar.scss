@@ -281,13 +281,19 @@
         margin-top: 0px;
         display: flex;
         justify-content: center;
-        height: 82%;
+        // height: 82%;
         a{
           margin-bottom: 35px;
           font-size: 30px;
           line-height: 25px;
         }
       }
+  }
+
+  @media only screen and (min-height: 600px) and (max-height: 888px){
+      .menu-items{
+        height: 82%;
+      } 
   }
 
 .recentItem::-webkit-scrollbar {
@@ -362,7 +368,7 @@
 }
 
 
-@keyframes fadeTest {
+@keyframes fadeUnderMenu {
   from {
       opacity:0;
       -webkit-transform: translatex(60px);
@@ -379,10 +385,10 @@
   }
 }
 .under-menu.open-menu {
-  -webkit-animation-name: fadeTest;
-  -moz-animation-name: fadeTest;
-  -o-animation-name: fadeTest;
-  animation-name: fadeTest;
+  -webkit-animation-name: fadeUnderMenu;
+  -moz-animation-name: fadeUnderMenu;
+  -o-animation-name: fadeUnderMenu;
+  animation-name: fadeUnderMenu;
   -webkit-animation-fill-mode: both;
   -moz-animation-fill-mode: both;
   -o-animation-fill-mode: both;

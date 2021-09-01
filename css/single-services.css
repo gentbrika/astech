@@ -532,6 +532,10 @@ footer {
   margin-left: auto !important;
   margin-right: auto !important; }
 
+@media only screen and (min-width: 1200px) {
+  .single-services .center {
+    max-width: 1200px; } }
+
 .vertical-line {
   position: absolute;
   margin-left: 104px;

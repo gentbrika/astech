@@ -18,7 +18,8 @@ html, body {
   right: 0;
   bottom: 0;
   background-color: rgba(0, 0, 0, 0.25);
-  z-index: 2; }
+  z-index: 2;
+  cursor: pointer; }
 
 .recentItem {
   position: fixed;
@@ -1017,7 +1018,7 @@ body {
   margin-left: -13px; }
 
 .owl-next::before {
-  content: url(/assets/images/arrow-divider.svg);
+  content: url(../assets/images/arrow-divider.svg);
   margin-top: 2px;
   position: inherit;
   margin-left: -20px; }

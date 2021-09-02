@@ -546,7 +546,8 @@ footer {
 .about-text p {
   color: #2DA1C5;
   padding-top: 212px;
-  font-size: 16px; }
+  font-size: 16px;
+  font-weight: bold; }
 
 .about-text span {
   color: #2DA1C5; }
@@ -557,6 +558,19 @@ footer {
   position: absolute;
   margin-top: -104px;
   right: 200px; }
+
+.about-logo svg {
+  animation-name: logoRotate;
+  animation-duration: 1s;
+  animation-timing-function: linear; }
+
+@keyframes logoRotate {
+  0% {
+    transform: rotate(0deg); }
+  50% {
+    transform: rotate(180deg); }
+  100% {
+    transform: rotate(360deg); } }
 
 .about-background {
   width: 100%; }
@@ -577,7 +591,7 @@ footer {
   margin-left: -25px; }
 
 .our-mision-logo {
-  width: 366px;
+  max-width: 366px;
   height: 197.36px;
   margin-left: 130px; }
 
@@ -591,19 +605,26 @@ footer {
   margin-right: 64px;
   width: 522px; }
 
-.our-mision-logo h1 {
-  margin-left: 57px; }
-
-.our-mision {
-  margin-bottom: 200px; }
+.our-mision-logo h1, .our-vision h1 {
+  color: #1D1C20;
+  font-weight: bold; }
 
 .our-mision img {
   margin-top: 44px; }
 
+.background-color {
+  background-color: #f4fcff;
+  padding-top: 75px;
+  padding-bottom: 75px;
+  margin-bottom: 130px; }
+
+.container {
+  max-width: 1200px !important; }
+
 .work-photos {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-gap: 20px; }
+  grid-gap: 30px; }
 
 .work-photos img {
   width: 100%; }
@@ -612,7 +633,10 @@ footer {
   margin-bottom: 120px; }
 
 .work-photo2 img {
-  margin-top: 50px; }
+  margin-top: 90px; }
+
+.third-column p {
+  font-size: 18px; }
 
 .owl-carousel-3 .owl3-borders {
   background: #FFFFFF;
@@ -679,7 +703,8 @@ footer {
 .tools-section h1 {
   color: #1B1C1F;
   font-size: 45px;
-  width: 467px; }
+  max-width: 467px;
+  font-weight: bold; }
 
 .tools-content {
   height: 227px; }
@@ -712,22 +737,39 @@ footer {
 .background-image {
   opacity: 0.04;
   position: absolute;
-  width: 566px;
+  width: 30%;
   height: 131px;
   display: flex; }
 
-@media only screen and (max-width: 1024px) {
+.certified-care {
+  margin-bottom: 130px; }
+
+.certified-care h1 {
+  font-weight: bold;
+  font-size: 45px;
+  color: #1B1C1F;
+  margin-bottom: 60px; }
+
+@media only screen and (max-width: 1200px) {
   .our-vision {
-    grid-template-columns: 1fr; }
+    grid-template-columns: 1fr;
+    padding-left: 50px; }
   .our-mision {
-    grid-template-columns: 1fr; }
+    grid-template-columns: 1fr;
+    padding-left: 50px; }
   .our-mision-text {
     order: 1; }
   .our-mision-logo {
     height: auto;
     margin-left: 0px; }
   .our-mision-text p {
-    width: 100%; } }
+    width: 100%; }
+  .first-column h1 {
+    margin-bottom: 50px; }
+  .second-column {
+    margin-bottom: 50px; }
+  .our-mision-logo img {
+    margin-bottom: 50px; } }
 
 @media screen and (max-width: 991px) {
   .about-text h1 {
@@ -739,18 +781,56 @@ footer {
     height: 204px;
     position: absolute;
     margin-top: -104px;
-    right: 70px; }
-  .our-mision-logo h1 {
-    margin-left: 57px; }
-  .our-mision-logo {
-    margin-left: 130px; } }
+    right: 70px; } }
 
 @media screen and (max-width: 768px) {
   .about-background {
     object-fit: cover;
     height: 420px; } }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 700px) {
+  .tools-posts {
+    grid-template-columns: 1fr; }
+  .background-image {
+    width: 70%; } }
+
+@media screen and (max-width: 575px) {
+  .our-vision h1, .our-mision-logo h1 {
+    font-size: 24px; }
+  .background-color {
+    margin-bottom: 33px;
+    padding-top: 50px; }
+  .our-mision, .our-vision {
+    padding-left: 0px; }
+  .our-vision {
+    margin-bottom: 60px; }
+  .about-content {
+    margin-bottom: 50px; }
+  .about-text h1 {
+    font-size: 24px;
+    line-height: 34px; }
+  .about-text p {
+    padding-top: 130px; }
   .about-background {
-    height: 453px;
-    width: 360px; } }
+    height: 245px; }
+  .work-photos {
+    grid-template-columns: 1fr;
+    grid-gap: 0px;
+    margin-bottom: 60px; }
+  .work-photo2 img {
+    margin-top: 20px; }
+  .certified-care h1 {
+    font-size: 24px;
+    margin-bottom: 30px; }
+  .certified-care {
+    margin-bottom: 60px; }
+  .tools-section h1 {
+    font-size: 24px; }
+  .about-logo {
+    width: 86px;
+    height: fit-content;
+    right: 20px; } }
+
+@media screen and (max-width: 390px) {
+  .our-mision-logo img {
+    width: 100%; } }

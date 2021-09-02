@@ -744,7 +744,7 @@ button.accordion-button.collapsed:focus {
     height: 135px;
     margin-bottom: 25px; }
   .content {
-    margin-top: 130px !important; }
+    margin-top: 200px !important; }
   .milestone-image {
     display: none; }
   .milestone-text {
@@ -762,4 +762,4 @@ button.accordion-button.collapsed:focus {
   .content-description {
     margin-top: 40px !important; }
   .content {
-    margin-top: 65px !important; } }
+    margin-top: 165px !important; } }

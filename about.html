@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- style -->
     <link rel="stylesheet" href="css/about.css">
-   <!-- jquery -->
+    <!-- jquery -->
     <!-- <script src="/node_modules/jquery/dist/jquery.js"></script> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
         integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
@@ -22,7 +22,7 @@
         integrity="sha512-NWNl2ZLgVBoi6lTcMsHgCQyrZVFnSmcaa3zRv0L3aoGXshwoxkGs3esa9zwQHsChGRL4aLDnJjJJeP6MjPX46Q=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-     <!-- owl -->
+    <!-- owl -->
     <!-- <link rel="stylesheet" href="/node_modules/owl.carousel/dist/assets/owl.carousel.min.css" />
     <script src="/node_modules/owl.carousel/dist/owl.carousel.min.js"></script> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
@@ -32,18 +32,58 @@
         integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <title>Astech</title>
 </head>
 
 <body>
     <div id="nav"></div>
     <div class="about-content">
-        <div class="about-text container">
+        <div class="about-text container" data-aos="fade-down" data-aos-once="true" data-aos-duration="1000">
             <p>ABOUT US</p>
             <h1>We are a software development company leading the digital transformation of our worldwide clients
                 through <span>custom software development services</span></h1>
         </div>
-        <img src="assets/images/about-logo.svg" class="about-logo">
+        <!-- <img src="assets/images/about-logo.svg" class="about-logo" data-aos="zoom-in" data-aos-once="true" data-aos-duration="1000"> -->
+        <div class="about-logo"  data-aos="zoom-in" data-aos-once="true" data-aos-duration="1000">
+            <svg width="204" height="204" viewBox="0 0 204 204" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="102" cy="102" r="101.25" stroke="#1C78AB" stroke-width="1.5"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" class="testt" d="M87.6361 135.756L69.1348 146.405L87.6361 157.054V135.756Z" fill="#213D7A"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" class="testt" d="M87.6361 93.1597L69.1348 103.808L87.6361 114.457V93.1597Z" fill="#6BC2D1"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" class="testt" d="M75.4252 56.6485L56.9238 67.2973L75.4252 77.9461V56.6485Z" fill="#0AA1C7"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" class="testt" d="M69.1328 103.809L87.6341 114.458L69.1328 125.107V103.809Z" fill="#0AA1C7"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" class="testt" d="M69.1328 125.108L87.6341 135.757L69.1328 146.405V125.108Z" fill="#0AA1C7"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" class="testt" d="M66.0801 79.4679L84.5814 90.1167L66.0801 100.766V79.4679Z" fill="#213D7A"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" class="testt" d="M87.6348 114.458L106.136 125.107L87.6348 135.756V114.458Z" fill="#213D7A"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" class="testt" d="M87.6348 135.756L106.136 146.405L87.6348 157.054V135.756Z" fill="#1775AB"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" class="testt" d="M87.6348 93.1597L106.136 103.808L87.6348 114.457V93.1597Z" fill="#0AA1C7"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" class="testt" d="M87.6348 71.8612L106.136 82.51L87.6348 93.1588V71.8612Z" fill="#1775AB"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" class="testt" d="M106.138 125.108L87.6367 135.757L106.138 146.405V125.108Z" fill="#6BC2D1"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" class="testt" d="M106.138 103.809L87.6367 114.458L106.138 125.107V103.809Z" fill="#6BC2D1"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" class="testt" d="M100.035 46L81.5332 56.6488L100.035 67.2976V46Z" fill="#6BC2D1"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" class="testt" d="M50.627 114.458L69.1283 125.107L50.627 135.756V114.458Z" fill="#213D7A"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" class="testt" d="M69.1322 125.108L50.6309 135.757L69.1322 146.405V125.108Z" fill="#6BC2D1"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" class="testt" d="M124.643 135.756L143.144 146.405L124.643 157.054V135.756Z" fill="#213D7A"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" class="testt" d="M124.643 93.1597L143.144 103.808L124.643 114.457V93.1597Z" fill="#0AA1C7"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" class="testt" d="M124.643 71.8612L143.144 82.51L124.643 93.1588V71.8612Z" fill="#213D7A"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" class="testt" d="M143.148 103.809L124.646 114.458L143.148 125.107V103.809Z" fill="#6BC2D1"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" class="testt" d="M143.148 82.5112L124.646 93.16L143.148 103.809V82.5112Z" fill="#1775AB"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" class="testt" d="M143.148 125.108L124.646 135.757L143.148 146.405V125.108Z" fill="#6BC2D1"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" class="testt" d="M124.644 114.458L106.143 125.107L124.644 135.756V114.458Z" fill="#213D7A"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" class="testt" d="M124.644 135.756L106.143 146.405L124.644 157.054V135.756Z" fill="#1775AB"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" class="testt" d="M124.644 93.1597L106.143 103.808L124.644 114.457V93.1597Z" fill="#6BC2D1"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" class="testt" d="M124.644 71.8612L106.143 82.51L124.644 93.1588V71.8612Z" fill="#6BC2D1"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" class="testt" d="M106.141 125.108L124.642 135.757L106.141 146.405V125.108Z" fill="#0AA1C7"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" class="testt" d="M106.141 103.809L124.642 114.458L106.141 125.107V103.809Z" fill="#0AA1C7"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" class="testt" d="M106.141 56.6485L124.642 67.2973L106.141 77.9461V56.6485Z" fill="#0AA1C7"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" class="testt" d="M161.652 114.458L143.15 125.107L161.652 135.756V114.458Z" fill="#1775AB"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" class="testt" d="M143.146 125.108L161.648 135.757L143.146 146.405V125.108Z" fill="#0AA1C7"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" class="testt" d="M143.146 103.809L161.648 114.458L143.146 125.107V103.809Z" fill="#213D7A"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" class="testt" d="M61.5013 93.1597L43 103.808L61.5013 114.457V93.1597Z" fill="#1775AB"/>
+                </svg>
+                
+        </div>
         <img src="assets/images/about-us photo.svg" class="about-background">
     </div>
     <div class="container">
@@ -60,24 +100,32 @@
                     clients’ trust through outstanding execution and uncompromising dedication to their success.</p>
             </div>
         </div>
-        <div class="our-mision">
-            <div class="our-mision-text">
-                <p>ASTECh’s mission is to help our clients achieve and exceed their growth and revenue goals. We
-                    seek to
-                    accomplish this through the creation and superior execution of revenue-driving solutions. We are
-                    dedicated to developing fully customised, accountable applications to address each client’s
-                    unique
-                    situation.
-                    We are further committed to analysing the analytics data we collect and translating it into
-                    kernels
-                    of actionable business intelligence that can directly impact each client’s growth and success.
-                </p>
-            </div>
-            <div class="our-mision-logo">
-                <h1>OUR MISION</h1>
-                <img src="assets/images/Mision-photo.svg">
+    </div>
+    <div class="background-color">
+        <div class="container">
+            <div class="our-mision">
+                <div class="our-mision-text">
+                    <p>ASTECh’s mission is to help our clients achieve and exceed their growth and revenue goals. We
+                        seek to
+                        accomplish this through the creation and superior execution of revenue-driving solutions. We are
+                        dedicated to developing fully customised, accountable applications to address each client’s
+                        unique
+                        situation.
+                        We are further committed to analysing the analytics data we collect and translating it into
+                        kernels
+                        of actionable business intelligence that can directly impact each client’s growth and success.
+                    </p>
+                </div>
+                <div class="our-mision-logo">
+                    <h1>OUR MISION</h1>
+                    <img src="assets/images/Mision-photo.svg">
+                </div>
             </div>
         </div>
+    </div>
+
+    <div class="container">
+
         <div class="work-photos">
             <div class="work-photo1">
                 <img src="assets/images/about-work-photo1.svg">
@@ -127,55 +175,56 @@
 
                 </div>
             </div>
-            <div class="tools-section">
-                <h1>Tools that we use on our daily basis:</h1>
+        </div>
+        <div class="tools-section">
+            <h1>Tools that we use on our daily basis:</h1>
 
-                <div class="tools-posts">
-                    <div class="tools-content">
-                        <img src="assets/images/slack.svg" class="background-image">
-                        <div class="tools-image-text">
-                            <img src="assets/images/slack.svg">
-                            <h5>for team communication</h5>
-                        </div>
+            <div class="tools-posts">
+                <div class="tools-content">
+                    <img src="assets/images/slack.svg" class="background-image">
+                    <div class="tools-image-text">
+                        <img src="assets/images/slack.svg">
+                        <h5>for team communication</h5>
                     </div>
-                    <div class="tools-content">
-                        <img src="assets/images/Jira.svg" class="background-image">
-                        <div class="tools-image-text">
-                            <img src="assets/images/Jira.svg">
-                            <h5>for daily work management and planning</h5>
-                        </div>
+                </div>
+                <div class="tools-content">
+                    <img src="assets/images/Jira.svg" class="background-image">
+                    <div class="tools-image-text">
+                        <img src="assets/images/Jira.svg">
+                        <h5>for daily work management and planning</h5>
                     </div>
-                    <div class="tools-content">
-                        <img src="assets/images/Wrike.svg" class="background-image">
-                        <div class="tools-image-text">
-                            <img src="assets/images/Wrike.svg">
-                            <h5>for team communication</h5>
-                        </div>
+                </div>
+                <div class="tools-content">
+                    <img src="assets/images/Wrike.svg" class="background-image">
+                    <div class="tools-image-text">
+                        <img src="assets/images/Wrike.svg">
+                        <h5>for team communication</h5>
                     </div>
-                    <div class="tools-content">
-                        <img src="assets/images/Microsoft-teams.svg" class="background-image">
-                        <div class="tools-image-text">
-                            <img src="assets/images/Microsoft-teams.svg">
-                            <h5>for team communication</h5>
-                        </div>
+                </div>
+                <div class="tools-content">
+                    <img src="assets/images/Microsoft-teams.svg" class="background-image">
+                    <div class="tools-image-text">
+                        <img src="assets/images/Microsoft-teams.svg">
+                        <h5>for team communication</h5>
                     </div>
-                    <div class="tools-content">
-                        <img src="assets/images/Bitbucket.svg" class="background-image">
-                        <div class="tools-image-text">
-                            <img src="assets/images/Bitbucket.svg">
-                            <h5>for team communication</h5>
-                        </div>
+                </div>
+                <div class="tools-content">
+                    <img src="assets/images/Bitbucket.svg" class="background-image">
+                    <div class="tools-image-text">
+                        <img src="assets/images/Bitbucket.svg">
+                        <h5>for team communication</h5>
                     </div>
-                    <div class="tools-content">
-                        <img src="assets/images/Jenkins.svg" class="background-image">
-                        <div class="tools-image-text">
-                            <img src="assets/images/Jenkins.svg">
-                            <h5>for team communication</h5>
-                        </div>
+                </div>
+                <div class="tools-content">
+                    <img src="assets/images/Jenkins.svg" class="background-image">
+                    <div class="tools-image-text">
+                        <img src="assets/images/Jenkins.svg">
+                        <h5>for team communication</h5>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
 
 
     </div>
@@ -191,6 +240,11 @@
             autoWidth: true,
             margin: 50
         });
+    </script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
     </script>
 </body>
 

@@ -324,12 +324,13 @@
     .about-text p{
         padding-top: 202px;
     }
-    .about-logo {
+    .about-logo{
+        right: 70px;
+    }
+    .about-logo svg{
         width: 150px;
         height: 204px;
         position: absolute;
-        margin-top: -104px;
-        right: 70px;
     }
 
     .our-mision-logo h1{
@@ -402,10 +403,14 @@
     .tools-section h1{
         font-size: 24px;
     }
-    .about-logo {
+    .about-logo{
+        right: 20px;
+        margin-top: -44px;
+    }
+    .about-logo svg{
         width: 86px;
         height: fit-content;
-        right: 20px;
+        right: 0;
     }
 }
 

@@ -777,11 +777,11 @@ footer {
   .about-text p {
     padding-top: 202px; }
   .about-logo {
+    right: 70px; }
+  .about-logo svg {
     width: 150px;
     height: 204px;
-    position: absolute;
-    margin-top: -104px;
-    right: 70px; } }
+    position: absolute; } }
 
 @media screen and (max-width: 768px) {
   .about-background {
@@ -827,9 +827,12 @@ footer {
   .tools-section h1 {
     font-size: 24px; }
   .about-logo {
+    right: 20px;
+    margin-top: -44px; }
+  .about-logo svg {
     width: 86px;
     height: fit-content;
-    right: 20px; } }
+    right: 0; } }
 
 @media screen and (max-width: 390px) {
   .our-mision-logo img {

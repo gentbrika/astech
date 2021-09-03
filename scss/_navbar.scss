@@ -318,6 +318,7 @@
   backdrop-filter: blur(10px);
   z-index: 2;
   transition: .05s;
+  left: 0;
 }
 
 
@@ -409,5 +410,11 @@
   .rtbp {
     display: flex;
     justify-content: center;
+  }
+}
+
+@media only screen and (max-width: 1024px){
+  .nav-content {
+    padding: 30px 15px;
   }
 }

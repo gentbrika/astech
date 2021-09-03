@@ -244,7 +244,8 @@ html, body {
   background: rgba(255, 255, 255, 0.9) !important;
   backdrop-filter: blur(10px);
   z-index: 2;
-  transition: .05s; }
+  transition: .05s;
+  left: 0; }
 
 @keyframes fadeInRight {
   from {
@@ -322,6 +323,10 @@ html, body {
   .rtbp {
     display: flex;
     justify-content: center; } }
+
+@media only screen and (max-width: 1024px) {
+  .nav-content {
+    padding: 30px 15px; } }
 
 .lwt {
   height: 350px;
@@ -434,6 +439,9 @@ footer {
   transform: rotate(90deg);
   padding: 10px 5px; }
 
+.move-top {
+  padding-left: 10px; }
+
 .footer-links {
   position: relative;
   width: fit-content; }
@@ -511,6 +519,10 @@ footer {
   .text-content h1 {
     font-size: 24px !important; } }
 
+@media only screen and (min-width: 1024px) {
+  .quote {
+    margin-top: 30px; } }
+
 .text-content h1 {
   font-size: 45px;
   color: #FDFDFD;
@@ -530,6 +542,13 @@ footer {
 
 .lwt {
   height: 323px; }
+
+.background-image {
+  background: #f4fcff;
+  width: 100%;
+  height: 614px;
+  position: absolute;
+  z-index: -1; }
 
 .single-blog-content {
   padding-bottom: 100px; }
@@ -630,7 +649,9 @@ footer {
     height: 431px; }
   .single-blog-post-title {
     font-size: 36px;
-    line-height: 46px; } }
+    line-height: 46px; }
+  .background-image {
+    height: 564px; } }
 
 @media only screen and (max-width: 990px) {
   .post-image, .post-content {
@@ -672,4 +693,6 @@ footer {
   .marketing img, .hr {
     margin-bottom: 40px; }
   .body-content {
-    padding-top: 100px; } }
+    padding-top: 140px; }
+  .background-image {
+    height: 420px; } }

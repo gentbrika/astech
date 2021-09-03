@@ -179,7 +179,10 @@ button.accordion-button.collapsed:focus{
     margin-top: 13px !important;
 }
 
-
+.accordion-header p {
+    font-size: 14px;
+    font-weight: 500;
+}
 
 .milestone{
     margin-left: 10px;

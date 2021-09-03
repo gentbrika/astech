@@ -135,6 +135,10 @@ footer{
 //     }
 // }
 
+.move-top{
+    padding-left: 10px;
+}
+
 .footer-links{
     position: relative;
     width:fit-content;
@@ -243,6 +247,12 @@ footer{
     }
 }
 
+@media only screen and (min-width: 1024px){
+    .quote{
+        margin-top: 30px;
+    }
+}
+
 .text-content h1{
     font-size: 45px;
     color: $secondary-six;
@@ -271,3 +281,4 @@ footer{
 .lwt {
     height: 323px;
 }
+

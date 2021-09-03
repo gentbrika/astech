@@ -223,15 +223,65 @@
     width: 197px;
 }
 
+.owl-nav{
+    float: right;
+    margin-right: 40px ;
+}
+
+.owl-nav .left-arrow{
+    transform: rotate(180deg);
+    margin-left: -13px;
+}
+
+.owl-next::before{
+    content: url(../assets/images/arrow-divider.svg);
+    margin-top: 2px;
+    position: inherit;
+    margin-left: -20px;
+}
+
+.owl-prev, .owl-next{
+    margin-top: -50px !important;
+}
+
+.owl-prev,
+.owl-next {
+  position: absolute;
+  top: 0%;
+  transform: translateY(-100%);
+}
+
+.owl-prev{
+    margin-left: -50px;
+}
+
+.owl-next{
+    margin-right: 20px;
+}
+
+.disabled path {
+    fill: #B7B3B2;
+}
+
+
+
+
 .footer-background{
     margin-top: 130px;
 }
+
 .tools-section h1{
     color:#1B1C1F;
     font-size: 45px;
     max-width: 467px;
     font-weight: bold;
+    margin-bottom: 40px;
 }
+
+.tools-section{
+    padding-bottom: 130px;
+}
+
 .tools-content{
     // width:570px;
     height: 227px;
@@ -316,6 +366,13 @@
     }
 }
 
+@media only screen and (min-width:1200px){
+    .our-mision-logo h1{
+        text-align: center;
+    }
+}
+
+
 @media screen and (max-width: 991px){
     .about-text h1{
         width: 100%;
@@ -339,6 +396,9 @@
 
     .our-mision-logo{
         // margin-left: 130px;
+    }
+    .tools-section{
+        padding-bottom: 90px;
     }
 }
 
@@ -411,6 +471,9 @@
         width: 86px;
         height: fit-content;
         right: 0;
+    }
+    .tools-section{
+        padding-bottom: 60px;
     }
 }
 

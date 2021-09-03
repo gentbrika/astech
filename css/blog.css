@@ -560,6 +560,12 @@ footer {
 .cards a {
   text-decoration: none; }
 
+.cards img {
+  transition: .4s; }
+
+.cards:hover img {
+  transform: scale(1.02); }
+
 .blog-title {
   color: #2da1c5;
   font-weight: 700; }

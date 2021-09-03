@@ -244,6 +244,7 @@ line-height: 30px;
     -moz-animation:spin 4s linear infinite;
     animation:spin 4s linear infinite;
     opacity: 0.3;
+    display: none; 
 }
 
 @keyframes spin {
@@ -474,7 +475,7 @@ line-height: 30px;
     padding: 12px 20px;
     z-index: 1;
     position: relative;
-    transition: .2s;
+    transition: .4s;
 }
 
 .rtbp button:hover{

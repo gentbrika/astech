@@ -50,7 +50,8 @@ html, body {
   padding: 30px 40px;
   display: flex;
   justify-content: space-between;
-  background-color: transparent; }
+  background-color: transparent;
+  border-bottom: 1px solid #F1F1F1; }
 
 .menu-toplinks {
   display: flex;

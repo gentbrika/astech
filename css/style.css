@@ -50,7 +50,8 @@ html, body {
   padding: 30px 40px;
   display: flex;
   justify-content: space-between;
-  background-color: transparent; }
+  background-color: transparent;
+  border-bottom: 1px solid #F1F1F1; }
 
 .menu-toplinks {
   display: flex;
@@ -861,6 +862,23 @@ body {
   line-height: 50px;
   color: #1B1C1F;
   margin-bottom: 60px; }
+
+.item:hover {
+  border-bottom: none !important; }
+
+.item:hover:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  border-bottom: 4px solid #2da1c5;
+  animation: borderAnimation .4s linear forwards; }
+
+@keyframes borderAnimation {
+  0% {
+    width: 0%; }
+  100% {
+    width: 100%; } }
 
 .owl-carousel-1 .item {
   background: #fff;

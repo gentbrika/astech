@@ -392,6 +392,30 @@ line-height: 30px;
     margin-bottom: 60px;
 }
 
+.item:hover{
+    border-bottom: none !important;
+}
+
+.item:hover:before{
+	content: '';
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	// width: 0;
+    border-bottom: 4px solid $primary-one;
+    animation: borderAnimation .4s linear forwards;
+}
+
+@keyframes borderAnimation {
+	0%{
+		width: 0%;
+	}
+	100%{
+		width: 100%;
+	}
+}
+
+
 .owl-carousel-1 .item {
     background: #fff;
     width:100%;

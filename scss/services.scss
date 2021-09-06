@@ -1,26 +1,6 @@
 @import "navbar";
 @import "footer";
 
-// .logo-text{
-//     fill: #fff;
-// }
-
-// .nav-content{
-//     background: $secondary-one !important;
-// }
-
-// // .container{
-// //     max-width: 1200px !important;
-// // }
-
-// .start {
-//     border-color: white;
-//     color: white;
-// }
-// #recentItem{
-//     border-color: white;
-// }
-
 //negative background
 
 .nav-content{
@@ -41,6 +21,38 @@
 }
 
 //negative background
+
+// .container{
+//     max-width: 1200px !important;
+// }
+
+
+.item:hover{
+    border-bottom: none !important;
+}
+
+.item{
+	position: relative;
+}
+
+.item:hover:before{
+	content: '';
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 0;
+	border-bottom: 4px solid $primary-one;
+	animation: bottomAnimation .4s linear forwards;
+}
+
+@keyframes bottomAnimation {
+	0%{
+		width: 0%;
+	}
+	100%{
+		width: 100%;
+	}
+}
 
 .first-section{
     background-color: #1B1C1F;

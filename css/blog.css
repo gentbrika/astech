@@ -50,7 +50,8 @@ html, body {
   padding: 30px 40px;
   display: flex;
   justify-content: space-between;
-  background-color: transparent; }
+  background-color: transparent;
+  border-bottom: 1px solid #F1F1F1; }
 
 .menu-toplinks {
   display: flex;
@@ -584,11 +585,13 @@ footer {
   color: #39383A;
   padding: 7px 15px;
   border: 1px solid #D7D7D7;
-  border-radius: 20px; }
+  border-radius: 20px;
+  transition: .4s; }
 
 .categories.active, .categories:hover {
   background-color: #2da1c5;
-  color: #fff; }
+  color: #fff;
+  border: none; }
 
 .owl-stage {
   margin-top: 10px;

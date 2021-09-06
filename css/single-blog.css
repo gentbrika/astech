@@ -50,7 +50,8 @@ html, body {
   padding: 30px 40px;
   display: flex;
   justify-content: space-between;
-  background-color: transparent; }
+  background-color: transparent;
+  border-bottom: 1px solid #F1F1F1; }
 
 .menu-toplinks {
   display: flex;
@@ -561,7 +562,8 @@ footer {
 
 .single-blog-post-content p {
   font-size: 20px;
-  color: #39383A; }
+  color: #39383A;
+  line-height: 38px; }
 
 .single-blog-post-content h1, .single-blog-post-content h2, .single-blog-post-content h3, .single-blog-post-content h4, .single-blog-post-content h5, .single-blog-post-content h6 {
   margin-top: 50px;
@@ -684,7 +686,8 @@ footer {
   .single-blog-post-image img {
     height: 206px; }
   .single-blog-post-content p {
-    font-size: 16px; }
+    font-size: 16px;
+    line-height: 28px; }
   .single-blog-post-content h1, .single-blog-post-content h2, .single-blog-post-content h3, .single-blog-post-content h4, .single-blog-post-content h5, .single-blog-post-content h6 {
     margin-top: 25px;
     margin-bottom: 10px; }

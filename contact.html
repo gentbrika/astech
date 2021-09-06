@@ -22,7 +22,7 @@
         integrity="sha512-NWNl2ZLgVBoi6lTcMsHgCQyrZVFnSmcaa3zRv0L3aoGXshwoxkGs3esa9zwQHsChGRL4aLDnJjJJeP6MjPX46Q=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-        <link rel="icon" type="image/png" href="./assets/images/responsive-logo.png"/>
+    <link rel="icon" type="image/png" href="./assets/images/responsive-logo.png" />
     <title>Astech</title>
 
 </head>
@@ -88,8 +88,10 @@
                     <div class="right-content">
                         <div class="inputs">
                             <h1>Get a quote</h1>
-                            <input type="text" placeholder="Your Name">
-                            <input type="text" placeholder="Email Address">
+                            <div class="first-row">
+                                <input type="text" placeholder="Your Name">
+                                <input type="text" placeholder="Email Address">
+                            </div>
                             <input type="text" placeholder="Phone Number">
                             <p class="labels">Message</p>
                             <textarea name="" id="" cols="30" rows="10" placeholder="Write message here"></textarea>
@@ -128,7 +130,7 @@
                 var filez = $(this).val();
                 $('.files')
                     .append(filez.split("\\").pop());
-                    $(".files").css('display', 'block');
+                $(".files").css('display', 'block');
             });
         </script>
 

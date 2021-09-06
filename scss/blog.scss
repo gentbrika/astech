@@ -53,11 +53,13 @@
     padding:7px 15px;
     border: 1px solid #D7D7D7;
     border-radius: 20px;
+    transition: .4s;
 }
 
 .categories.active, .categories:hover{
     background-color: $primary-one;
     color: #fff;
+    border: none;
 }
 
 .owl-stage{

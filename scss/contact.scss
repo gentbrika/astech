@@ -143,6 +143,12 @@ a#file-link {
     display:none;
 }
 
+.first-row{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 30px;
+}
+
 @media only screen and (max-width:1024px){
     .left-section,.right-section{
         width: 100%;
@@ -167,6 +173,10 @@ a#file-link {
     .inputs{
         padding-top: 35px;
     }  
+    .first-row{
+        grid-template-columns: 1fr;
+        grid-gap: 0px;
+    }
 }    
 
 // @media only screen and (max-width:768px){
@@ -181,7 +191,7 @@ a#file-link {
         padding-bottom: 40px;
     }
     .left-content{
-        padding-top: 40px;
+        padding-top: 130px;
     }
     .contact-content h1{
         margin-bottom: 20px;

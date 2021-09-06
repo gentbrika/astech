@@ -543,18 +543,18 @@ footer {
 .lwt {
   height: 323px; }
 
+.nav-content {
+  background-color: transparent !important; }
+
 .logo-text {
   fill: #fff; }
 
-.nav-content {
-  background: #1D1C20 !important; }
-
 .start {
-  border-color: white;
-  color: white; }
+  border-color: #fff;
+  color: #fff; }
 
 #recentItem {
-  border-color: white; }
+  border-color: #fff; }
 
 .first-section {
   background-color: #1B1C1F;

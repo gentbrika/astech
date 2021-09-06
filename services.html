@@ -557,7 +557,38 @@
                     items: 4,
                 }
             }
-        })
+        });
+
+
+        
+        //CONTINUE
+        $(window).scroll(function (event) {
+            var scroll = $(window).scrollTop();
+            if (scroll == 0) {
+                // console.log("test" + scroll);
+                $('.nav-content').attr('style', 'background-color: transparent');
+                $('.logo-text').attr('style', 'fill: #fff');
+                // $('.start').attr('style', 'border-color: #fff');
+                // $('.start').attr('style', 'color: #fff !important');
+                $('.start').css({
+                    'border-color': '#fff',
+                    'color': '#fff'
+                });
+                $('#recentItem').attr('style', 'border-color: #fff !important');
+
+            }
+            else {
+                $('.nav-content').attr('style', 'background-color: #fff !important');
+                $('.logo-text').attr('style', 'fill: #1D1C20');
+                $('.start').attr('style', 'border-color: #1D1C20 !important');
+                // $('.start').attr('style', 'color: #1D1C20 !important');
+                $('.start').css({
+                    'color': 'black',
+                });
+                $('#recentItem').attr('style', 'border-color: #1D1C20 !important');
+            }
+        });
+        //CONTINUE
 
     </script>
 
@@ -566,6 +597,9 @@
         <script>
             AOS.init();
         </script>
+
+
+
 
 </body>
 </html>

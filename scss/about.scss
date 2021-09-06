@@ -2,6 +2,27 @@
 @import "footer";
 
 
+//negative background
+
+.nav-content{
+    background-color: transparent !important;
+}
+
+.logo-text{
+    fill: #fff;
+}
+
+.start {
+    border-color: #fff;
+    color: #fff;
+}
+
+#recentItem{
+    border-color: #fff;
+}
+
+//negative background
+
 .about-content{
     margin-bottom: 130px;
     background: #1B1C1F;

@@ -16,6 +16,11 @@
     // overflow: scroll;
   }
 
+  .menuOpen {
+    overflow: hidden !important;
+    // margin-right: 117px !important;
+  }
+
   .overlay-openmenu{  
     position: fixed;
     display: none;

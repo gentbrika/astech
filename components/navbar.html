@@ -372,9 +372,7 @@
     });
 
     $(".close-outside-menu").click(function () {
-        $(".recentItem").animate({
-            right: '-100%'
-        });
+        $(".recentItem").css('right', '-100%');
 
         $("body").css('background', 'transparent');
         $(".overlay-openmenu").css('display', 'none');

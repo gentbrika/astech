@@ -548,7 +548,8 @@ footer {
   height: 323px; }
 
 .nav-content {
-  background-color: transparent !important; }
+  background-color: transparent !important;
+  border-bottom: 1px solid #262A33; }
 
 .logo-text {
   fill: #fff; }

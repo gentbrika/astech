@@ -35,7 +35,7 @@
 
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
-    <link rel="icon" type="image/png" href="./assets/images/responsive-logo.png"/>
+    <link rel="icon" type="image/png" href="./assets/images/responsive-logo.png" />
 
     <title>Astech</title>
 
@@ -119,7 +119,7 @@
                                 success.
                             </p>
                             <div class="about--logo">
-                                <button class="about"  onclick="location.href='./about.html'">About us</button>
+                                <button class="about" onclick="location.href='./about.html'">About us</button>
                                 <div class="csd">
                                     <svg width="156" height="131" viewBox="0 0 156 131" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
@@ -920,6 +920,16 @@
             }
         });
 
+        $(window).scroll(function (event) {
+            var scroll = $(window).scrollTop();
+            if (scroll == 0) {
+                $(".nav-content").addClass("test-class");
+
+            }
+            else {
+                $(".nav-content").removeClass("test-class");
+            }
+        });
 
 
 

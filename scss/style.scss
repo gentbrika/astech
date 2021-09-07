@@ -3,7 +3,6 @@
 *{
     box-sizing: border-box;
 }
-
 .container, .first-section{
     max-width: 1200px !important;
 }
@@ -135,7 +134,7 @@ body{
 }
 
 .text-section h1{
-    font-weight: 800;
+    font-weight: bold;
     font-size: 60px;
     line-height: 70px;
     text-transform: uppercase;
@@ -795,6 +794,12 @@ line-height: 30px;
     display: none;
 }
 
+@media only screen and (min-width: 1261px) and (max-width: 1579px){
+    .images-content {
+        margin-right: -15% !important;
+    }
+}
+
 @media only screen and (min-width:768px) and (max-width:1024px) {
         .owl-carousel.owl-carousel-1{
             display: none !important;
@@ -1237,6 +1242,10 @@ line-height: 30px;
         margin-top: 135px;
         margin-bottom: 100px;
     }
+    .text-section{
+        margin-top: auto;
+        margin-bottom: auto;
+    }
 }
 
 .scroll-bar-wrapper {
@@ -1258,3 +1267,9 @@ line-height: 30px;
     border-radius: 10px;
 }
   
+
+.test-class{
+    backdrop-filter: none !important;
+    background-color: transparent !important;
+    border-bottom: none !important;
+}

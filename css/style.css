@@ -1205,10 +1205,6 @@ body {
 .show-tablet {
   display: none; }
 
-@media only screen and (min-width: 1261px) and (max-width: 1579px) {
-  .images-content {
-    margin-right: -15% !important; } }
-
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
   .owl-carousel.owl-carousel-1 {
     display: none !important; }

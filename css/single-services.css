@@ -337,7 +337,7 @@ html, body {
 .top-nav {
   backdrop-filter: none !important;
   background-color: transparent !important;
-  border-bottom: none !important; }
+  border-bottom: none; }
 
 .openMenu-logo {
   display: none; }

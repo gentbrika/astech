@@ -269,7 +269,7 @@
       }
       .menu-items{
           margin-top: 52px;
-          padding-left: 30px;
+          padding-left: 20px;
       }
       .menu-items a{
           font-size: 24px;
@@ -419,9 +419,11 @@
   }
 }
 
-@media only screen and (max-width: 1024px){
-  .nav-content {
+@media only screen and (max-width: 768px){
+  .nav-content, .menu-toplinks {
     padding: 30px 15px;
+    margin: 0;
+    justify-content: space-between;
   }
 }
 
@@ -429,4 +431,21 @@
   backdrop-filter: none !important;
   background-color: transparent !important;
   border-bottom: none !important;
+}
+
+.openMenu-logo{
+  display: none;
+}
+
+@media only screen and (max-width: 768px){
+  .openMenu-logo{
+    display: block;
+    padding-left: 30px;
+  }
+}
+
+@media only screen and (max-width: 480px){
+  .openMenu-logo{
+    padding-left: 0px;
+  }
 }

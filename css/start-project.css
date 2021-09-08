@@ -214,7 +214,7 @@ html, body {
     margin-right: 20px; }
   .menu-items {
     margin-top: 52px;
-    padding-left: 30px; }
+    padding-left: 20px; }
   .menu-items a {
     font-size: 24px;
     margin-bottom: 30px; }
@@ -328,14 +328,28 @@ html, body {
     display: flex;
     justify-content: center; } }
 
-@media only screen and (max-width: 1024px) {
-  .nav-content {
-    padding: 30px 15px; } }
+@media only screen and (max-width: 768px) {
+  .nav-content, .menu-toplinks {
+    padding: 30px 15px;
+    margin: 0;
+    justify-content: space-between; } }
 
 .top-nav {
   backdrop-filter: none !important;
   background-color: transparent !important;
   border-bottom: none !important; }
+
+.openMenu-logo {
+  display: none; }
+
+@media only screen and (max-width: 768px) {
+  .openMenu-logo {
+    display: block;
+    padding-left: 30px; } }
+
+@media only screen and (max-width: 480px) {
+  .openMenu-logo {
+    padding-left: 0px; } }
 
 .lwt {
   height: 350px;
@@ -522,7 +536,9 @@ footer {
   .fourth h3 {
     width: 274px; }
   .footer-background {
-    padding-bottom: 0px; } }
+    padding-bottom: 0px; }
+  .containers.lwt-section {
+    width: 100%; } }
 
 @media only screen and (max-width: 500px) {
   .text-content h1 {

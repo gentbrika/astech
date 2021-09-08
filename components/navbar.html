@@ -238,6 +238,21 @@
     </div>
 </div>
 
+<script>
+    $(".nav-content").addClass("top-nav");
+
+    $(window).scroll(function (event) {
+            var scroll = $(window).scrollTop();
+            if (scroll == 0) {
+                $(".nav-content").addClass("top-nav");
+
+            }
+            else {
+                $(".nav-content").removeClass("top-nav");
+            }
+        });
+        
+</script>
 
 <script>
 

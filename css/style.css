@@ -332,6 +332,11 @@ html, body {
   .nav-content {
     padding: 30px 15px; } }
 
+.top-nav {
+  backdrop-filter: none !important;
+  background-color: transparent !important;
+  border-bottom: none !important; }
+
 .lwt {
   height: 350px;
   max-width: 100%;
@@ -1148,11 +1153,11 @@ body {
 
 .im-tx {
   display: flex;
+  align-items: flex-end;
   margin-right: 25px; }
 
 .im-tx h5 {
   width: 150px;
-  margin-top: 26px;
   margin-left: 15px;
   margin-bottom: 0px;
   font-weight: bold;
@@ -1522,8 +1527,3 @@ body {
   height: inherit;
   background: #2da1c5;
   border-radius: 10px; }
-
-.test-class {
-  backdrop-filter: none !important;
-  background-color: transparent !important;
-  border-bottom: none !important; }

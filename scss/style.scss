@@ -723,12 +723,13 @@ line-height: 30px;
 
 .im-tx{
     display: flex;
+    align-items: flex-end;
     margin-right: 25px;
 }
 
 .im-tx h5{
     width: 150px;
-    margin-top: 26px;
+    // margin-top: 26px;
     margin-left: 15px;
     margin-bottom: 0px;
     font-weight: bold;
@@ -1265,11 +1266,4 @@ line-height: 30px;
     height: inherit;
     background: $primary-one;
     border-radius: 10px;
-}
-  
-
-.test-class{
-    backdrop-filter: none !important;
-    background-color: transparent !important;
-    border-bottom: none !important;
 }

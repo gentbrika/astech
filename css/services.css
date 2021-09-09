@@ -831,6 +831,10 @@ footer {
 .hide-desktop {
   display: none; }
 
+@media only screen and (min-width: 1170px) {
+  .milestone-image img {
+    width: 65%; } }
+
 @media only screen and (max-width: 1370px) {
   .milestone-image img {
     width: 95%;
@@ -865,6 +869,11 @@ footer {
   .informations, .fourth {
     height: fit-content !important; } }
 
+@media only screen and (min-width: 576px) and (max-width: 991px) {
+  .first-left-part, .third-left-part {
+    margin-left: auto;
+    margin-right: auto; } }
+
 @media only screen and (max-width: 575px) {
   .hidden-xs, .hide-desktop {
     display: none; }
@@ -887,7 +896,10 @@ footer {
     margin-top: 0px !important; }
   .milestone-description {
     font-size: 16px;
-    line-height: 29px; } }
+    line-height: 29px; }
+  .second-row.development {
+    margin-top: 30px !important;
+    margin-bottom: 90px !important; } }
 
 @media only screen and (max-width: 991px) {
   .milestone-image img {

@@ -364,6 +364,12 @@
     display: none;
 }
 
+@media only screen and (min-width:1170px){
+    .milestone-image img {
+        width: 65%;
+    }
+}
+
 @media only screen and (max-width:1370px){
     .milestone-image img{
         width: 95%;
@@ -410,7 +416,13 @@
     .informations, .fourth{
         height: fit-content !important;
     }
+}
 
+@media only screen and (min-width:576px) and (max-width:991px){
+    .first-left-part, .third-left-part{
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 
 @media only screen and (max-width:575px){
@@ -444,6 +456,10 @@
     .milestone-description{
         font-size: 16px;
         line-height: 29px;
+    }
+    .second-row.development{
+        margin-top: 30px !important;
+        margin-bottom: 90px !important;
     }
 }
 

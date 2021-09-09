@@ -41,6 +41,11 @@ footer{
     margin-top: -100px;
 }
 
+footer .informations p a{
+    text-decoration: none;
+    color: $secondary-two;
+}
+
 .footer-info{
     margin-top: 100px !important;
 }

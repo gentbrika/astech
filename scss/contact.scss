@@ -149,6 +149,11 @@ a#file-link {
     grid-gap: 30px;
 }
 
+.as-infos{
+    text-decoration: none;
+    color: $secondary-one;
+}
+
 @media only screen and (max-width:1024px){
     .left-section,.right-section{
         width: 100%;

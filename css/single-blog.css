@@ -388,6 +388,10 @@ html, body {
 footer {
   margin-top: -100px; }
 
+footer .informations p a {
+  text-decoration: none;
+  color: #39383A; }
+
 .footer-info {
   margin-top: 100px !important; }
 

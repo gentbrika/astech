@@ -388,6 +388,10 @@ html, body {
 footer {
   margin-top: -100px; }
 
+footer .informations p a {
+  text-decoration: none;
+  color: #39383A; }
+
 .footer-info {
   margin-top: 100px !important; }
 
@@ -690,6 +694,10 @@ a#file-link {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 30px; }
+
+.as-infos {
+  text-decoration: none;
+  color: #1D1C20; }
 
 @media only screen and (max-width: 1024px) {
   .left-section, .right-section {

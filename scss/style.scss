@@ -959,6 +959,11 @@ line-height: 30px;
     }
 }
 
+@media only screen and (min-width:991px){
+    .right-side h1{
+        margin-top: -10px;
+    }
+}
 
 @media only screen and (max-width:991px){
     .second-section{
@@ -989,8 +994,7 @@ line-height: 30px;
     .row-2{
         margin-top: 60px;
         width: 100%;
-    }
-    
+    }   
 }
 
 @media only screen and (max-width: 768px){
@@ -998,7 +1002,7 @@ line-height: 30px;
         display: none;
     }
     .scroll-bottom{
-        display: none;
+        display: none !important;
     }
     .shape1, .shape2, .shape3, .shape4, .shape8{
         display: none;
@@ -1259,6 +1263,7 @@ line-height: 30px;
     right: -40px;
     transform: rotate(90deg);
     border-radius: 10px;
+    z-index: 1;
 }
   
 .scroll-bar { 

@@ -37,7 +37,7 @@
 
     <link rel="icon" type="image/png" href="./assets/images/responsive-logo.png" />
 
-    <title>Astech</title>
+    <title>Astech - Custom Software Development</title>
 
 </head>
 
@@ -99,7 +99,7 @@
                 <img src="./assets/images/hexagon.svg" class="shapes shape8">
 
             </div>
-            <div class="scroll-bottom" onclick="scrollBottom()">
+            <div class="scroll-bottom" id="scroll-bottom" onclick="scrollBottom()">
                 <p>SCROLL</p>
                 <img src="./assets/images/scroll-line.svg" class="scroll-image">
             </div>
@@ -314,9 +314,7 @@
                                 <a href="single-services.html">
                                     <img src="./assets/images/software-development.svg" class="post-image">
                                     <h2>Software Development</h2>
-                                    <p>At Astech, we believe that a powerful IT solution is able to transform your
-                                        business
-                                        and...</p>
+                                    <p>At Astech, we believe that a powerful IT solution is able to transform your business and bring significant profits.We advise solutions that help your business take over the market.</p>
                                     <div class="post-triangles">
                                         <div class="right-triangle">
                                             <svg width="15" height="17" viewBox="0 0 24 27" fill="none"
@@ -340,9 +338,7 @@
 
                                     <img src="./assets/images/extended-team.svg" class="post-image">
                                     <h2>Extended Team</h2>
-                                    <p>In publishing and graphic design, Lorem ipsum is a placeholder text commonly used
-                                        to
-                                        demonstra...</p>
+                                    <p>A successful software re-engineering is much more than just moving data to the cloud, it is the ability to reach higher scalability, performance, and cost optimization.</p>
                                     <div class="post-triangles">
                                         <div class="right-triangle">
                                             <svg width="15" height="17" viewBox="0 0 24 27" fill="none"
@@ -366,9 +362,7 @@
 
                                     <img src="./assets/images/mobile-apps.svg" class="post-image">
                                     <h2>Mobile Apps</h2>
-                                    <p>In publishing and graphic design, Lorem ipsum is a placeholder text commonly used
-                                        to
-                                        demonstr...</p>
+                                    <p>Native or Cross-platform app development. We offer both and help you decide which one is most suitable for your project. Mobile applications are a great way to bring your business closer to your customers, wherever they are. We attentively drill down into your challenges and objectives, helping you to deliver a compelling product with a unique value proposition.</p>
                                     <div class="post-triangles">
                                         <div class="right-triangle">
                                             <svg width="15" height="17" viewBox="0 0 24 27" fill="none"
@@ -391,9 +385,7 @@
                                 <a href="mvp.html">
                                     <img src="./assets/images/mvp.svg" class="post-image">
                                     <h2>MVP</h2>
-                                    <p>In publishing and graphic design, Lorem ipsum is a placeholder text commonly used
-                                        to
-                                        demonstr...</p>
+                                    <p>What You Need is Quality. Assuring High Quality and Reliability For Any Software Type Built With Any Technology When the work is done, it needs to be tested. We know how to crash code, in a good way</p>
                                     <div class="post-triangles">
                                         <div class="right-triangle">
                                             <svg width="15" height="17" viewBox="0 0 24 27" fill="none"
@@ -416,9 +408,7 @@
                                 <a href="dedicated-development.html">
                                     <img src="./assets/images/software-enginiering.svg" class="post-image">
                                     <h2>Software Enginiering</h2>
-                                    <p>In publishing and graphic design, Lorem ipsum is a placeholder text commonly used
-                                        to
-                                        demonstra...</p>
+                                    <p>Outsourcing your IT staff has a wide range of both direct and indirect benefits for your business. Whether you need to add more resources to your existing software development team</p>
                                     <div class="post-triangles">
                                         <div class="right-triangle">
                                             <svg width="15" height="17" viewBox="0 0 24 27" fill="none"
@@ -441,9 +431,8 @@
                                 <a href="software-quality.html">
                                     <img src="./assets/images/software-quality.svg" class="post-image">
                                     <h2>Software Quality (QA)</h2>
-                                    <p>In publishing and graphic design, Lorem ipsum is a placeholder text commonly used
-                                        to
-                                        demonstr...</p>
+                                    <p>What You Need is Quality. Assuring High Quality and Reliability For Any Software Type
+                                        Built With Any Technology</p>
                                     <div class="post-triangles">
                                         <div class="right-triangle">
                                             <svg width="15" height="17" viewBox="0 0 24 27" fill="none"
@@ -611,8 +600,8 @@
 
 
             <div class="container-fluid partners-section">
-                <div class="partners-overlay partners-overlay1"></div>
-                <div class="partners-overlay partners-overlay2"></div>
+                <!-- <div class="partners-overlay partners-overlay1"></div>
+                <div class="partners-overlay partners-overlay2"></div> -->
                 <div class="container partners-content">
                     <h1>
                         Our amazing <span>clients</span> and <span>partners</span> that we work with.
@@ -796,6 +785,54 @@
 
 
     <script>
+
+        $(window).scroll(function () {
+
+            let getFooter = document.querySelector('footer')
+            let footerHeight = getFooter.offsetHeight;
+            console.log(footerHeight);
+
+            $(window).scroll(function () {
+                if ($(window).scrollTop() + $(window).height() > $(document).height() - footerHeight + 340) {
+                    $(".scroll-bottom").css('display', 'none');
+                }
+                else{
+                    $(".scroll-bottom").css('display', 'flex');
+
+                }
+            });
+
+
+
+
+
+
+            // let footer = document.querySelector('footer').getBoundingClientRect()
+            // let scrollEl = document.querySelector('.scroll-bottom').getBoundingClientRect()
+            // let getFooter = document.querySelector('footer');
+            // let footerHeight = getFooter.offsetHeight;
+            // // console.log(footerHeight);
+            // console.log({footer, scrollEl});
+
+            // console.log(footer.y-scrollEl.y);
+
+            // if(footer.top-(scrollEl.bottom-120) <= 0) {
+            // $(".scroll-bottom").css('display', 'none');
+
+            // }
+            // else{
+            // $(".scroll-bottom").css('display', 'flex');
+            // }
+
+            // if ($(window).scrollTop() + $(window).height() == $(document).height()) {
+            //     // $(".scroll-bottom").css('display', 'none');
+            //     // console.log("duhet mu hek");
+            // }
+            // else{
+            //     // $(".scroll-bottom").css('display', 'flex');
+            // }
+        });
+
         setTimeout(function () {
             // $(".half-screen").css('background', 'red');
             $(".half-screen").css('marginLeft', '-52%');
@@ -814,6 +851,18 @@
             $("#nav").load("components/navbar.html");
             $("#footer").load("components/footer.html");
         });
+
+        //hide scroll bottom when in bottom of page
+        jQuery(function ($) {
+            $('body').on('scroll', function () {
+                if ($(this).scrollTop() + $(this).innerHeight() >= $(this)[0].scrollHeight) {
+                    alert('end reached');
+                    console.log("Test")
+                }
+            })
+        });
+
+
 
         // scroll progress
         window.addEventListener('scroll', () => indicateScrollBar())

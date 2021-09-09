@@ -1330,6 +1330,10 @@ body {
   .partner-logos {
     grid-template-columns: 1fr 1fr 1fr 1fr; } }
 
+@media only screen and (min-width: 991px) {
+  .right-side h1 {
+    margin-top: -10px; } }
+
 @media only screen and (max-width: 991px) {
   .second-section {
     grid-template-columns: 1fr; }
@@ -1357,7 +1361,7 @@ body {
   .progress-line {
     display: none; }
   .scroll-bottom {
-    display: none; }
+    display: none !important; }
   .shape1, .shape2, .shape3, .shape4, .shape8 {
     display: none; }
   .shape5 {
@@ -1540,7 +1544,8 @@ body {
   background: #e7e7e7;
   right: -40px;
   transform: rotate(90deg);
-  border-radius: 10px; }
+  border-radius: 10px;
+  z-index: 1; }
 
 .scroll-bar {
   width: 0;

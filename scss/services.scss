@@ -94,6 +94,10 @@
     padding-bottom: 130px;
 }
 
+.post-link{
+    text-decoration: none;
+}
+
 .item {
     background: #fff;
     width:100%;
@@ -352,9 +356,9 @@
     display: none;
 }
 
-.development .milestone-title{
-    margin-left: -20px;
-}
+// .development .milestone-title{
+//     margin-left: -20px;
+// }
 
 .hide-desktop{
     display: none;

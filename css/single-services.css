@@ -328,6 +328,11 @@ html, body {
     display: flex;
     justify-content: center; } }
 
+@supports (-webkit-touch-callout: none) {
+  .ios-class-menu {
+    top: 0px !important;
+    border: 2px solid red; } }
+
 @media only screen and (max-width: 768px) {
   .nav-content, .menu-toplinks {
     padding: 30px 15px;
@@ -680,14 +685,14 @@ footer .informations p a {
   margin-bottom: 40px; }
 
 .accordion-button:not(.collapsed)::after {
-  background-image: url(/assets/images/minus.svg) !important;
+  background-image: url(../assets/images/minus.svg) !important;
   transform: rotate(0deg) !important;
   position: absolute;
   right: 20px;
   background-size: 14px 14px !important; }
 
 .accordion-button::after {
-  background-image: url(/assets/images/plus.svg) !important;
+  background-image: url(../assets/images/plus.svg) !important;
   background-size: 14px 14px !important; }
 
 .accordion-button, .accordion-header, .accordion-item, .accordion {
@@ -753,6 +758,9 @@ button.accordion-button.collapsed:focus {
 .other-part {
   display: flex;
   margin-top: 58px; }
+
+#footer {
+  margin-top: 50px; }
 
 @media only screen and (max-width: 1204px) {
   .vertical-line {

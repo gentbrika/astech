@@ -328,6 +328,11 @@ html, body {
     display: flex;
     justify-content: center; } }
 
+@supports (-webkit-touch-callout: none) {
+  .ios-class-menu {
+    top: 0px !important;
+    border: 2px solid red; } }
+
 @media only screen and (max-width: 768px) {
   .nav-content, .menu-toplinks {
     padding: 30px 15px;
@@ -667,6 +672,9 @@ footer .informations p a {
   color: #a4a4a4;
   margin-top: 15px;
   margin-bottom: 0px; }
+
+.owl-stage {
+  width: 100% !important; }
 
 @media only screen and (max-width: 1340px) {
   .posts {

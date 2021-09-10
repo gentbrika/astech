@@ -134,7 +134,7 @@
 }
 
 .accordion-button:not(.collapsed)::after {
-    background-image: url(/assets/images/minus.svg) !important;
+    background-image: url(../assets/images/minus.svg) !important;
     transform: rotate(0deg) !important;
     position: absolute;
     // margin-top: 18px;
@@ -144,7 +144,7 @@
 }
 
 .accordion-button::after{
-    background-image: url(/assets/images/plus.svg) !important;
+    background-image: url(../assets/images/plus.svg) !important;
     background-size: 14px 14px !important;
 }
 
@@ -227,6 +227,9 @@ button.accordion-button.collapsed:focus{
     margin-top: 58px;
 }
 
+#footer{
+    margin-top: 50px;
+}
 
 
 

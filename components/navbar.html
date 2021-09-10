@@ -232,7 +232,7 @@
                             </div>
                         </div>
                         <div class="">
-                            <p class="copyright">© 2019-2021, Astech.</p>
+                            <p class="copyright">© 2017-2021, Astech.</p>
                         </div>
                     </div>
                 </div>
@@ -249,12 +249,15 @@
         var scroll = $(window).scrollTop();
         if (scroll == 0) {
             $(".nav-content").addClass("top-nav");
-
+            $(".nav-content").addClass("ios-class-menu");
         }
         else {
             $(".nav-content").removeClass("top-nav");
+            $(".nav-content").removeClass("ios-class-menu");
         }
     });
+
+
 
 </script>
 

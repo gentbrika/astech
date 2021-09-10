@@ -964,7 +964,8 @@ body {
 .partner-logos img {
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 15px; }
+  margin-bottom: 15px;
+  max-width: 100%; }
 
 .rtbp {
   width: fit-content;

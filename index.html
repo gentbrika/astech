@@ -790,7 +790,7 @@
 
             let getFooter = document.querySelector('footer')
             let footerHeight = getFooter.offsetHeight;
-            console.log(footerHeight);
+            // console.log(footerHeight);
 
             $(window).scroll(function () {
                 if ($(window).scrollTop() + $(window).height() > $(document).height() - footerHeight + 340) {
@@ -851,17 +851,6 @@
             $("#nav").load("components/navbar.html");
             $("#footer").load("components/footer.html");
         });
-
-        //hide scroll bottom when in bottom of page
-        jQuery(function ($) {
-            $('body').on('scroll', function () {
-                if ($(this).scrollTop() + $(this).innerHeight() >= $(this)[0].scrollHeight) {
-                    alert('end reached');
-                    console.log("Test")
-                }
-            })
-        });
-
 
 
         // scroll progress
@@ -965,6 +954,7 @@
             if (isScrolledIntoView($elem, $window)) {
                 $elem.addClass("animate")
                 // console.log("now you see me");
+                // $(".csd svg").addClass("rotateLogo");
             }
             else {
                 // console.log("cant see")

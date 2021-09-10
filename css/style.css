@@ -738,7 +738,8 @@ body {
   left: -34px;
   top: 320px;
   cursor: pointer;
-  position: fixed; }
+  position: fixed;
+  z-index: 2; }
 
 .scroll-bottom p {
   font-weight: bold;

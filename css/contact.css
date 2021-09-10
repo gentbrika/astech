@@ -330,8 +330,7 @@ html, body {
 
 @supports (-webkit-touch-callout: none) {
   .ios-class-menu {
-    top: 0px !important;
-    border: 2px solid red; } }
+    top: 0px !important; } }
 
 @media only screen and (max-width: 768px) {
   .nav-content, .menu-toplinks {

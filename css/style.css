@@ -1467,6 +1467,10 @@ body {
   .row-1, .row-2 {
     margin-top: 20px; } }
 
+@media only screen and (min-width: 481px) and (max-width: 580px) {
+  .our-services {
+    margin-top: 80px; } }
+
 @media only screen and (max-width: 480px) {
   .text-section h1 {
     font-size: 36px;

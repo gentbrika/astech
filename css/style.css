@@ -958,7 +958,7 @@ body {
 
 .partner-logos {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   margin-left: auto;
   max-width: 1098px;
   margin-right: auto;

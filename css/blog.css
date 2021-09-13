@@ -708,4 +708,6 @@ footer .informations p a {
   .categories {
     font-size: 14px; }
   .blog-text {
-    font-size: 24px; } }
+    font-size: 24px; }
+  .owl-stage {
+    width: max-content !important; } }

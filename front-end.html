@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- style -->
+    <link rel="stylesheet" href="css/single-job.css">
+    <!-- jquery -->
+    <!-- <script src="/node_modules/jquery/dist/jquery.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- bootstrap -->
+    <!-- <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
+        <script src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.0/css/bootstrap.min.css"
+        integrity="sha512-F7WyTLiiiPqvu2pGumDR15med0MDkUIo5VTVyyfECR5DZmCnDhti9q5VID02ItWjq6fvDfMaBaDl2J3WdL1uxA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.0/js/bootstrap.min.js"
+        integrity="sha512-NWNl2ZLgVBoi6lTcMsHgCQyrZVFnSmcaa3zRv0L3aoGXshwoxkGs3esa9zwQHsChGRL4aLDnJjJJeP6MjPX46Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- animation -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <link rel="icon" type="image/png" href="./assets/images/responsive-logo.png" />
+
+    <title>Astech - Custom Software Development</title>
+
+</head>
+
+<body>
+    <div id="nav"></div>
+
+
+    <div class="job-content">
+        <div class="background-color"></div>
+
+        <div class="all-content">
+            <div class="container">
+                <div class="top-section" data-aos="fade-down" data-aos-once="true" data-aos-duration="1000">
+
+                    <img src="assets/images/job-background.png" class="main-image">
+                    <div class="job-logo">
+                        <img src="assets/images/angular-icon.svg">
+                    </div>
+
+                    <h3 class="post-title">Senior Front-End Developer (Remote/Office Tirane or Prizren)</h3>
+
+                    <div class="details">
+                        <div class="location">
+                            <img src="assets/images/location.svg">
+                            <p class="job-location">Tirana/Prizren</p>
+                        </div>
+                        <div class="date">
+                            <img src="assets/images/calendar.svg">
+                            <p>Posted 1 week ago</p>
+                        </div>
+                    </div>
+                    <div class="divider"></div>
+                </div>
+
+
+
+                <div class="job-description" data-aos="fade-up" data-aos-once="true" data-aos-duration="1000">
+                    <h5>Job Description</h5>
+                    <ul>
+                        <li>We are looking for an experienced developer who can help design and develop our application inAngular front-end framework</li>
+                        <li>Scale application and infrastructure to meet our international ambitions</li>
+                        <li>Take responsibility and ownership of the product</li>
+                        <li>Work closely with the rest of the team in a flat structure</li>
+                        <li>Help to continuously improve the development process</li>
+                    </ul>
+
+                    <h5>We are looking for you who:</h5>
+
+                    <ul>
+                        <li>Have a good understanding of front-end development with experience from developingapplications used on various devices</li>
+                        <li>At least 6 years experience from front-end development</li>
+                        <li>Experienced in Angular and JavaScript, and possibly worked with TypeScript / NodeJS.</li>
+                        <li>Have good communication skills, both oral and written</li>
+                        <li>Dreams of working in a start-up where everyone influences the way forward.</li>
+                    </ul>
+
+                    <h5>We can offer:</h5>
+
+                    <ul>
+                        <li>Exciting work with direct impact on final product and customer experience</li>
+                        <li>Opportunity to influence technology choices, development process and to grow in responsibility</li>
+                        <li>Participate in a start-up that enters a strong growth phase</li>
+                        <li>International working environment</li>
+                        <li>Competitive conditions, including opportunity to take part in ownership and share program</li>
+                    </ul>
+
+                    <p>For more information or apply, you can get in touch with us on: <a href="mailto:info@astech.al">info@astech.al</a></p>
+                </div>
+
+                <div class="divider"></div>
+
+                <button class="apply">Apply Now</button>
+
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+
+    <div id="footer"></div>
+
+
+    <script>
+        $(function () {
+            $("#nav").load("components/navbar.html");
+            $("#footer").load("components/footer.html");
+        });
+    </script>
+
+    <!-- animation -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>

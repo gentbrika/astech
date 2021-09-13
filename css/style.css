@@ -963,8 +963,6 @@ body {
   color: #2da1c5; }
 
 .partner-logos {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   margin-left: auto;
   max-width: 1098px;
   margin-right: auto;
@@ -977,6 +975,9 @@ body {
   margin-right: auto;
   margin-bottom: 15px;
   max-width: 100%; }
+
+.partners .owl-item img {
+  width: auto !important; }
 
 .rtbp {
   width: fit-content;
@@ -1467,7 +1468,16 @@ body {
   .text-section h1 {
     font-size: 36px !important; }
   .looking-for h1 {
-    line-height: 34px; } }
+    line-height: 34px; }
+  .partner-logos {
+    margin-top: 40px !important;
+    margin-bottom: 40px !important; }
+  .partners-content {
+    padding-top: 50px;
+    padding-bottom: 50px; }
+  .partners .owl-stage {
+    display: flex;
+    align-items: center; } }
 
 @media only screen and (max-width: 520px) {
   .trianlge {

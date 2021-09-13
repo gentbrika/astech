@@ -644,13 +644,39 @@
                         Our amazing <span>clients</span> and <span>partners</span> that we work with.
                     </h1>
                     <div class="partner-logos" data-aos="fade-up" data-aos-once="true" data-aos-duration="1000">
-                        <img src="./assets/images/zemp-logo.png">
+                        <!-- <img src="./assets/images/zemp-logo.png">
                         <img src="./assets/images/sharefox.png">
                         <img src="./assets/images/men-at-code.svg">
                         <img src="./assets/images/busines-soft.svg">
                         <img src="./assets/images/makerspace.svg">
                         <img src="./assets/images/knauf-logo.png">
-                        <img src="./assets/images/shehu-and-partners.png">
+                        <img src="./assets/images/shehu-and-partners.png"> -->
+
+                        <div class="owl-carousel partners">
+                            <div class="partner-logo">
+                                <img src="./assets/images/zemp-logo.png">
+                            </div>
+                            <div class="partner-logo">
+                                <img src="./assets/images/sharefox.png">
+                            </div>
+                            <div class="partner-logo">
+                                <img src="./assets/images/men-at-code.svg">
+                            </div>
+                            <div class="partner-logo">
+                                <img src="./assets/images/busines-soft.svg">
+                            </div>
+                            <div class="partner-logo">
+                                <img src="./assets/images/makerspace.svg">
+                            </div>
+                            <div class="partner-logo">
+                                <img src="./assets/images/knauf-logo.png">
+                            </div>
+                            <div class="partner-logo">
+                                <img src="./assets/images/shehu-and-partners.png">
+                            </div>
+                        </div>
+
+
                     </div>
                     <div class="rtbp">
                         <button onclick="location.href='./contact.html'">Ready to be partners?</button>
@@ -786,6 +812,29 @@
         </div>
     </div>
 
+
+
+    <script>
+        $('.partners').owlCarousel({
+            margin: 10,
+            nav: false,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                525: {
+                    items: 2
+                },
+                767: {
+                    items: 3
+                },
+                1024: {
+                    items: 4
+                }
+            }
+        })
+    </script>
+
     <div id="footer"></div>
 
 
@@ -916,12 +965,12 @@
             }
         })
 
-
         $('.owl-carousel-3').owlCarousel({
             loop: false,
             autoWidth: true,
             margin: 50
         });
+
 
         // popup
         function openPopup(id) {
@@ -970,6 +1019,8 @@
 
 
     </script>
+
+
 
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>

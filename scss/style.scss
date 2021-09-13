@@ -476,8 +476,8 @@ line-height: 30px;
     color: $primary-one;
 }
 .partner-logos{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    // display: grid;
+    // grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     // grid-template-columns: 1fr 1fr 1fr 1fr;
     margin-left: auto;
     max-width: 1098px;
@@ -492,6 +492,10 @@ line-height: 30px;
     margin-right: auto;
     margin-bottom: 15px;
     max-width: 100%;
+}
+
+.partners .owl-item img{
+    width: auto !important;
 }
 
 .rtbp{
@@ -1147,6 +1151,18 @@ line-height: 30px;
     }
     .looking-for h1{
         line-height: 34px;
+    }
+    .partner-logos{
+        margin-top: 40px !important;
+        margin-bottom: 40px !important;
+    }
+    .partners-content {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .partners .owl-stage{
+        display: flex;
+        align-items: center;
     }
 }
 

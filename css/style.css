@@ -237,6 +237,14 @@ html, body {
   .menu-items {
     height: 82%; } }
 
+@media only screen and (max-height: 600px) {
+  .menu-items a {
+    margin-bottom: 25px !important; }
+  .line-port {
+    margin-top: 20px !important; }
+  .copyright {
+    margin-top: 40px !important; } }
+
 .recentItem::-webkit-scrollbar {
   width: 0;
   background: transparent; }
@@ -979,6 +987,11 @@ body {
 .partners .owl-item img {
   width: auto !important; }
 
+.partner-logo {
+  height: 80px;
+  display: flex;
+  align-items: center; }
+
 .rtbp {
   width: fit-content;
   margin-left: auto;
@@ -1247,6 +1260,10 @@ body {
 
 .show-tablet a {
   text-decoration: none; }
+
+@media only screen and (min-width: 1261px) and (max-width: 1320px) {
+  .scroll-bottom {
+    left: -60px !important; } }
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
   .owl-carousel.owl-carousel-1 {

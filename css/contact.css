@@ -237,6 +237,14 @@ html, body {
   .menu-items {
     height: 82%; } }
 
+@media only screen and (max-height: 600px) {
+  .menu-items a {
+    margin-bottom: 25px !important; }
+  .line-port {
+    margin-top: 20px !important; }
+  .copyright {
+    margin-top: 40px !important; } }
+
 .recentItem::-webkit-scrollbar {
   width: 0;
   background: transparent; }

@@ -394,6 +394,16 @@
     }
 }
 
+@media only screen and (min-width: 576px) and (max-width:991px){
+    .design-row, .launch-row{
+        display: flex;
+        justify-content: center;
+    }
+    .milestone-image img {
+        width: 70% !important;
+    }
+}
+
 @media only screen and (min-width: 991px){
     .container {
         max-width: 1200px;

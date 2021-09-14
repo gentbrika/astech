@@ -539,6 +539,18 @@ line-height: 30px;
     }
 }
 
+@media only screen and (max-width: 575px){
+    .partner-logos .partner-image{
+        width: 33%;
+    }
+}
+
+@media only screen and (max-width: 450px){
+    .partner-logos .partner-image {
+        width: 50%;
+    }
+}
+
 
 @-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
 @-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }

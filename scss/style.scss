@@ -528,6 +528,17 @@ line-height: 30px;
 }
 
 
+.partner-logos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    .partner-image{
+        width: 25%;
+        display: flex;
+        justify-content: center;
+    }
+}
+
 
 @-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
 @-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }

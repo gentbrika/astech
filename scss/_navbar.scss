@@ -438,12 +438,12 @@
     }
 }
 
-@supports (overflow:-webkit-marquee) and (justify-content:inherit)
-{
-  .ios-class-menu{
-    top: 0px !important;
-  }
-}
+// @supports (overflow:-webkit-marquee) and (justify-content:inherit)
+// {
+//   .ios-class-menu{
+//     top: 0px !important;
+//   }
+// }
 
 @media only screen and (max-width: 768px){
   .nav-content, .menu-toplinks {

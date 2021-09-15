@@ -555,11 +555,3 @@
     padding-left: 0px;
   }
 }
-
-
-@media not all and (min-resolution:.001dpcm)
-{ @supports (-webkit-appearance:none) and (stroke-color:transparent) {
-    body { 
-      border:20px solid green; 
-    }
-}}

@@ -441,11 +441,6 @@ html, body {
   .openMenu-logo {
     padding-left: 0px; } }
 
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    body {
-      border: 20px solid green; } } }
-
 .lwt {
   height: 350px;
   max-width: 100%;

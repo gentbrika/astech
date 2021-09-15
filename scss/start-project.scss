@@ -2,6 +2,8 @@
 @import "footer";
 
 .sections{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     margin-top: -103px;
 }
@@ -44,13 +46,33 @@
 }
 
 .right-content{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     width: 100%;
     max-width: 570px;
     margin-left: auto;
     margin-right: auto;
     padding-top: 260px;
+}
+
+.right-content .inputs ::-webkit-input-placeholder{
+    color: $secondary-two;
+    font-size: 16px;
+}
+
+.right-content .inputs ::-moz-placeholder{
+    color: $secondary-two;
+    font-size: 16px;
+}
+
+.right-content .inputs :-ms-input-placeholder{
+    color: $secondary-two;
+    font-size: 16px;
 }
 
 .right-content .inputs ::placeholder{
@@ -67,8 +89,13 @@
 }
 
 .inputs{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
 }
 
 .send-message{
@@ -121,6 +148,21 @@
     padding-bottom: 8px;
 }
 
+.project-form input::-webkit-input-placeholder{
+    color: $secondary-two;
+    font-size: 16px;
+}
+
+.project-form input::-moz-placeholder{
+    color: $secondary-two;
+    font-size: 16px;
+}
+
+.project-form input:-ms-input-placeholder{
+    color: $secondary-two;
+    font-size: 16px;
+}
+
 .project-form input::placeholder{
     color: $secondary-two;
     font-size: 16px;
@@ -136,6 +178,8 @@ a#file-link {
 
 .files{
     border: 2px solid #B7B3B2;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
     width: fit-content;
     padding: 2px;
     height: 30px;
@@ -149,7 +193,8 @@ a#file-link {
         width: 100%;
     }
     .sections{
-        flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
     }
     .left-section{
         padding-bottom: 0px;
@@ -172,14 +217,18 @@ a#file-link {
         padding-top: 40px;
     }
     .left-content{
+        max-width: -webkit-fit-content;
+        max-width: -moz-fit-content;
         max-width: fit-content;
     }
 }
 
 @media only screen and (min-width:575px) and (max-width:1024px){
     .project-form {
+        display: -ms-grid;
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        -ms-grid-columns: 1fr 1fr;
+            grid-template-columns: 1fr 1fr;
         grid-column-gap: 40px;
     }
 }

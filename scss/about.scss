@@ -58,21 +58,43 @@
 }
 
 .about-logo svg{
-    animation-name: logoRotate;
-    animation-duration: 1s;
-    animation-timing-function: linear;
+    -webkit-animation-name: logoRotate;
+            animation-name: logoRotate;
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+    -webkit-animation-timing-function: linear;
+            animation-timing-function: linear;
 }
+
+
+@-webkit-keyframes logoRotate {
+    0%{
+       -webkit-transform: rotate(0deg);
+               transform: rotate(0deg);
+    }
+    50%{
+        -webkit-transform: rotate(180deg);
+                transform: rotate(180deg);
+    }
+    100%{
+        -webkit-transform: rotate(360deg);
+                transform: rotate(360deg);
+    }
+  }
 
 
 @keyframes logoRotate {
     0%{
-       transform: rotate(0deg);
+       -webkit-transform: rotate(0deg);
+               transform: rotate(0deg);
     }
     50%{
-        transform: rotate(180deg);
+        -webkit-transform: rotate(180deg);
+                transform: rotate(180deg);
     }
     100%{
-        transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+                transform: rotate(360deg);
     }
   }
 
@@ -92,8 +114,10 @@
 }
 
 .our-vision{
+    display: -ms-grid;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
 }
 
 .second-elipse{
@@ -108,8 +132,10 @@
 }
 
 .our-mision{
+    display: -ms-grid;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
 }
 
 .our-mision p{
@@ -148,8 +174,10 @@
 }
 
 .work-photos{
+    display: -ms-grid;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
     grid-gap: 30px;
 }
 
@@ -251,7 +279,8 @@
 }
 
 .owl-nav .left-arrow{
-    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
     margin-left: -13px;
 }
 
@@ -270,7 +299,8 @@
 .owl-next {
   position: absolute;
   top: 0%;
-  transform: translateY(-100%);
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
 }
 
 .owl-prev{
@@ -310,24 +340,41 @@
 }
 
 .tools-content{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     border: 1px solid #EFEFEF;
 }
 
 .tools-posts{
+    display: -ms-grid;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
     grid-gap: 30px;
 }
 
 .tools-image-text{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    justify-content: center; 
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; 
     text-align: center;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
 .tools-content h5{
@@ -335,7 +382,11 @@
 }
 
 .tools-image-text img{
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
     width: fit-content;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
     height: fit-content;
 }
 
@@ -344,6 +395,8 @@
     position: absolute;
     width: 30%;
     height: 131px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 
@@ -360,15 +413,19 @@
 
 @media only screen and (max-width:1200px){
     .our-vision{
-        grid-template-columns: 1fr;
+        -ms-grid-columns: 1fr;
+            grid-template-columns: 1fr;
         padding-left: 50px;
     }
     .our-mision{
-        grid-template-columns: 1fr;
+        -ms-grid-columns: 1fr;
+            grid-template-columns: 1fr;
         padding-left: 50px;
     }
     .our-mision-text {
-        order: 1;
+        -webkit-box-ordinal-group: 2;
+            -ms-flex-order: 1;
+                order: 1;
     }
     .our-mision-logo{
         height: auto ;
@@ -426,14 +483,16 @@
 
 @media screen and (max-width: 768px){
     .about-background{
-        object-fit: cover;
+        -o-object-fit: cover;
+           object-fit: cover;
         height: 420px;
     }
 }
 
 @media screen and (max-width: 700px){
     .tools-posts{
-        grid-template-columns: 1fr;
+        -ms-grid-columns: 1fr;
+            grid-template-columns: 1fr;
     }
     .background-image{
         width: 70%;
@@ -468,7 +527,8 @@
         height: 245px;
     }
     .work-photos{
-        grid-template-columns: 1fr;
+        -ms-grid-columns: 1fr;
+            grid-template-columns: 1fr;
         grid-gap: 0px;
         margin-bottom: 60px;
     }
@@ -491,6 +551,8 @@
     }
     .about-logo svg{
         width: 86px;
+        height: -webkit-fit-content;
+        height: -moz-fit-content;
         height: fit-content;
         right: 0;
     }

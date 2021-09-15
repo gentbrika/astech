@@ -2,13 +2,20 @@
     height: 350px;
     max-width: 100%;
     background: #1B1C1F;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
 .lwt .right-image{
-    transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+            transform: scaleX(-1);
 }
 
 .slide-images {
@@ -16,9 +23,15 @@
 }
 
 .quote{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     margin-left: auto;
     margin-right: auto;
     background-color: $primary-one;
@@ -81,8 +94,12 @@ footer .informations p a{
 
 
 .footer-navigations{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     padding-top: 175px;
 }
 
@@ -110,7 +127,8 @@ footer .informations p a{
 }
 
 .scroll-top{
-    transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg);
+            transform: rotate(-90deg);
     min-width: 100px;
     height: 40px;
     position: absolute;
@@ -126,19 +144,19 @@ footer .informations p a{
     border: 1px solid #DEDEDE;
     background-color: transparent;
     box-sizing: border-box;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 .scroll-top .arrow{
-    transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
     padding: 10px 5px;
 }
 
-// @media only screen and (max-width: 1367px){
-//     .scroll-top button{
-//     margin: 90px 0px 0px 159px;
-//     }
-// }
 
 .move-top{
     padding-left: 10px;
@@ -146,6 +164,8 @@ footer .informations p a{
 
 .footer-links{
     position: relative;
+    width:-webkit-fit-content;
+    width:-moz-fit-content;
     width:fit-content;
   }
   
@@ -157,6 +177,7 @@ footer .informations p a{
     width: 0;
     height: 2px;
     background-color: #0074D9;
+    -webkit-transition: width 0.6s cubic-bezier(0.25, 1, 0.5, 1);
     transition: width 0.6s cubic-bezier(0.25, 1, 0.5, 1);
   }
   
@@ -214,15 +235,23 @@ footer .informations p a{
         width: auto !important;
     }
     .footer-navigations{
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
         padding-top: 35px;
     }
     .icons, .pages, .copyright-footer{
         padding-bottom: 30px;
     }
     .pages{
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
     }
     .pages a{
         margin-left: 0px !important;
@@ -289,4 +318,3 @@ footer .informations p a{
 .lwt {
     height: 323px;
 }
-

@@ -2,6 +2,8 @@
 @import "footer";
 
 .sections{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 
@@ -36,12 +38,32 @@
 }
 
 .right-content{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     width: 80%;
     margin-left: auto;
     margin-right: auto;
     padding-top: 70px;
+}
+
+.right-content .inputs ::-webkit-input-placeholder{
+    color: $secondary-two;
+    font-size: 16px;
+}
+
+.right-content .inputs ::-moz-placeholder{
+    color: $secondary-two;
+    font-size: 16px;
+}
+
+.right-content .inputs :-ms-input-placeholder{
+    color: $secondary-two;
+    font-size: 16px;
 }
 
 .right-content .inputs ::placeholder{
@@ -58,8 +80,13 @@
 }
 
 .inputs{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     max-width: 540px;
     width: 100%;
     padding-top: 90px;
@@ -136,6 +163,8 @@ a#file-link {
 
 .files{
     border: 2px solid #B7B3B2;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
     width: fit-content;
     padding: 2px;
     height: 30px;
@@ -144,8 +173,10 @@ a#file-link {
 }
 
 .first-row{
+    display: -ms-grid;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
     grid-gap: 30px;
 }
 
@@ -159,14 +190,19 @@ a#file-link {
         width: 100%;
     }
     .sections{
-        flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
     }
     .left-content{
         width: 80%;
     }
     .astech{
+        display:-webkit-box;
+        display:-ms-flexbox;
         display:flex;
-        justify-content: space-between;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
     }
     .contact-content h1{
         font-size: 36px;
@@ -179,18 +215,19 @@ a#file-link {
         padding-top: 35px;
     }  
     .first-row{
-        grid-template-columns: 1fr;
+        -ms-grid-columns: 1fr;
+            grid-template-columns: 1fr;
         grid-gap: 0px;
     }
 }    
 
-// @media only screen and (max-width:768px){
-
-// }
 
 @media only screen and (max-width:570px){
     .astech{
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
     }
     .left-section{
         padding-bottom: 40px;

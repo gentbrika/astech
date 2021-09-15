@@ -557,9 +557,9 @@
 }
 
 
-@media screen and (min-color-index:0) and(-webkit-min-device-pixel-ratio:0)
-{
-  body{
-    border:20px solid red;
-  }
-}
+@media not all and (min-resolution:.001dpcm)
+{ @supports (-webkit-appearance:none) and (stroke-color:transparent) {
+    body { 
+      border:20px solid green; 
+    }
+}}

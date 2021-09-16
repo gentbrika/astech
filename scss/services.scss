@@ -372,6 +372,13 @@
     font-weight: 600;
     font-size: 24px;
     pointer-events: none;
+    margin-top: 20px;
+    margin-bottom: 0px;
+}
+
+.milestone:hover .milestone-title{
+    margin-top: 64px !important;
+    margin-bottom: 0px;
 }
 
 .milestone-description{
@@ -529,7 +536,7 @@
         margin-bottom: 35px;
     }
     .milestone-title{
-        margin-top: 20px;
+        margin-top: 30px;
     }
     .our-process {
         padding-bottom: 60px;
@@ -744,6 +751,9 @@
     }
     .first-section {
         padding-top: 300px;
+    }
+    .milestone:hover .milestone-title{
+        margin-top: 56px !important;
     }
 }
 

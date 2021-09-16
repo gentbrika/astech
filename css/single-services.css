@@ -600,7 +600,7 @@ footer .informations p a {
   right: 0;
   width: 0;
   height: 2px;
-  background-color: #0074D9;
+  background-color: #2da1c5;
   -webkit-transition: width 0.6s cubic-bezier(0.25, 1, 0.5, 1);
   transition: width 0.6s cubic-bezier(0.25, 1, 0.5, 1); }
 

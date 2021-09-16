@@ -600,7 +600,7 @@ footer .informations p a {
   right: 0;
   width: 0;
   height: 2px;
-  background-color: #0074D9;
+  background-color: #2da1c5;
   -webkit-transition: width 0.6s cubic-bezier(0.25, 1, 0.5, 1);
   transition: width 0.6s cubic-bezier(0.25, 1, 0.5, 1); }
 
@@ -983,7 +983,13 @@ footer .informations p a {
   text-align: center !important;
   font-weight: 600;
   font-size: 24px;
-  pointer-events: none; }
+  pointer-events: none;
+  margin-top: 20px;
+  margin-bottom: 0px; }
+
+.milestone:hover .milestone-title {
+  margin-top: 64px !important;
+  margin-bottom: 0px; }
 
 .milestone-description {
   pointer-events: none; }
@@ -1102,7 +1108,7 @@ footer .informations p a {
   .development {
     margin-bottom: 35px; }
   .milestone-title {
-    margin-top: 20px; }
+    margin-top: 30px; }
   .our-process {
     padding-bottom: 60px;
     padding-top: 60px; }
@@ -1262,7 +1268,9 @@ footer .informations p a {
   .our-vision-section h1 {
     max-width: 376px; }
   .first-section {
-    padding-top: 300px; } }
+    padding-top: 300px; }
+  .milestone:hover .milestone-title {
+    margin-top: 56px !important; } }
 
 @media only screen and (max-width: 700px) {
   .posts {

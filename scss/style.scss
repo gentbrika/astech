@@ -184,6 +184,35 @@ body{
     color: $secondary-one;
 }
 
+
+.text-section a{
+    position: relative;
+    border-bottom: none !important;
+  }
+
+  .text-section a:hover{
+    color: $primary-one;
+  }
+  
+  .text-section a::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 0;
+    height: 2px;
+    background-color: $primary-one;
+    transition: width 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+  }
+  
+  @media (hover: hover) and (pointer: fine) {
+    .text-section a:hover::before{
+      left: 0;
+      right: auto;
+      width: 100%;
+    }
+  }
+
 .images-content{
     display: -webkit-box;
     display: -ms-flexbox;
@@ -699,6 +728,10 @@ line-height: 30px;
 
 .looking-for h1 span{
     color: $primary-one;
+}
+
+.description{
+    height: 90px;
 }
 
 .owl-carousel-2{
@@ -1218,6 +1251,9 @@ line-height: 30px;
     .looking-for h1{
         line-height: 60px;
         width: 378px;
+    }
+    .description{
+        height: 150px;
     }
     .owl-carousel-2 .item{
         padding: 30px 30px;

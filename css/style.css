@@ -600,7 +600,7 @@ footer .informations p a {
   right: 0;
   width: 0;
   height: 2px;
-  background-color: #0074D9;
+  background-color: #2da1c5;
   -webkit-transition: width 0.6s cubic-bezier(0.25, 1, 0.5, 1);
   transition: width 0.6s cubic-bezier(0.25, 1, 0.5, 1); }
 
@@ -851,6 +851,29 @@ body {
   line-height: 70px;
   text-transform: uppercase;
   color: #1D1C20; }
+
+.text-section a {
+  position: relative;
+  border-bottom: none !important; }
+
+.text-section a:hover {
+  color: #2da1c5; }
+
+.text-section a::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 0;
+  height: 2px;
+  background-color: #2da1c5;
+  transition: width 0.6s cubic-bezier(0.25, 1, 0.5, 1); }
+
+@media (hover: hover) and (pointer: fine) {
+  .text-section a:hover::before {
+    left: 0;
+    right: auto;
+    width: 100%; } }
 
 .images-content {
   display: -webkit-box;
@@ -1287,6 +1310,9 @@ body {
 .looking-for h1 span {
   color: #2da1c5; }
 
+.description {
+  height: 90px; }
+
 .owl-carousel-2 {
   padding-top: 38px; }
 
@@ -1677,6 +1703,8 @@ body {
   .looking-for h1 {
     line-height: 60px;
     width: 378px; }
+  .description {
+    height: 150px; }
   .owl-carousel-2 .item {
     padding: 30px 30px; }
   .owl-carousel-1 .item {

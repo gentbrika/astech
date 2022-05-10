@@ -1,2 +1,2 @@
-# astech web
+# ASTech Website
 https://gentbrika.github.io/astech/
